@@ -393,7 +393,7 @@ for dung in dunglist:
     wep = leg_dict[dung]["War"]
     arm = t3_dict[dung]
     wep = int(items[dung][wep]["Legendary"]["minpot"])
-    arm = int(items[dung][arm]["Green"]["minpot"])
+    arm = int(items[dung][arm]["Gray"]["minpot"])
     helm = arm
     spell = random.choice(spells[dung]["4"])
     while spell["class"] != "Mage":
@@ -412,8 +412,8 @@ for dung in dunglist:
     skill = lvl_dict[dung][4]
     wep = ins_weap_dict[dung]
     arm = ins_dict[dung]
-    wep = int(items[dung][wep]["Gray"]["minpot"])
-    arm = int(items[dung][arm]["Gray"]["minpot"])
+    wep = int(items[dung][wep]["Green"]["minpot"])
+    arm = int(items[dung][arm]["Green"]["minpot"])
     helm = arm
     spell = random.choice(spells[dung]["5"])
     while spell["class"] != "Mage":

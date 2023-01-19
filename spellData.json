@@ -546,12 +546,12 @@
   },
   "Jade Roller": {
     "abilityType": "spell",
-    "Damage": 1,
+    "Damage": 12500,
     "Dungeon": "gs"
   },
   "Solar Beam": {
     "abilityType": "spell",
-    "Damage": 1,
+    "Damage": 12500,
     "Dungeon": "gs"
   },
   "Amethyst Beams": {
