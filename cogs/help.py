@@ -171,6 +171,11 @@ class General(commands.Cog, name="help"):
         )
         await context.send(embed=embed)
 
+    @commands.hybrid_command(
+        name="creative",
+        description="command information",
+    )
+    @checks.not_blacklisted()
     async def creative(self, context: Context) -> None:
         new = {
             "inventory": {
@@ -208,11 +213,11 @@ class General(commands.Cog, name="help"):
             color=0x9C84EF
         )
         embed.set_author(
-            name="Profile Creation"
+            name="Profile Maxed"
         )
         embed.add_field(
             name="Success",
-            value="Your profile has been refreshed",
+            value="Your profile has been maxed",
             inline=False
         )
         embed.set_footer(
