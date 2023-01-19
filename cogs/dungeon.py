@@ -1358,6 +1358,9 @@ class General(commands.Cog, name="dungeon"):
                         elif rand == 2:
                             dropname2 = "Enhanced Inner Rage"
                             dropstats2 = "Class: War Spell"
+        if len(userdata["inventory"]) >= 200:
+            error = True
+            errorType = "Your inventory is full, please clear it: " + str(len(userdata["inventory"])) + "/" + "200"
 
         #Send Raid Message
         if error:
