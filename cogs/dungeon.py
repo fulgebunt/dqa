@@ -1592,7 +1592,7 @@ class General(commands.Cog, name="dungeon"):
             if "Boss Raids" in dungeon:
                 embed = discord.Embed(
                     description="You failed " + dungeon,
-                    color=color_dict[dung]
+                    color=0x454B1B
                 )
                 embed.set_author(
                     name="Raid Information"
