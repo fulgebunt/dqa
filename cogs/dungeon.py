@@ -1519,6 +1519,8 @@ class General(commands.Cog, name="dungeon"):
                     str(userdata["stats"]["level"])]
                 userdata["stats"]["level"] += 1
                 userdata["stats"]["free"] += 1
+            collection.drop()
+            collection.insert_one(userdata)
 
             embed.add_field(
                 name="Exp",
@@ -1613,6 +1615,8 @@ class General(commands.Cog, name="dungeon"):
                     userdata["stats"]["exp"] -= level_dict[str(userdata["stats"]["level"])]
                     userdata["stats"]["level"] += 1
                     userdata["stats"]["free"] += 1
+                collection.drop()
+                collection.insert_one(userdata)
                 embed.add_field(
                     name="Exp",
                     value="Level: " + str(userdata["stats"]["level"]) + "\nExp: " + str(
