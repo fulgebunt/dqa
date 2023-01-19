@@ -75,8 +75,8 @@ class General(commands.Cog, name="help"):
                 inline=False
             )
             embed.add_field(
-                name="$damage",
-                value="Shows the damage the user deals",
+                name="$damage (dungeon)",
+                value="Shows the damage the user deals, and their clear chance of a dungeon",
                 inline=False
             )
         elif page == 3:
