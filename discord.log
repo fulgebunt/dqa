@@ -1,19 +1,24 @@
-[2023-01-19 06:16:26] [INFO    ] discord_bot: Loaded extension 'leaderboard'
-[2023-01-19 06:16:26] [INFO    ] discord_bot: Loaded extension 'dungeon'
-[2023-01-19 06:16:26] [INFO    ] discord_bot: Loaded extension 'trading'
-[2023-01-19 06:16:26] [INFO    ] discord_bot: Loaded extension 'skillpoints'
-[2023-01-19 06:16:26] [INFO    ] discord_bot: Loaded extension 'help'
-[2023-01-19 06:16:26] [INFO    ] discord_bot: Loaded extension 'equip'
-[2023-01-19 06:16:26] [INFO    ] discord_bot: Loaded extension 'inventory'
-[2023-01-19 06:16:29] [INFO    ] discord_bot: Logged in as DQA
-[2023-01-19 06:16:29] [INFO    ] discord_bot: discord.py API version: 2.1.0
-[2023-01-19 06:16:29] [INFO    ] discord_bot: Python version: 3.10.5
-[2023-01-19 06:16:29] [INFO    ] discord_bot: Running on: Darwin 22.2.0 (posix)
-[2023-01-19 06:16:29] [INFO    ] discord_bot: -------------------
-[2023-01-19 06:16:34] [INFO    ] discord_bot: Executed damage command in Dungeon Quest Adventures (ID: 1064651478133911653) by ria’s 🥟#9960 (ID: 421086209431961600)
-[2023-01-19 06:16:36] [INFO    ] discord_bot: Executed damage command in Dungeon Quest Adventures (ID: 1064651478133911653) by Zlox_lx#8409 (ID: 611158782176919552)
-[2023-01-19 06:17:24] [INFO    ] discord_bot: Executed raid command in Dungeon Quest Adventures (ID: 1064651478133911653) by Zlox_lx#8409 (ID: 611158782176919552)
-[2023-01-19 06:17:31] [INFO    ] discord_bot: Executed raid command in Dungeon Quest Adventures (ID: 1064651478133911653) by Zlox_lx#8409 (ID: 611158782176919552)
-[2023-01-19 06:17:37] [INFO    ] discord_bot: Executed raid command in Dungeon Quest Adventures (ID: 1064651478133911653) by Zlox_lx#8409 (ID: 611158782176919552)
-[2023-01-19 06:17:41] [INFO    ] discord_bot: Executed raid command in Dungeon Quest Adventures (ID: 1064651478133911653) by Zlox_lx#8409 (ID: 611158782176919552)
-[2023-01-19 06:17:53] [INFO    ] discord_bot: Executed equipped command in Dungeon Quest Adventures (ID: 1064651478133911653) by Zlox_lx#8409 (ID: 611158782176919552)
+[2023-01-19 18:29:15] [INFO    ] discord_bot: Loaded extension 'leaderboard'
+[2023-01-19 18:29:15] [INFO    ] discord_bot: Loaded extension 'dungeon'
+[2023-01-19 18:29:15] [INFO    ] discord_bot: Loaded extension 'trading'
+[2023-01-19 18:29:15] [INFO    ] discord_bot: Loaded extension 'skillpoints'
+[2023-01-19 18:29:15] [INFO    ] discord_bot: Loaded extension 'help'
+[2023-01-19 18:29:15] [INFO    ] discord_bot: Loaded extension 'equip'
+[2023-01-19 18:29:15] [INFO    ] discord_bot: Loaded extension 'inventory'
+[2023-01-19 18:29:17] [INFO    ] discord_bot: Logged in as DQA Beta App
+[2023-01-19 18:29:17] [INFO    ] discord_bot: discord.py API version: 2.1.0
+[2023-01-19 18:29:17] [INFO    ] discord_bot: Python version: 3.10.5
+[2023-01-19 18:29:17] [INFO    ] discord_bot: Running on: Darwin 22.2.0 (posix)
+[2023-01-19 18:29:17] [INFO    ] discord_bot: -------------------
+[2023-01-19 18:29:23] [INFO    ] discord_bot: Executed raid command in Dungeon Quest Adventures (ID: 1064651478133911653) by ria’s 🥟#9960 (ID: 421086209431961600)
+[2023-01-19 18:29:24] [INFO    ] discord_bot: Executed raid command in Dungeon Quest Adventures (ID: 1064651478133911653) by ria’s 🥟#9960 (ID: 421086209431961600)
+[2023-01-19 18:29:25] [INFO    ] discord_bot: Executed raid command in Dungeon Quest Adventures (ID: 1064651478133911653) by ria’s 🥟#9960 (ID: 421086209431961600)
+[2023-01-19 18:29:25] [INFO    ] discord_bot: Executed raid command in Dungeon Quest Adventures (ID: 1064651478133911653) by ria’s 🥟#9960 (ID: 421086209431961600)
+[2023-01-19 18:29:26] [INFO    ] discord_bot: Executed raid command in Dungeon Quest Adventures (ID: 1064651478133911653) by ria’s 🥟#9960 (ID: 421086209431961600)
+[2023-01-19 18:29:27] [INFO    ] discord_bot: Executed raid command in Dungeon Quest Adventures (ID: 1064651478133911653) by ria’s 🥟#9960 (ID: 421086209431961600)
+[2023-01-19 18:29:29] [INFO    ] discord_bot: Executed raid command in Dungeon Quest Adventures (ID: 1064651478133911653) by ria’s 🥟#9960 (ID: 421086209431961600)
+[2023-01-19 18:30:04] [INFO    ] discord_bot: Executed raid command in Dungeon Quest Adventures (ID: 1064651478133911653) by ChaosDreamx | Justin#0418 (ID: 392837642036969473)
+[2023-01-19 18:30:11] [INFO    ] discord_bot: Executed raid command in Dungeon Quest Adventures (ID: 1064651478133911653) by ChaosDreamx | Justin#0418 (ID: 392837642036969473)
+[2023-01-19 18:30:19] [INFO    ] discord_bot: Executed inv command in Dungeon Quest Adventures (ID: 1064651478133911653) by ChaosDreamx | Justin#0418 (ID: 392837642036969473)
+[2023-01-19 18:30:26] [INFO    ] discord_bot: Executed equip command in Dungeon Quest Adventures (ID: 1064651478133911653) by ChaosDreamx | Justin#0418 (ID: 392837642036969473)
+[2023-01-19 18:30:31] [INFO    ] discord_bot: Executed clearinv command in Dungeon Quest Adventures (ID: 1064651478133911653) by ChaosDreamx | Justin#0418 (ID: 392837642036969473)

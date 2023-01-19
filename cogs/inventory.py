@@ -162,7 +162,9 @@ class General(commands.Cog, name="inv"):
                     "Sea Serpent Wings", "Inventors Greatsword", "Inventors Spellblade", "Galactic Dual Blades",
                     "Galactic Pike", "Lava Kings Warscythe", "Lava Kings Spell Daggers", "Sea Kings Greatstaff",
                     "Sea Kings Trident", "Eldenbark Greatsword", "Eldenbark Greatstaff", "Mjolnir", "Gungnir", "Hofund",
-                    "Laevateinn", "Gildenscale Oath and Aegis", "Daybreak and Gildensong"]
+                    "Laevateinn", "Gildenscale Oath and Aegis", "Daybreak and Gildensong", "Fulmen", "Fuscina",
+                    "Shattered Skies", "Stormy Seas", "Ghost Kings Halberd", "Ghost Kings Tome", "Gladius Imperialis",
+                    "Magicus Imperialis", "Storsvero", "Vigamenn", "Theospathia", "Theosevis"]
         leg_dict = {
             "dt": {
                 "War": "Desert Fury",
@@ -223,6 +225,36 @@ class General(commands.Cog, name="inv"):
             "gs": {
                 "War": "Gildenscale Oath and Aegis",
                 "Mage": "Daybreak and Gildensong"
+            },
+            "om": {
+                "War": "Fuscina",
+                "Mage": "Fulmen"
+            },
+            "wt": {
+                "War": "Ghost Kings Halberd",
+                "Mage": "Ghost Kings Tome"
+            },
+            "ec": {
+                "War": "Gladius Imperialis",
+                "Mage": "Magicus Imperialis"
+            }
+        }
+        ult_dict = {
+            "nl": {
+                "War": "Hofund",
+                "Mage": "Laevateinn"
+            },
+            "om": {
+                "War": "Stormy Seas",
+                "Mage": "Shattered Skies"
+            },
+            "wt": {
+                "War": "Storsvero",
+                "Mage": "Vigamenn"
+            },
+            "ec": {
+                "War": "Theospathia",
+                "Mage": "Theosevis"
             }
         }
         t3_dict = {
@@ -238,7 +270,10 @@ class General(commands.Cog, name="inv"):
             "at": "Triton",
             "ef": "Eldenbark",
             "nl": "Valhalla",
-            "gs": "Gildenscale"
+            "gs": "Gildenscale",
+            "om": "Thunder Gods",
+            "wt": "Soulshard",
+            "ec": "Gods Chosen"
         }
         t3_guard_dict = {
             "pi": "Godly Guardian",
@@ -253,7 +288,10 @@ class General(commands.Cog, name="inv"):
             "at": "Triton Guardian",
             "ef": "Eldenbark Guardian",
             "nl": "Valhalla Guardian",
-            "gs": "Gildenscale Guardian"
+            "gs": "Gildenscale Guardian",
+            "om": "Thunder Gods Guardian",
+            "wt": "Soulshard Guardian",
+            "ec": "Gods Chosen Guardian"
         }
         t3_list = list(t3_dict.values())
         t3_guard_list = list(t3_guard_dict.values())

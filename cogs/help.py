@@ -7,7 +7,6 @@ from discord import app_commands
 from discord.ext import commands
 from discord.ext.commands import Context
 import json
-
 from helpers import checks
 
 
@@ -181,22 +180,22 @@ class General(commands.Cog, name="help"):
             "inventory": {
             },
             "stats": {
-                "level": 200,
+                "level": 230,
                 "exp": 0,
                 "gold": 0,
                 "war": 0,
-                "mage": 200,
+                "mage": 230,
                 "health": 0,
                 "free": 0
             },
             "equipped": {
-                "helmname": "Gildenscale",
-                "armorname": "Gildenscale",
-                "weapname": "Daybreak and Gildensong",
-                "helmstats": "Class: Mage Helm\nPot: 15540000\nHealth: 404250000\nLvl Req: 196\nRarity: Purple",
-                "armorstats": "Class: Mage Armor\nPot: 15540000\nHealth: 404250000\nLvl Req: 196\nRarity: Purple",
-                "weapstats": "Class: Mage Helm\nPot: 155400000\nLvl Req: 196\nRarity: Legendary",
-                "spellname": "Jade Rain",
+                "helmname": "Gods Chosen",
+                "armorname": "Gods Chosen",
+                "weapname": "Theosevis",
+                "helmstats": "Class: Mage Helm\nPot: 122662692\nHealth: 9456885438\nLvl Req: 226\nRarity: Purple",
+                "armorstats": "Class: Mage Armor\nPot: 122662692\nHealth: 9456885438\nLvl Req: 226\nRarity: Purple",
+                "weapstats": "Class: Mage Helm\nPot: 1512195236\nLvl Req: 196\nRarity: Ultimate",
+                "spellname": "Skyfall",
                 "spellstats": "Class: Mage"
             },
             "trades": {
@@ -223,6 +222,16 @@ class General(commands.Cog, name="help"):
             text=f"Requested by {context.author}"
         )
         await context.send(embed=embed)
+
+    @commands.hybrid_command(
+        name="pityset",
+        description="command information",
+    )
+    @checks.not_blacklisted()
+    async def pityset(self, context: Context) -> None:
+        dbname = get_database()
+        collection = dbname[str(context.message.author.id)]
+        userdata = collection.find_one()
 
 async def setup(bot):
     await bot.add_cog(General(bot))

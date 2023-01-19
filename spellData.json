@@ -571,7 +571,97 @@
   },
   "God Spear": {
     "abilityType": "spell",
-    "Damage": 13000,
+    "Damage": 13300,
     "Dungeon": "gs"
+  },
+  "Lightning Smite": {
+    "abilityType": "spell",
+    "Damage": 14000,
+    "Dungeon": "om"
+  },
+  "Sky Pierce": {
+    "abilityType": "spell",
+    "Damage": 14000,
+    "Dungeon": "om"
+  },
+  "Storm Surge": {
+    "abilityType": "spell",
+    "Damage": 14500,
+    "Dungeon": "om"
+  },
+  "Thunderstorm": {
+    "abilityType": "spell",
+    "Damage": 14500,
+    "Dungeon": "om"
+  },
+  "Trident Call": {
+    "abilityType": "spell",
+    "Damage": 14500,
+    "Dungeon": "om"
+  },
+  "Hurricane": {
+    "abilityType": "spell",
+    "Damage": 14500,
+    "Dungeon": "om"
+  },
+  "Anger Surge": {
+    "abilityType": "spell",
+    "Damage": 15500,
+    "Dungeon": "wt"
+  },
+  "Vitality Surge": {
+    "abilityType": "spell",
+    "Damage": 15500,
+    "Dungeon": "wt"
+  },
+  "Dead Army": {
+    "abilityType": "spell",
+    "Damage": 16200,
+    "Dungeon": "wt"
+  },
+  "Skeleton Whip": {
+    "abilityType": "spell",
+    "Damage": 16200,
+    "Dungeon": "wt"
+  },
+  "Soul Strike": {
+    "abilityType": "spell",
+    "Damage": 16200,
+    "Dungeon": "wt"
+  },
+  "Spirit Lash": {
+    "abilityType": "spell",
+    "Damage": 16200,
+    "Dungeon": "wt"
+  },
+  "Mages Inscription": {
+    "abilityType": "spell",
+    "Damage": 17200,
+    "Dungeon": "ec"
+  },
+  "Gladiators Net": {
+    "abilityType": "spell",
+    "Damage": 17200,
+    "Dungeon": "ec"
+  },
+  "Skyfall": {
+    "abilityType": "spell",
+    "Damage": 18500,
+    "Dungeon": "ec"
+  },
+  "Earthrise": {
+    "abilityType": "spell",
+    "Damage": 18500,
+    "Dungeon": "ec"
+  },
+  "Sword Storm": {
+    "abilityType": "spell",
+    "Damage": 18500,
+    "Dungeon": "ec"
+  },
+  "Magic Storm": {
+    "abilityType": "spell",
+    "Damage": 18500,
+    "Dungeon": "ec"
   }
 }

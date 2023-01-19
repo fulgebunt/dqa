@@ -176,6 +176,327 @@ damage_gates = {
             "min": 1,
             "max": 4495306129317689
         },
+    },
+    "om": {
+        4: {
+            "min": 1,
+            "max": 1
+        },
+        5: {
+            "min": 1,
+            "max": 4495306129317689
+        },
+    },
+    "wt": {
+        4: {
+            "min": 1,
+            "max": 1
+        },
+        5: {
+            "min": 1,
+            "max": 4495306129317689
+        },
+    },
+    "ec": {
+        4: {
+            "min": 1,
+            "max": 1
+        },
+        5: {
+            "min": 1,
+            "max": 4495306129317689
+        },
+    }
+}
+leg_dict = {
+            "dt": {
+                "War": "Desert Fury",
+                "Mage": "Desert Fury"
+            },
+            "wo": {
+                "War": "Crystalised Greatsword",
+                "Mage": "Crystalised Greatsword"
+            },
+            "pi": {
+                "War": "Soulstealer Greatsword",
+                "Mage": "Staff of the Gods"
+            },
+            "kc": {
+                "War": "Beast Master War Scythe",
+                "Mage": "Beast Master Spell Scythe"
+            },
+            "uw": {
+                "War": "Dual Phoenix Daggers",
+                "Mage": "Phoenix Greatstaff"
+            },
+            "sp": {
+                "War": "Sakura Katana",
+                "Mage": "Sakura Greatstaff"
+            },
+            "tc": {
+                "War": "Overlords Rageblade",
+                "Mage": "Overlords Manablade"
+            },
+            "gh": {
+                "War": "Kraken Slayer",
+                "Mage": "Sea Serpent Wings"
+            },
+            "ss": {
+                "War": "Inventors Greatsword",
+                "Mage": "Inventors Spellblade"
+            },
+            "oo": {
+                "War": "Galactic Dual Blades",
+                "Mage": "Galactic Pike"
+            },
+            "vc": {
+                "War": "Lava Kings Warscythe",
+                "Mage": "Lava Kings Spell Daggers"
+            },
+            "at": {
+                "War": "Sea Kings Trident",
+                "Mage": "Sea Kings Greatstaff"
+            },
+            "ef": {
+                "War": "Eldenbark Greatsword",
+                "Mage": "Eldenbark Greatstaff"
+            },
+            "nl": {
+                "War": "Mjolnir",
+                "Mage": "Gungnir"
+            },
+            "gs": {
+                "War": "Gildenscale Oath and Aegis",
+                "Mage": "Daybreak and Gildensong"
+            },
+            "om": {
+                "War": "Fuscina",
+                "Mage": "Fulmen"
+            },
+            "wt": {
+                "War": "Ghost Kings Halberd",
+                "Mage": "Ghost Kings Tome"
+            },
+            "ec": {
+                "War": "Gladius Imperialis",
+                "Mage": "Magicus Imperialis"
+            }
+        }
+ult_dict = {
+    "nl": {
+        "War": "Hofund",
+        "Mage": "Laevateinn"
+    },
+    "om": {
+        "War": "Stormy Seas",
+        "Mage": "Shattered Skies"
+    },
+    "wt": {
+        "War": "Storsvero",
+        "Mage": "Vigamenn"
+    },
+    "ec": {
+        "War": "Theospathia",
+        "Mage": "Theosevis"
+    }
+}
+t3_dict = {
+    "pi": "Godly",
+    "kc": "TitanForged",
+    "uw": "Glorious",
+    "sp": "Ancestral",
+    "tc": "Overlords",
+    "gh": "Mythical",
+    "ss": "WarForged",
+    "oo": "Alien",
+    "vc": "Lava Kings",
+    "at": "Triton",
+    "ef": "Eldenbark",
+    "nl": "Valhalla",
+    "gs": "Gildenscale",
+    "om": "Thunder Gods",
+    "wt": "Soulshard",
+    "ec": "Gods Chosen"
+}
+t3_guard_dict = {
+    "pi": "Godly Guardian",
+    "kc": "TitanForged Guardian",
+    "uw": "Glorious Guardian",
+    "sp": "Ancestral Guardian",
+    "tc": "Overlords Guardian",
+    "gh": "Mythical Guardian",
+    "ss": "WarForged Guardian",
+    "oo": "Alien Guardian",
+    "vc": "Lava Kings Guardian",
+    "at": "Triton Guardian",
+    "ef": "Eldenbark Guardian",
+    "nl": "Valhalla Guardian",
+    "gs": "Gildenscale Guardian",
+    "om": "Thunder Gods Guardian",
+    "wt": "Soulshard Guardian",
+    "ec": "Gods Chosen Guardian"
+}
+exp_dict = {
+    "dt": {
+        1: 232,
+        2: 354,
+        3: 680,
+        4: 1118,
+        5: 2253
+
+    },
+    "wo": {
+        1: 6564,
+        2: 9180,
+        3: 16140,
+        4: 27840,
+        5: 46180,
+    },
+    "pi": {
+        4: 51150,
+        5: 82200
+    },
+    "kc": {
+        4: 135900,
+        5: 271800
+    },
+    "uw": {
+        4: 546000,
+        5: 924000
+    },
+    "sp": {
+        4: 1934000,
+        5: 3500000
+    },
+    "tc": {
+        4: 4594000,
+        5: 8005000
+    },
+    "gh": {
+        4: 12840000,
+        5: 24160000
+    },
+    "ss": {
+        4: 35700000,
+        5: 59600000
+    },
+    "oo": {
+        4: 329000000,
+        5: 506500000
+    },
+    "vc": {
+        4: 755000000,
+        5: 1225000000
+    },
+    "at": {
+        4: 2034000000,
+        5: 3564000000
+    },
+    "ef": {
+        4: 6900000000,
+        5: 11280000000
+    },
+    "nl": {
+        4: 21820000000,
+        5: 36600000000
+    },
+    "gs": {
+        4: 63500000000,
+        5: 115500000000
+    },
+    "om": {
+        4: 207900000000,
+        5: 374220000000
+    },
+    "wt": {
+        4: 673596000000,
+        5: 1212472800000,
+    },
+    "ec": {
+        4: 2182451040000,
+        5: 3928411872000,
+    }
+
+}
+gold_dict = {
+    "dt": {
+        1: 600,
+        2: 1200,
+        3: 2400,
+        4: 4800,
+        5: 9600
+
+    },
+    "wo": {
+        1: 18000,
+        2: 48000,
+        3: 80000,
+        4: 125000,
+        5: 200000,
+    },
+    "pi": {
+        4: 240000,
+        5: 325000
+    },
+    "kc": {
+        4: 550000,
+        5: 750000
+    },
+    "uw": {
+        4: 1250000,
+        5: 1500000
+    },
+    "sp": {
+        4: 2400000,
+        5: 3625000
+    },
+    "tc": {
+        4: 4875000,
+        5: 6125000
+    },
+    "gh": {
+        4: 8500000,
+        5: 11750000
+    },
+    "ss": {
+        4: 21000000,
+        5: 27500000
+    },
+    "oo": {
+        4: 50000000,
+        5: 60000000
+    },
+    "vc": {
+        4: 90000000,
+        5: 100000000
+    },
+    "at": {
+        4: 110000000,
+        5: 120000000
+    },
+    "ef": {
+        4: 150000000,
+        5: 170000000
+    },
+    "nl": {
+        4: 200000000,
+        5: 225000000
+    },
+    "gs": {
+        4: 300000000,
+        5: 410000000
+    },
+    "om": {
+        4: 450000000,
+        5: 550000000
+    },
+    "wt": {
+        4: 600000000,
+        5: 750000000
+    },
+    "ec": {
+        4: 900000000,
+        5: 1050000000
     }
 }
 lvl_dict = {
@@ -245,90 +566,19 @@ lvl_dict = {
     "gs": {
         4: 190,
         5: 195
+    },
+    "om": {
+        4: 200,
+        5: 205
+    },
+    "wt": {
+        4: 210,
+        5: 215
+    },
+    "ec": {
+        4: 220,
+        5: 225
     }
-}
-leg_dict = {
-    "dt": {
-        "War": "Desert Fury",
-        "Mage": "Desert Fury"
-    },
-    "wo": {
-        "War": "Crystalised Greatsword",
-        "Mage": "Crystalised Greatsword"
-    },
-    "pi": {
-        "War": "Soulstealer Greatsword",
-        "Mage": "Staff of the Gods"
-    },
-    "kc": {
-        "War": "Beast Master War Scythe",
-        "Mage": "Beast Master Spell Scythe"
-    },
-    "uw": {
-        "War": "Dual Phoenix Daggers",
-        "Mage": "Phoenix Greatstaff"
-    },
-    "sp": {
-        "War": "Sakura Katana",
-        "Mage": "Sakura Greatstaff"
-    },
-    "tc": {
-        "War": "Overlords Rageblade",
-        "Mage": "Overlords Manablade"
-    },
-    "gh": {
-        "War": "Kraken Slayer",
-        "Mage": "Sea Serpent Wings"
-    },
-    "ss": {
-        "War": "Inventors Greatsword",
-        "Mage": "Inventors Spellblade"
-    },
-    "oo": {
-        "War": "Galactic Dual Blades",
-        "Mage": "Galactic Pike"
-    },
-    "vc": {
-        "War": "Lava Kings Warscythe",
-        "Mage": "Lava Kings Spell Daggers"
-    },
-    "at": {
-        "War": "Sea Kings Trident",
-        "Mage": "Sea Kings Greatstaff"
-    },
-    "ef": {
-        "War": "Eldenbark Greatsword",
-        "Mage": "Eldenbark Greatstaff"
-    },
-    "nl": {
-        "War": "Mjolnir",
-        "Mage": "Gungnir"
-    },
-    "gs": {
-        "War": "Gildenscale Oath and Aegis",
-        "Mage": "Daybreak and Gildensong"
-    }
-}
-ult_dict = {
-    "nl": {
-        "War": "Hofund",
-        "Mage": "Laevateinn"
-    }
-}
-t3_dict = {
-    "pi": "Godly",
-    "kc": "TitanForged",
-    "uw": "Glorious",
-    "sp": "Ancestral",
-    "tc": "Overlords",
-    "gh": "Mythical",
-    "ss": "WarForged",
-    "oo": "Alien",
-    "vc": "Lava Kings",
-    "at": "Triton",
-    "ef": "Eldenbark",
-    "nl": "Valhalla",
-    "gs": "Gildenscale"
 }
 dunglist = list(t3_dict.keys())
 with open('spells.json') as json_file:
@@ -351,7 +601,10 @@ ins_dict = {
     "at": "Aquatic",
     "ef": "Fungal",
     "nl": "Midgardian",
-    "gs": "Dracani"
+    "gs": "Dracani",
+    "om": "Olympian",
+    "wt": "Skeleton",
+    "ec": "Centurion"
 }
 ins_weap_dict = {
     "pi": "Cultist Blade",
@@ -366,7 +619,10 @@ ins_weap_dict = {
     "at": "Aquatic Defender",
     "ef": "Enchanted Shard Spell Dagger",
     "nl": "Viking Hatchets",
-    "gs": "Dracani Royal Glaive"
+    "gs": "Dracani Royal Glaive",
+    "om": "Heavenly Staff and Tome",
+    "wt": "Cracked Greatsword",
+    "ec": "Praetorian Godstaff"
 }
 
 for dung in dunglist:
