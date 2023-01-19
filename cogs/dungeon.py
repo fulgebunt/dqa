@@ -1102,8 +1102,11 @@ class General(commands.Cog, name="dungeon"):
                             if diff == 5:
                                 pass
                     else:
-                        if diff == 5:
-                            type = "Legendary"
+                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                            pass
+                        else:
+                            if diff == 5:
+                                type = "Legendary"
                 if rand <= 100:
                     if rand <= 20:
                         if diff == 5:
@@ -1252,8 +1255,11 @@ class General(commands.Cog, name="dungeon"):
                             if diff == 5:
                                 pass
                     else:
-                        if diff == 5:
-                            type = "Legendary"
+                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                            pass
+                        else:
+                            if diff == 5:
+                                type = "Legendary"
                 if rand <= 100:
                     if rand <= 20:
                         if diff == 5:
@@ -1768,8 +1774,11 @@ class General(commands.Cog, name="dungeon"):
                                     if diff == 5:
                                         pass
                             else:
-                                if diff == 5:
-                                    type = "Legendary"
+                                if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                                    pass
+                                else:
+                                    if diff == 5:
+                                        type = "Legendary"
                         if rand <= 100:
                             if rand <= 20:
                                 if diff == 5:
