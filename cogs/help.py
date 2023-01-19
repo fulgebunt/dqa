@@ -179,7 +179,6 @@ class General(commands.Cog, name="help"):
     async def creative(self, context: Context) -> None:
         new = {
             "inventory": {
-
             },
             "stats": {
                 "level": 200,
