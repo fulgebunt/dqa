@@ -1104,6 +1104,7 @@ class General(commands.Cog, name="dungeon"):
                 dropstats = ""
                 classname = self.data[dung][dropname]["class"]
             # Get type of weapon
+            type = "Gray"
             if classname != "Guardian" and classname != "DPS Armor":
                 rand = random.randint(1,2000)
                 if rand <= 4:
@@ -1256,6 +1257,7 @@ class General(commands.Cog, name="dungeon"):
                 dropstats2 = ""
                 classname = self.data[dung][dropname2]["class"]
             # Get type of weapon
+            type = "Gray"
             if classname != "Guardian" and classname != "DPS Armor":
                 rand = random.randint(1, 2000)
 
@@ -1897,6 +1899,7 @@ class General(commands.Cog, name="dungeon"):
                         dropstats = ""
                         classname = self.data[dung][dropname]["class"]
                     # Get type of weapon
+                    type = "Gray"
                     if classname != "Guardian" and classname != "DPS Armor":
                         rand = random.randint(1, 2000)
                         if rand <= 4:
