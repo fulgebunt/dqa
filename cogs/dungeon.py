@@ -1388,6 +1388,7 @@ class General(commands.Cog, name="dungeon"):
         if len(userdata["inventory"]) >= 200:
             error = True
             errorType = "Your inventory is full, please clear it: " + str(len(userdata["inventory"])) + "/" + "200"
+
         #Calculate damage and see if player reaches damage threshold
         with open('spellData.json') as json_file:
             spells = json.load(json_file)
