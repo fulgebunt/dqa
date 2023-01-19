@@ -412,8 +412,8 @@ for dung in dunglist:
     skill = lvl_dict[dung][4]
     wep = ins_weap_dict[dung]
     arm = ins_dict[dung]
-    wep = int(items[dung][wep]["Blue"]["minpot"])
-    arm = int(items[dung][arm]["Blue"]["minpot"])
+    wep = int(items[dung][wep]["Gray"]["minpot"])
+    arm = int(items[dung][arm]["Gray"]["minpot"])
     helm = arm
     spell = random.choice(spells[dung]["5"])
     while spell["class"] != "Mage":
