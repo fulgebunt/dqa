@@ -1,3 +1,4 @@
+import math
 import platform
 import random
 
@@ -671,170 +672,186 @@ class General(commands.Cog, name="dungeon"):
           "299": 551639611729825920
         }
         damage_gates = {
-            "dt":{
-                1: {
+            "dt": {
+                "1": {
                     "min": 1,
                     "max": 1
                 },
-                2: {
+                "2": {
                     "min": 1,
                     "max": 1
                 },
-                3: {
+                "3": {
                     "min": 1,
                     "max": 1
                 },
-                4: {
+                "4": {
                     "min": 1,
                     "max": 1
                 },
-                5: {
+                "5": {
                     "min": 1,
                     "max": 1
                 }
             },
-            "wo":{
-                1: {
+            "wo": {
+                "1": {
                     "min": 1,
                     "max": 1
                 },
-                2: {
+                "2": {
                     "min": 1,
                     "max": 1
                 },
-                3: {
+                "3": {
                     "min": 1,
                     "max": 1
                 },
-                4: {
+                "4": {
                     "min": 1,
                     "max": 1
                 },
-                5: {
+                "5": {
                     "min": 1,
                     "max": 1
                 }
             },
             "pi": {
-                4: {
+                "4": {
                     "min": 1,
-                    "max": 1
+                    "max": 162916
                 },
-                5: {
-                    "min": 1,
-                    "max": 1
-                },
+                "5": {
+                    "min": 191235,
+                    "max": 738487
+                }
             },
             "kc": {
-                4: {
-                    "min": 1,
-                    "max": 1
+                "4": {
+                    "min": 535165,
+                    "max": 1654379
                 },
-                5: {
-                    "min": 1,
-                    "max": 1
-                },
+                "5": {
+                    "min": 2088819,
+                    "max": 8676735
+                }
             },
             "uw": {
-                4: {
-                    "min": 1,
-                    "max": 1
+                "4": {
+                    "min": 6688506,
+                    "max": 14573049
                 },
-                5: {
-                    "min": 1,
-                    "max": 1
-                },
+                "5": {
+                    "min": 16799953,
+                    "max": 36958863
+                }
             },
             "sp": {
-                4: {
-                    "min": 1,
-                    "max": 1
+                "4": {
+                    "min": 31209706,
+                    "max": 61558932
                 },
-                5: {
-                    "min": 1,
-                    "max": 1
-                },
+                "5": {
+                    "min": 71419739,
+                    "max": 181983567
+                }
             },
             "tc": {
-                4: {
-                    "min": 1,
-                    "max": 1
+                "4": {
+                    "min": 154809912,
+                    "max": 419825999
                 },
-                5: {
-                    "min": 1,
-                    "max": 1
-                },
+                "5": {
+                    "min": 474640773,
+                    "max": 893671521
+                }
             },
             "gh": {
-                4: {
-                    "min": 1,
-                    "max": 1
+                "4": {
+                    "min": 823893521,
+                    "max": 1738592292
                 },
-                5: {
-                    "min": 1,
-                    "max": 1
-                },
+                "5": {
+                    "min": 2058318255,
+                    "max": 5580019482
+                }
             },
             "ss": {
-                4: {
-                    "min": 1,
-                    "max": 1
+                "4": {
+                    "min": 4657113019,
+                    "max": 10270841120
                 },
-                5: {
-                    "min": 1,
-                    "max": 1
-                },
+                "5": {
+                    "min": 11705582096,
+                    "max": 30571979892
+                }
+            },
+            "br": {
+                "1": {
+                    "min": 11705582096,
+                    "max": 30571979892
+                }
             },
             "oo": {
-                4: {
-                    "min": 1,
-                    "max": 1
+                "4": {
+                    "min": 23995449334,
+                    "max": 443050348144
                 },
-                5: {
-                    "min": 1,
-                    "max": 1
-                },
+                "5": {
+                    "min": 504875542240,
+                    "max": 1401043912623
+                }
             },
             "vc": {
-                4: {
-                    "min": 1,
-                    "max": 1
+                "4": {
+                    "min": 964821448986,
+                    "max": 2511647524847
                 },
-                5: {
-                    "min": 1,
-                    "max": 1
-                },
+                "5": {
+                    "min": 2877237671616,
+                    "max": 7628358177706
+                }
             },
             "at": {
-                4: {
-                    "min": 1,
-                    "max": 1
+                "4": {
+                    "min": 0,
+                    "max": 12606801168245
                 },
-                5: {
-                    "min": 1,
-                    "max": 1
-                },
+                "5": {
+                    "min": 14337730222784,
+                    "max": 37088616556535
+                }
             },
             "ef": {
-                4: {
-                    "min": 1,
-                    "max": 1
+                "4": {
+                    "min": 32774594079959,
+                    "max": 63859672403788
                 },
-                5: {
-                    "min": 1,
-                    "max": 1
-                },
+                "5": {
+                    "min": 72995838225664,
+                    "max": 188668177076686
+                }
             },
             "nl": {
-                4: {
-                    "min": 1,
-                    "max": 1
+                "4": {
+                    "min": 166717093145820,
+                    "max": 312611214558692
                 },
-                5: {
-                    "min": 1,
-                    "max": 1
-                },
+                "5": {
+                    "min": 357409906702600,
+                    "max": 904717196044072
+                }
             },
+            "gs": {
+                "4": {
+                    "min": 805370505409657,
+                    "max": 1512304433113689
+                },
+                "5": {
+                    "min": 1721815753587184,
+                    "max": 4495306129317689
+                }
+            }
         }
         with open('spells.json') as json_file:
             spell_dict = json.load(json_file)
@@ -1087,6 +1104,8 @@ class General(commands.Cog, name="dungeon"):
                 dropstats = ""
                 classname = self.data[dung][dropname]["class"]
             # Get type of weapon
+            if random.randint(1,5) == 1:
+                classname = "DPS Armor"
             if classname != "Guardian" and classname != "DPS Armor":
                 rand = random.randint(1,2000)
                 if rand <= 4:
@@ -1102,8 +1121,11 @@ class General(commands.Cog, name="dungeon"):
                             if diff == 5:
                                 pass
                     else:
-                        if diff == 5:
-                            type = "Legendary"
+                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                            pass
+                        else:
+                            if diff == 5:
+                                type = "Legendary"
                 if rand <= 100:
                     if rand <= 20:
                         if diff == 5:
@@ -1236,6 +1258,8 @@ class General(commands.Cog, name="dungeon"):
                 dropstats2 = ""
                 classname = self.data[dung][dropname2]["class"]
             # Get type of weapon
+            if random.randint(1,5) == 1:
+                classname = "DPS Armor"
             if classname != "Guardian" and classname != "DPS Armor":
                 rand = random.randint(1, 2000)
 
@@ -1252,8 +1276,11 @@ class General(commands.Cog, name="dungeon"):
                             if diff == 5:
                                 pass
                     else:
-                        if diff == 5:
-                            type = "Legendary"
+                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                            pass
+                        else:
+                            if diff == 5:
+                                type = "Legendary"
                 if rand <= 100:
                     if rand <= 20:
                         if diff == 5:
@@ -1358,7 +1385,84 @@ class General(commands.Cog, name="dungeon"):
                         elif rand == 2:
                             dropname2 = "Enhanced Inner Rage"
                             dropstats2 = "Class: War Spell"
-
+        if len(userdata["inventory"]) >= 200:
+            error = True
+            errorType = "Your inventory is full, please clear it: " + str(len(userdata["inventory"])) + "/" + "200"
+        #Calculate damage and see if player reaches damage threshold
+        with open('spellData.json') as json_file:
+            spells = json.load(json_file)
+        highest = userdata["stats"]["war"]
+        stat = "War"
+        if userdata["stats"]["mage"] > highest:
+            highest = userdata["stats"]["mage"]
+            stat = "Mage"
+        skill = highest
+        if "Boss Raids" not in dungeon:
+            if (userdata["equipped"]["helmstats"] != "Empty") and stat in userdata["equipped"]["helmstats"]:
+                helmstats = userdata["equipped"]["helmstats"].split("\n")
+                helm = int(helmstats[1][5:])
+                print(helm)
+            else:
+                helm = 1
+            if (userdata["equipped"]["armorstats"] != "Empty") and stat in userdata["equipped"]["armorstats"]:
+                armorstats = userdata["equipped"]["armorstats"].split("\n")
+                arm = int(armorstats[1][5:])
+            else:
+                arm = 1
+            if (userdata["equipped"]["weapstats"] != "Empty") and stat in userdata["equipped"]["weapstats"]:
+                weapstats = userdata["equipped"]["weapstats"].split("\n")
+                wep = int(weapstats[1][5:])
+            else:
+                wep = 1
+            if (userdata["equipped"]["spellstats"] != "Empty") and stat in userdata["equipped"]["spellstats"]:
+                SPELL_MULT = int(spells[userdata["equipped"]["spellname"]]["Damage"])/100
+            else:
+                SPELL_MULT = 1
+            damage = math.floor((wep * (0.6597 + 0.013202 * skill)*((arm+helm)*0.0028))*SPELL_MULT)
+            if damage >= damage_gates[dung][str(diff)]["max"]:
+                cleared = True
+            elif damage < damage_gates[dung][str(diff)]["min"]:
+                cleared = False
+                percent = 0
+            else:
+                percent = math.floor(damage - damage_gates[dung][str(diff)]["min"])/(damage_gates[dung][str(diff)]["max"]-damage_gates[dung][str(diff)]["min"])
+                roll = random.randint(0,100)
+                if roll <= percent:
+                    cleared = True
+        else:
+            dmgdung = "br"
+            dmgdiff = "1"
+            if (userdata["equipped"]["helmstats"] != "Empty") and stat in userdata["equipped"]["helmstats"]:
+                helmstats = userdata["equipped"]["helmstats"].split("\n")
+                helm = int(helmstats[1][5:])
+                print(helm)
+            else:
+                helm = 1
+            if (userdata["equipped"]["armorstats"] != "Empty") and stat in userdata["equipped"]["armorstats"]:
+                armorstats = userdata["equipped"]["armorstats"].split("\n")
+                arm = int(armorstats[1][5:])
+            else:
+                arm = 1
+            if (userdata["equipped"]["weapstats"] != "Empty") and stat in userdata["equipped"]["weapstats"]:
+                weapstats = userdata["equipped"]["weapstats"].split("\n")
+                wep = int(weapstats[1][5:])
+            else:
+                wep = 1
+            if (userdata["equipped"]["spellstats"] != "Empty") and stat in userdata["equipped"]["spellstats"]:
+                SPELL_MULT = int(spells[userdata["equipped"]["spellname"]]["Damage"])/100
+            else:
+                SPELL_MULT = 1
+            damage = math.floor((wep * (0.6597 + 0.013202 * skill)*((arm+helm)*0.0028))*SPELL_MULT)
+            if damage >= damage_gates[dmgdung][str(dmgdiff)]["max"]:
+                cleared = True
+            elif damage < damage_gates[dmgdung][str(dmgdiff)]["min"]:
+                cleared = False
+                percent = 0
+            else:
+                percent = math.floor(damage - damage_gates[dmgdung][str(dmgdiff)]["min"])/(damage_gates[dmgdung][str(dmgdiff)]["max"]-damage_gates[dmgdung][str(dmgdiff)]["min"])
+                roll = random.randint(0,100)
+                if roll <= percent:
+                    cleared = True
         #Send Raid Message
         if error:
             embed = discord.Embed(
@@ -1369,7 +1473,7 @@ class General(commands.Cog, name="dungeon"):
                 name="Error"
             )
             await context.send(embed=embed)
-        elif "Boss Raids" in dungeon:
+        elif "Boss Raids" in dungeon and cleared == True:
 
             embed = discord.Embed(
                 description="You raided " + dungeon,
@@ -1417,7 +1521,7 @@ class General(commands.Cog, name="dungeon"):
                 text=f"Requested by {context.author}"
             )
             await context.send(embed=embed)
-        else:
+        elif cleared == True:
             dbname = get_database()
             collection_name = dbname["userinv"]
             userinv = collection_name.find()
@@ -1473,6 +1577,42 @@ class General(commands.Cog, name="dungeon"):
                 text=f"Requested by {context.author}"
             )
             await context.send(embed=embed)
+        else:
+            if "Boss Raids" in dungeon:
+                embed = discord.Embed(
+                    description="You failed " + dungeon,
+                    color=color_dict[dung]
+                )
+                embed.set_author(
+                    name="Raid Information"
+                )
+
+                embed.set_footer(
+                    text=f"Requested by {context.author}"
+                )
+                await context.send(embed=embed)
+            else:
+                embed = discord.Embed(
+                    description="You failed " + dungeon + " on " + difficulty + " difficulty, in " + mode,
+                    color=color_dict[dung]
+                )
+                embed.set_author(
+                    name="Raid Information"
+                )
+                userdata["stats"]["exp"] += math.floor(exp_dict[dung][diff]*percent/100)
+                while userdata["stats"]["exp"] >= level_dict[str(userdata["stats"]["level"])]:
+                    userdata["stats"]["exp"] -= level_dict[str(userdata["stats"]["level"])]
+                    userdata["stats"]["level"] += 1
+                    userdata["stats"]["free"] += 1
+                embed.add_field(
+                    name="Exp",
+                    value="Level: " + str(userdata["stats"]["level"]) + "\nExp: " + str(
+                        userdata["stats"]["exp"]) + " / " + str(level_dict[str(userdata["stats"]["level"])])
+                )
+                embed.set_footer(
+                    text=f"Requested by {context.author}"
+                )
+                await context.send(embed=embed)
 
     @commands.hybrid_command(
         name="drop",
@@ -1750,6 +1890,8 @@ class General(commands.Cog, name="dungeon"):
                         dropstats = ""
                         classname = self.data[dung][dropname]["class"]
                     # Get type of weapon
+                    if random.randint(1, 5) == 1:
+                        classname = "DPS Armor"
                     if classname != "Guardian" and classname != "DPS Armor":
                         rand = random.randint(1, 2000)
                         if rand <= 4:
@@ -1765,8 +1907,11 @@ class General(commands.Cog, name="dungeon"):
                                     if diff == 5:
                                         pass
                             else:
-                                if diff == 5:
-                                    type = "Legendary"
+                                if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                                    pass
+                                else:
+                                    if diff == 5:
+                                        type = "Legendary"
                         if rand <= 100:
                             if rand <= 20:
                                 if diff == 5:
@@ -1780,6 +1925,7 @@ class General(commands.Cog, name="dungeon"):
                         else:
                             type = "Gray"
                     # Get pot of weapon
+
                     if classname != "Guardian" and classname != "DPS Armor":
 
                         # Legendary Catch Code

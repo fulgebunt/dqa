@@ -371,7 +371,7 @@ class General(commands.Cog, name="inv"):
     @checks.not_blacklisted()
     async def profile(self, context: Context) -> None:
         db = get_database()
-        collection = db[str(userid)]
+        collection = db[str(context.message.author.id)]
         userdata = collection.find_one()
         level_dict = {
             "1": 84,
@@ -697,7 +697,9 @@ class General(commands.Cog, name="inv"):
         description="set a user's level",
     )
     @checks.not_blacklisted()
-    async def setlevel(self, context: Context, userid: int=0, level: int=0) -> None:
+    async def setlevel(self, context: Context, level: int=0, userid: int=0,) -> None:
+        if userid == 0:
+            userid = context.message.author.id
         if context.message.author.id in self.adminlist:
             db = get_database()
             collection = db[str(userid)]

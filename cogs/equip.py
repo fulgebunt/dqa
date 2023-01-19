@@ -77,20 +77,17 @@ class General(commands.Cog, name="equip"):
         )
         embed.add_field(
             name="Armor",
-            value=userdata["equipped"]["armorname"] + "\n" + equips[
-                str(context.message.author.id)]["armorstats"],
+            value=userdata["equipped"]["armorname"] + "\n" + userdata['equipped']["armorstats"],
             inline=False
         )
         embed.add_field(
             name="Weapon",
-            value=userdata["equipped"]["weapname"] + "\n" + equips[
-                str(context.message.author.id)]["weapstats"],
+            value=userdata["equipped"]["weapname"] + "\n" + userdata['equipped']["weapstats"],
             inline=False
         )
         embed.add_field(
             name="Spell",
-            value=userdata["equipped"]["spellname"] + "\n" + equips[
-                str(context.message.author.id)]["spellstats"],
+            value=userdata["equipped"]["spellname"] + "\n" + userdata['equipped']["spellstats"],
             inline=False
         )
         embed.set_footer(
@@ -110,8 +107,10 @@ class General(commands.Cog, name="equip"):
         with open('spellData.json') as json_file:
             spells = json.load(json_file)
         highest = userdata["stats"]["war"]
+        stat = "War"
         if userdata["stats"]["mage"] > highest:
             highest = userdata["stats"]["mage"]
+            stat = "Mage"
         skill = highest
         embed = discord.Embed(
             color=0x9C84EF
@@ -119,31 +118,26 @@ class General(commands.Cog, name="equip"):
         embed.set_author(
             name="Damage"
         )
-        if userdata["equipped"]["helmstats"] != "Empty":
+        if (userdata["equipped"]["helmstats"] != "Empty") and stat in userdata["equipped"]["helmstats"]:
             helmstats = userdata["equipped"]["helmstats"].split("\n")
             helm = int(helmstats[1][5:])
+            print(helm)
         else:
             helm = 1
-        if userdata["equipped"]["armorstats"] != "Empty":
+        if (userdata["equipped"]["armorstats"] != "Empty") and stat in userdata["equipped"]["armorstats"]:
             armorstats = userdata["equipped"]["armorstats"].split("\n")
             arm = int(armorstats[1][5:])
         else:
             arm = 1
-        if userdata["equipped"]["weapstats"] != "Empty":
+        if (userdata["equipped"]["weapstats"] != "Empty") and stat in userdata["equipped"]["weapstats"]:
             weapstats = userdata["equipped"]["weapstats"].split("\n")
             wep = int(weapstats[1][5:])
         else:
             wep = 1
-        if userdata["equipped"]["spellstats"] != "Empty":
+        if (userdata["equipped"]["spellstats"] != "Empty") and stat in userdata["equipped"]["spellstats"]:
             SPELL_MULT = int(spells[userdata["equipped"]["spellname"]]["Damage"])/100
         else:
             SPELL_MULT = 1
-        print(arm)
-        print(helm)
-        print(wep)
-        print(0.6597 + 0.013202 * skill)
-        print((arm+helm)*0.0028)
-        print((wep * (0.6597 + 0.013202 * skill)*((arm+helm)*0.0028))*SPELL_MULT)
         damage = math.floor((wep * (0.6597 + 0.013202 * skill)*((arm+helm)*0.0028))*SPELL_MULT)
         embed.add_field(
             name="Your total damage is",

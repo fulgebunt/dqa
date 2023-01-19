@@ -1,12 +1,12 @@
-[2023-01-19 00:35:52] [INFO    ] discord_bot: Loaded extension 'leaderboard'
-[2023-01-19 00:35:52] [INFO    ] discord_bot: Loaded extension 'dungeon'
-[2023-01-19 00:35:52] [INFO    ] discord_bot: Loaded extension 'trading'
-[2023-01-19 00:35:52] [INFO    ] discord_bot: Loaded extension 'skillpoints'
-[2023-01-19 00:35:52] [INFO    ] discord_bot: Loaded extension 'help'
-[2023-01-19 00:35:52] [INFO    ] discord_bot: Loaded extension 'equip'
-[2023-01-19 00:35:52] [INFO    ] discord_bot: Loaded extension 'inventory'
-[2023-01-19 00:35:55] [INFO    ] discord_bot: Logged in as DQA Beta App
-[2023-01-19 00:35:55] [INFO    ] discord_bot: discord.py API version: 2.1.0
-[2023-01-19 00:35:55] [INFO    ] discord_bot: Python version: 3.10.5
-[2023-01-19 00:35:55] [INFO    ] discord_bot: Running on: Darwin 22.2.0 (posix)
-[2023-01-19 00:35:55] [INFO    ] discord_bot: -------------------
+[2023-01-19 05:39:49] [INFO    ] discord_bot: Loaded extension 'leaderboard'
+[2023-01-19 05:39:49] [INFO    ] discord_bot: Loaded extension 'dungeon'
+[2023-01-19 05:39:49] [INFO    ] discord_bot: Loaded extension 'trading'
+[2023-01-19 05:39:49] [INFO    ] discord_bot: Loaded extension 'skillpoints'
+[2023-01-19 05:39:49] [INFO    ] discord_bot: Loaded extension 'help'
+[2023-01-19 05:39:49] [INFO    ] discord_bot: Loaded extension 'equip'
+[2023-01-19 05:39:49] [INFO    ] discord_bot: Loaded extension 'inventory'
+[2023-01-19 05:39:51] [INFO    ] discord_bot: Logged in as DQA Beta App
+[2023-01-19 05:39:51] [INFO    ] discord_bot: discord.py API version: 2.1.0
+[2023-01-19 05:39:51] [INFO    ] discord_bot: Python version: 3.10.5
+[2023-01-19 05:39:51] [INFO    ] discord_bot: Running on: Darwin 22.2.0 (posix)
+[2023-01-19 05:39:51] [INFO    ] discord_bot: -------------------
