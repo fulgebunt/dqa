@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11a5977c-5cb8-4655-95d9-a28fdf3af2ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/python_test_query.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/dungeon.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/dungeon.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/equip.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/equip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/help.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/inventory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/leaderboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/leaderboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/skillpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/skillpoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/trading.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/trading.py" afterDir="false" />
+    <list default="true" id="11a5977c-5cb8-4655-95d9-a28fdf3af2ce" name="Changes" comment="changed to use mongodb">
       <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/discord.log" beforeDir="false" afterPath="$PROJECT_DIR$/discord.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trades.json" beforeDir="false" afterPath="$PROJECT_DIR$/trades.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userequips.json" beforeDir="false" afterPath="$PROJECT_DIR$/userequips.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userstats.json" beforeDir="false" afterPath="$PROJECT_DIR$/userstats.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -77,8 +63,16 @@
       <updated>1674091910866</updated>
       <workItem from="1674091912955" duration="15000" />
       <workItem from="1674091952236" duration="4694000" />
-      <workItem from="1674098240442" duration="8317000" />
+      <workItem from="1674098240442" duration="8652000" />
     </task>
+    <task id="LOCAL-00001" summary="changed to use mongodb">
+      <created>1674106674377</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674106674377</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +88,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changed to use mongodb" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed to use mongodb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
