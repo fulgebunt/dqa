@@ -1465,7 +1465,7 @@ class General(commands.Cog, name="dungeon"):
                 cleared = False
                 percent = 0
             else:
-                percent = math.floor(t((damage - damage_gates[dmgdung][str(dmgdiff)]["min"]) / (
+                percent = math.floor(((damage - damage_gates[dmgdung][str(dmgdiff)]["min"]) / (
                             damage_gates[dmgdung][str(dmgdiff)]["max"] - damage_gates[dmgdung][str(dmgdiff)]["min"]))*100)
                 roll = random.randint(0,100)
                 if roll <= percent:
