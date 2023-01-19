@@ -1,1 +1,56 @@
-{"421086209431961600": {"0": {"userid": "392837642036969473", "giving": 1, "receiving": 1, "initiated": true}, "1": {"userid": "392837642036969473", "giving": 1, "receiving": 1, "initiated": true}, "2": {"userid": "392837642036969473", "giving": 1, "receiving": 1, "initiated": true}, "3": {"userid": "925791617162559510", "giving": 1, "receiving": 1, "initiated": true}}, "392837642036969473": {"0": {"userid": "421086209431961600", "giving": 1, "receiving": 1, "initiated": false}, "1": {"userid": "421086209431961600", "giving": 1, "receiving": 1, "initiated": false}, "2": {"userid": "421086209431961600", "giving": 1, "receiving": 1, "initiated": false}}, "925791617162559510": {"0": {"userid": "421086209431961600", "giving": 1, "receiving": 1, "initiated": false}}}
+{
+  "421086209431961600": {
+    "0": {
+      "userid": "392837642036969473",
+      "giving": 1,
+      "receiving": 1,
+      "initiated": true
+    },
+    "1": {
+      "userid": "392837642036969473",
+      "giving": 1,
+      "receiving": 1,
+      "initiated": true
+    },
+    "2": {
+      "userid": "392837642036969473",
+      "giving": 1,
+      "receiving": 1,
+      "initiated": true
+    },
+    "3": {
+      "userid": "925791617162559510",
+      "giving": 1,
+      "receiving": 1,
+      "initiated": true
+    }
+  },
+  "392837642036969473": {
+    "0": {
+      "userid": "421086209431961600",
+      "giving": 1,
+      "receiving": 1,
+      "initiated": false
+    },
+    "1": {
+      "userid": "421086209431961600",
+      "giving": 1,
+      "receiving": 1,
+      "initiated": false
+    },
+    "2": {
+      "userid": "421086209431961600",
+      "giving": 1,
+      "receiving": 1,
+      "initiated": false
+    }
+  },
+  "925791617162559510": {
+    "0": {
+      "userid": "421086209431961600",
+      "giving": 1,
+      "receiving": 1,
+      "initiated": false
+    }
+  }
+}

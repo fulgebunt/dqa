@@ -1,1 +1,92 @@
-{"886332419593097296": {"helmname": "Iron Armor", "armorname": "Empty", "weapname": "Empty", "helmstats": "Class: Guardian Helm\nPot: 70\nLvl Req: 1\nRarity: Gray", "armorstats": "Empty", "weapstats": "Empty", "spellname": "Fireball", "spellstats": "Class: Mage Spell"}, "383710782686232597": {"helmname": "Empty", "armorname": "Empty", "weapname": "Novice Wand", "helmstats": "Empty", "armorstats": "Empty", "weapstats": "Class: Mage\nPot: 13\nLvl Req: 1\nRarity: Gray", "spellname": "Fireball", "spellstats": "Class: Mage Spell"}, "421086209431961600": {"helmname": "Valhalla", "armorname": "Valhalla", "weapname": "Valhalla", "helmstats": "Class: War Helm\nPot: 7044252\nHealth: 165675517\nLvl Req: 186\nRarity: Purple", "armorstats": "Class: War Chest\nPot: 7008460\nHealth: 159134992\nLvl Req: 186\nRarity: Purple", "weapstats": "Class: DPS Armor\nPot: 6980053\nHealth: 158786351\nLvl Req: 186\nRarity: Purple", "spellname": "Fireball", "spellstats": "Class: Mage Spell"}, "611158782176919552": {"helmname": "Empty", "armorname": "Empty", "weapname": "Apprentice Staff", "helmstats": "Empty", "armorstats": "Empty", "weapstats": "Class: Mage\nPot: 20\nLvl Req: 6\nRarity: Gray", "spellname": "Empty", "spellstats": "Empty"}, "392837642036969473": {"helmname": "Empty", "armorname": "Empty", "weapname": "Laevateinn", "helmstats": "Empty", "armorstats": "Empty", "weapstats": "Class: Mage\nPot: 78005268\nLvl Req: 186\nRarity: Ultimate", "spellname": "Empty", "spellstats": "Empty"}, "770523157685338132": {"helmname": "Overlords", "armorname": "Overlords", "weapname": "Overlords Manablade", "helmstats": "Class: Mage Helm\nPot: 21858\nHealth: 104191\nLvl Req: 106\nRarity: Purple", "armorstats": "Class: Mage Chest\nPot: 21247\nHealth: 101876\nLvl Req: 106\nRarity: Purple", "weapstats": "Class: Mage\nPot: 174187\nLvl Req: 106\nRarity: Legendary", "spellname": "Empty", "spellstats": "Empty"}, "516221274335215619": {"helmname": "Empty", "armorname": "Empty", "weapname": "Granite Maul", "helmstats": "Empty", "armorstats": "Empty", "weapstats": "Class: War\nPot: 38\nLvl Req: 12\nRarity: Green", "spellname": "Empty", "spellstats": "Empty"}, "827457522830934058": {"helmname": "Mythical Guardian", "armorname": "Overlords", "weapname": "Inventors Greatsword", "helmstats": "Class: Guardian Helm\nPot: 379457\nLvl Req: 116\nRarity: Purple", "armorstats": "Class: War Chest\nPot: 17685\nHealth: 78173\nLvl Req: 106\nRarity: Gray", "weapstats": "Class: War\nPot: 758046\nLvl Req: 126\nRarity: Legendary", "spellname": "Empty", "spellstats": "Empty"}, "925791617162559510": {"helmname": "Crusaders", "armorname": "Novice  Blue Wizard", "weapname": "Cool Dev Item", "helmstats": "Class: Guardian Helm\nPot: 163\nLvl Req: 9\nRarity: Gray", "armorstats": "Class: Mage Chest\nPot: 8\nHealth: 21\nLvl Req: 1\nRarity: Gray", "weapstats": "Class: Dev Class\nPot: -1\nHealth: -1\nLvl Req: -1\nRarity: Dev", "spellname": "Blue Fireball", "spellstats": "Class: Mage Spell"}}
+{
+  "886332419593097296": {
+    "helmname": "Iron Armor",
+    "armorname": "Empty",
+    "weapname": "Empty",
+    "helmstats": "Class: Guardian Helm\nPot: 70\nLvl Req: 1\nRarity: Gray",
+    "armorstats": "Empty",
+    "weapstats": "Empty",
+    "spellname": "Fireball",
+    "spellstats": "Class: Mage Spell"
+  },
+  "383710782686232597": {
+    "helmname": "Empty",
+    "armorname": "Empty",
+    "weapname": "Novice Wand",
+    "helmstats": "Empty",
+    "armorstats": "Empty",
+    "weapstats": "Class: Mage\nPot: 13\nLvl Req: 1\nRarity: Gray",
+    "spellname": "Fireball",
+    "spellstats": "Class: Mage Spell"
+  },
+  "421086209431961600": {
+    "helmname": "Valhalla",
+    "armorname": "Valhalla",
+    "weapname": "Valhalla",
+    "helmstats": "Class: War Helm\nPot: 7044252\nHealth: 165675517\nLvl Req: 186\nRarity: Purple",
+    "armorstats": "Class: War Chest\nPot: 7008460\nHealth: 159134992\nLvl Req: 186\nRarity: Purple",
+    "weapstats": "Class: DPS Armor\nPot: 6980053\nHealth: 158786351\nLvl Req: 186\nRarity: Purple",
+    "spellname": "Fireball",
+    "spellstats": "Class: Mage Spell"
+  },
+  "611158782176919552": {
+    "helmname": "Empty",
+    "armorname": "Empty",
+    "weapname": "Apprentice Staff",
+    "helmstats": "Empty",
+    "armorstats": "Empty",
+    "weapstats": "Class: Mage\nPot: 20\nLvl Req: 6\nRarity: Gray",
+    "spellname": "Empty",
+    "spellstats": "Empty"
+  },
+  "392837642036969473": {
+    "helmname": "Empty",
+    "armorname": "Empty",
+    "weapname": "Laevateinn",
+    "helmstats": "Empty",
+    "armorstats": "Empty",
+    "weapstats": "Class: Mage\nPot: 78005268\nLvl Req: 186\nRarity: Ultimate",
+    "spellname": "Empty",
+    "spellstats": "Empty"
+  },
+  "770523157685338132": {
+    "helmname": "Overlords",
+    "armorname": "Overlords",
+    "weapname": "Overlords Manablade",
+    "helmstats": "Class: Mage Helm\nPot: 21858\nHealth: 104191\nLvl Req: 106\nRarity: Purple",
+    "armorstats": "Class: Mage Chest\nPot: 21247\nHealth: 101876\nLvl Req: 106\nRarity: Purple",
+    "weapstats": "Class: Mage\nPot: 174187\nLvl Req: 106\nRarity: Legendary",
+    "spellname": "Empty",
+    "spellstats": "Empty"
+  },
+  "516221274335215619": {
+    "helmname": "Empty",
+    "armorname": "Empty",
+    "weapname": "Granite Maul",
+    "helmstats": "Empty",
+    "armorstats": "Empty",
+    "weapstats": "Class: War\nPot: 38\nLvl Req: 12\nRarity: Green",
+    "spellname": "Empty",
+    "spellstats": "Empty"
+  },
+  "827457522830934058": {
+    "helmname": "Mythical Guardian",
+    "armorname": "Overlords",
+    "weapname": "Inventors Greatsword",
+    "helmstats": "Class: Guardian Helm\nPot: 379457\nLvl Req: 116\nRarity: Purple",
+    "armorstats": "Class: War Chest\nPot: 17685\nHealth: 78173\nLvl Req: 106\nRarity: Gray",
+    "weapstats": "Class: War\nPot: 758046\nLvl Req: 126\nRarity: Legendary",
+    "spellname": "Empty",
+    "spellstats": "Empty"
+  },
+  "925791617162559510": {
+    "helmname": "Crusaders",
+    "armorname": "Novice  Blue Wizard",
+    "weapname": "Cool Dev Item",
+    "helmstats": "Class: Guardian Helm\nPot: 163\nLvl Req: 9\nRarity: Gray",
+    "armorstats": "Class: Mage Chest\nPot: 8\nHealth: 21\nLvl Req: 1\nRarity: Gray",
+    "weapstats": "Class: Dev Class\nPot: -1\nHealth: -1\nLvl Req: -1\nRarity: Dev",
+    "spellname": "Blue Fireball",
+    "spellstats": "Class: Mage Spell"
+  }
+}

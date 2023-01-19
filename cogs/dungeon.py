@@ -7,7 +7,7 @@ from discord import app_commands
 from discord.ext import commands
 from discord.ext.commands import Context
 import json
-
+from utilities import get_database
 from helpers import checks
 
 
@@ -30,21 +30,11 @@ class General(commands.Cog, name="dungeon"):
     @app_commands.describe(dung="The dungeon to raid (DT, WO, PI, KC, UW, SP, TC, GH, SS, BR1-BR30, OO, VC, AT, EF, NL, GS)", diffi="Easy (1), Medium (2), Hard (3), Insane (4), Nightmare (5)", mode="Non-Hardcore (NHC), Hardcore (HC), or Waves (WVS).")
     async def raid(self, context: Context,  dung: str = "Desert Temple",  diffi: str = "5", mode: str = "HC") -> None:
         #Temp
-        with open('userstats.json') as json_file:
-            userstats = json.load(json_file)
-        if str(context.message.author.id) in userstats:
-            pass
-        else:
-            userstats[str(context.message.author.id)] = {}
-            userstats[str(context.message.author.id)]["level"] = 1
-            userstats[str(context.message.author.id)]["exp"] = 1
-            userstats[str(context.message.author.id)]["gold"] = 1
-            userstats[str(context.message.author.id)]["war"] = 0
-            userstats[str(context.message.author.id)]["mage"] = 0
-            userstats[str(context.message.author.id)]["health"] = 0
-            userstats[str(context.message.author.id)]["free"] = 0
-            with open('userstats.json', 'w') as fp:
-                json.dump(userstats, fp)
+        # Fetching user userdata
+        db = get_database()
+        collection = db[str(context.message.author.id)]
+        userdata = collection.find_one()
+
         error = False
         dungeon = "N/A"
         dung = dung.lower()
@@ -977,10 +967,10 @@ class General(commands.Cog, name="dungeon"):
             mode = mode_dictionary[mode]
 
         if "br" in dung:
-            if 130 > userstats[str(context.message.author.id)]["level"]:
+            if 130 > userdata["stats"]["level"]:
                 error = True
                 errorType = "Your level is not high enough for this dungeon"
-        elif lvl_dict[dung][diff] > userstats[str(context.message.author.id)]["level"]:
+        elif lvl_dict[dung][diff] > userdata["stats"]["level"]:
             error = True
             errorType = "Your level is not high enough for this dungeon"
 
@@ -1393,69 +1383,56 @@ class General(commands.Cog, name="dungeon"):
                 value=dropstats,
                 inline=False
             )
-            with open('userinv.json') as json_file:
-                userinv = json.load(json_file)
-            if str(str(context.message.author.id)) in userinv:
-                length = len(userinv[str(context.message.author.id)])
-                userinv[str(context.message.author.id)][length] = {}
-                userinv[str(context.message.author.id)][length]["name"] = dropname
-                userinv[str(context.message.author.id)][length]["stats"] = dropstats
-            else:
-                userinv[str(context.message.author.id)] = {}
-                userinv[str(context.message.author.id)][0] = {}
-                userinv[str(context.message.author.id)][0]["name"] = dropname
-                userinv[str(context.message.author.id)][0]["stats"] = dropstats
-            with open('userinv.json', 'w') as fp:
-                json.dump(userinv, fp)
+
+            length = len(userdata["inventory"])
+            length2 = length + 1
+            length = str(length)
+            length2 = str(length2)
+            userdata["inventory"][length] = {}
+            userdata["inventory"][length]["name"] = dropname
+            userdata["inventory"][length]["stats"] = dropstats
+
             embed.add_field(
                 name="Other Loot",
                 value="Gold: " + str(((tier-1)*666666) + 14000000) + "\nExp: 130000000",
                 inline=False
             )
 
-            userstats[str(context.message.author.id)]["gold"] += ((tier-1)*666666) + 14000000
-            userstats[str(context.message.author.id)]["exp"] += 130000000
-            while userstats[str(context.message.author.id)]["exp"] >= level_dict[
-                str(userstats[str(context.message.author.id)]["level"])]:
-                userstats[str(context.message.author.id)]["exp"] -= level_dict[
-                    str(userstats[str(context.message.author.id)]["level"])]
-                userstats[str(context.message.author.id)]["level"] += 1
-                userstats[str(context.message.author.id)]["free"] += 1
-            with open('userstats.json', 'w') as fp:
-                json.dump(userstats, fp)
+            userdata["stats"]["gold"] += ((tier-1)*666666) + 14000000
+            userdata["stats"]["exp"] += 130000000
+            while userdata["stats"]["exp"] >= level_dict[
+                str(userdata["stats"]["level"])]:
+                userdata["stats"]["exp"] -= level_dict[
+                    str(userdata["stats"]["level"])]
+                userdata["stats"]["level"] += 1
+                userdata["stats"]["free"] += 1
+
             embed.add_field(
                 name="Exp",
-                value="Level: " + str(userstats[str(context.message.author.id)]["level"]) + "\nExp: " + str(
-                    userstats[str(context.message.author.id)]["exp"]) + " / " + str(
-                    level_dict[str(userstats[str(context.message.author.id)]["level"])])
+                value="Level: " + str(userdata["stats"]["level"]) + "\nExp: " + str(
+                    userdata["stats"]["exp"]) + " / " + str(
+                    level_dict[str(userdata["stats"]["level"])])
             )
             embed.set_footer(
                 text=f"Requested by {context.author}"
             )
             await context.send(embed=embed)
         else:
-            with open('userinv.json') as json_file:
-                userinv = json.load(json_file)
-            if str(str(context.message.author.id)) in userinv:
-                length = len(userinv[str(context.message.author.id)])
-                userinv[str(context.message.author.id)][length] = {}
-                userinv[str(context.message.author.id)][length]["name"] = dropname
-                userinv[str(context.message.author.id)][length]["stats"] = dropstats
-                if mode == "Hardcore":
-                    userinv[str(context.message.author.id)][length + 1] = {}
-                    userinv[str(context.message.author.id)][length+1]["name"] = dropname2
-                    userinv[str(context.message.author.id)][length+1]["stats"] = dropstats2
-            else:
-                userinv[str(context.message.author.id)] = {}
-                userinv[str(context.message.author.id)][0] = {}
-                userinv[str(context.message.author.id)][0]["name"] = dropname
-                userinv[str(context.message.author.id)][0]["stats"] = dropstats
-                if mode == "Hardcore":
-                    userinv[str(context.message.author.id)][1] = {}
-                    userinv[str(context.message.author.id)][1]["name"] = dropname2
-                    userinv[str(context.message.author.id)][1]["stats"] = dropstats2
-            with open('userinv.json', 'w') as fp:
-                json.dump(userinv, fp)
+            dbname = get_database()
+            collection_name = dbname["userinv"]
+            userinv = collection_name.find()
+            length = len(userdata["inventory"])
+            length2 = length+1
+            length = str(length)
+            length2 = str(length2)
+            userdata["inventory"][length] = {}
+            userdata["inventory"][length]["name"] = dropname
+            userdata["inventory"][length]["stats"] = dropstats
+            if mode == "Hardcore":
+                userdata["inventory"][length2] = {}
+                userdata["inventory"][length2]["name"] = dropname2
+                userdata["inventory"][length2]["stats"] = dropstats2
+
             embed = discord.Embed(
                 description="You raided " + dungeon + " on " + difficulty + " difficulty, in " + mode,
                 color=color_dict[dung]
@@ -1479,17 +1456,18 @@ class General(commands.Cog, name="dungeon"):
                 value="Gold: " + str(gold_dict[dung][diff]) + "\nExp: " + str(exp_dict[dung][diff])
             )
 
-            userstats[str(context.message.author.id)]["gold"] += gold_dict[dung][diff]
-            userstats[str(context.message.author.id)]["exp"] += exp_dict[dung][diff]
-            while userstats[str(context.message.author.id)]["exp"] >= level_dict[str(userstats[str(context.message.author.id)]["level"])] :
-                userstats[str(context.message.author.id)]["exp"] -= level_dict[str(userstats[str(context.message.author.id)]["level"])]
-                userstats[str(context.message.author.id)]["level"] += 1
-                userstats[str(context.message.author.id)]["free"] += 1
-            with open('userstats.json', 'w') as fp:
-                json.dump(userstats, fp)
+            userdata["stats"]["gold"] += gold_dict[dung][diff]
+            userdata["stats"]["exp"] += exp_dict[dung][diff]
+            while userdata["stats"]["exp"] >= level_dict[str(userdata["stats"]["level"])] :
+                userdata["stats"]["exp"] -= level_dict[str(userdata["stats"]["level"])]
+                userdata["stats"]["level"] += 1
+                userdata["stats"]["free"] += 1
+
+            collection.drop()
+            collection.insert_one(userdata)
             embed.add_field(
                 name="Exp",
-                value="Level: " + str(userstats[str(context.message.author.id)]["level"]) + "\nExp: " + str(userstats[str(context.message.author.id)]["exp"]) + " / " + str(level_dict[str(userstats[str(context.message.author.id)]["level"])])
+                value="Level: " + str(userdata["stats"]["level"]) + "\nExp: " + str(userdata["stats"]["exp"]) + " / " + str(level_dict[str(userdata["stats"]["level"])])
             )
             embed.set_footer(
                 text=f"Requested by {context.author}"
@@ -1902,8 +1880,12 @@ class General(commands.Cog, name="dungeon"):
     )
     @checks.not_blacklisted()
     async def generate(self, context: Context, dung: str=None, item: str=None, type: str=None, target: int=0) -> None:
+
         if target == 0:
             target = context.message.author.id
+        db = get_database()
+        collection = db[str(target)]
+        userdata = collection.find_one()
         if context.message.author.id in self.adminlist:
             dropname = item
             classname = self.data[dung][dropname]["class"]
@@ -1927,14 +1909,16 @@ class General(commands.Cog, name="dungeon"):
             health = random.randint(int(min_pot), int(max_pot))
             dropstats = "Class: " + classname + "\nPot: " + str(pot) + "\nHealth: " + str(health) + "\nLvl Req: " + str(
                 lvlrq) + "\nRarity: " + type
-            with open('userinv.json') as json_file:
-                userinv = json.load(json_file)
-            length = len(userinv[str(target)])
-            userinv[str(target)][length] = {}
-            userinv[str(target)][length]["name"] = dropname
-            userinv[str(target)][length]["stats"] = dropstats
-            with open('userinv.json', 'w') as fp:
-                json.dump(userinv, fp)
+
+            length = len(userdata["inventory"])
+            length2 = length + 1
+            length = str(length)
+            length2 = str(length2)
+            userdata["inventory"][length] = {}
+            userdata["inventory"][length]["name"] = dropname
+            userdata["inventory"][length]["stats"] = dropstats
+            collection.drop()
+            collection.insert_one(userdata)
             embed = discord.Embed(
                 description="debug item gen",
             )
@@ -1959,6 +1943,9 @@ class General(commands.Cog, name="dungeon"):
     async def give(self, context: Context, item: str="None", itemclass: str="None", pot: int=0, health: int=0, lvlreq: int=0, rarity: str="None",target: int=0) -> None:
         if target == 0:
             target = context.message.author.id
+        db = get_database()
+        collection = db[str(target)]
+        userdata = collection.find_one()
         if context.message.author.id in self.adminlist:
             dropname = item
             classname = itemclass
@@ -1969,14 +1956,18 @@ class General(commands.Cog, name="dungeon"):
                 dropstats = "Class: " + classname + "\nPot: " + str(pot) + "\nHealth: " + str(
                     health) + "\nLvl Req: " + str(
                     lvlreq) + "\nRarity: " + rarity
-            with open('userinv.json') as json_file:
-                userinv = json.load(json_file)
-            length = len(userinv[str(target)])
-            userinv[str(target)][length] = {}
-            userinv[str(target)][length]["name"] = dropname
-            userinv[str(target)][length]["stats"] = dropstats
-            with open('userinv.json', 'w') as fp:
-                json.dump(userinv, fp)
+            dbname = get_database()
+            collection_name = dbname["userinv"]
+            userinv = collection_name.find()
+            length = len(userdata["inventory"])
+            length2 = length + 1
+            length = str(length)
+            length2 = str(length2)
+            userdata["inventory"][length] = {}
+            userdata["inventory"][length]["name"] = dropname
+            userdata["inventory"][length]["stats"] = dropstats
+            collection.drop()
+            collection.insert_one(userdata)
             embed = discord.Embed(
                 description="debug item giver",
             )

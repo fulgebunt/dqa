@@ -1,6 +1,6 @@
 import platform
 import random
-
+from utilities import get_database
 import aiohttp
 import discord
 from discord import app_commands
@@ -123,36 +123,38 @@ class General(commands.Cog, name="help"):
     )
     @checks.not_blacklisted()
     async def new(self, context: Context) -> None:
-        with open('userinv.json') as json_file:
-            userinv = json.load(json_file)
-        str[context.message.author.id] = {}
-        with open('userinv.json', 'w') as fp:
-            json.dump(userinv, fp)
-        with open('userstats.json') as json_file:
-            userstats = json.load(json_file)
-        userstats[str(context.message.author.id)] = {}
-        userstats[str(context.message.author.id)]["level"] = 1
-        userstats[str(context.message.author.id)]["exp"] = 1
-        userstats[str(context.message.author.id)]["gold"] = 1
-        userstats[str(context.message.author.id)]["war"] = 0
-        userstats[str(context.message.author.id)]["mage"] = 0
-        userstats[str(context.message.author.id)]["health"] = 0
-        userstats[str(context.message.author.id)]["free"] = 0
-        with open('userequips.json') as json_file:
-            equips = json.load(json_file)
-        with open('userstats.json', 'w') as fp:
-            json.dump(userstats, fp)
-        equips[str(context.message.author.id)] = {}
-        equips[str(context.message.author.id)]["helmname"] = "Empty"
-        equips[str(context.message.author.id)]["armorname"] = "Empty"
-        equips[str(context.message.author.id)]["weapname"] = "Empty"
-        equips[str(context.message.author.id)]["helmstats"] = "Empty"
-        equips[str(context.message.author.id)]["armorstats"] = "Empty"
-        equips[str(context.message.author.id)]["weapstats"] = "Empty"
-        equips[str(context.message.author.id)]["spellname"] = "Empty"
-        equips[str(context.message.author.id)]["spellstats"] = "Empty"
-        with open('userequips.json', 'w') as fp:
-            json.dump(equips, fp)
+        new = {
+            "inventory": {
+
+            },
+            "stats": {
+                "level": 1,
+                "exp": 0,
+                "gold": 0,
+                "war": 0,
+                "mage": 0,
+                "health": 0,
+                "free": 0
+            },
+            "equipped": {
+                "helmname": "Empty",
+                "armorname": "Empty",
+                "weapname": "Empty",
+                "helmstats": "Empty",
+                "armorstats": "Empty",
+                "weapstats": "Empty",
+                "spellname": "Empty",
+                "spellstats": "Empty"
+            },
+            "trades": {
+            }
+        }
+        dbname = get_database()
+        collection = dbname[str(context.message.author.id)]
+        collection.drop()
+        collection = dbname[str(context.message.author.id)]
+        collection.insert_one(new)
+
         embed = discord.Embed(
             color=0x9C84EF
         )
