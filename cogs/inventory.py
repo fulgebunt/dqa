@@ -371,7 +371,7 @@ class General(commands.Cog, name="inv"):
     @checks.not_blacklisted()
     async def profile(self, context: Context) -> None:
         db = get_database()
-        collection = db[str(userid)]
+        collection = db[str(context.author.message.id)]
         userdata = collection.find_one()
         level_dict = {
             "1": 84,
