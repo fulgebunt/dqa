@@ -171,5 +171,54 @@ class General(commands.Cog, name="help"):
         )
         await context.send(embed=embed)
 
+    async def creative(self, context: Context) -> None:
+        new = {
+            "inventory": {
+
+            },
+            "stats": {
+                "level": 200,
+                "exp": 0,
+                "gold": 0,
+                "war": 0,
+                "mage": 200,
+                "health": 0,
+                "free": 0
+            },
+            "equipped": {
+                "helmname": "Gildenscale",
+                "armorname": "Gildenscale",
+                "weapname": "Daybreak and Gildensong",
+                "helmstats": "Class: Mage Helm\nPot: 15540000\nHealth: 404250000\nLvl Req: 196\nRarity: Purple",
+                "armorstats": "Class: Mage Armor\nPot: 15540000\nHealth: 404250000\nLvl Req: 196\nRarity: Purple",
+                "weapstats": "Class: Mage Helm\nPot: 155400000\nLvl Req: 196\nRarity: Legendary",
+                "spellname": "Jade Rain",
+                "spellstats": "Class: Mage"
+            },
+            "trades": {
+            }
+        }
+        dbname = get_database()
+        collection = dbname[str(context.message.author.id)]
+        collection.drop()
+        collection = dbname[str(context.message.author.id)]
+        collection.insert_one(new)
+
+        embed = discord.Embed(
+            color=0x9C84EF
+        )
+        embed.set_author(
+            name="Profile Creation"
+        )
+        embed.add_field(
+            name="Success",
+            value="Your profile has been refreshed",
+            inline=False
+        )
+        embed.set_footer(
+            text=f"Requested by {context.author}"
+        )
+        await context.send(embed=embed)
+
 async def setup(bot):
     await bot.add_cog(General(bot))
