@@ -100,7 +100,189 @@ class General(commands.Cog, name="equip"):
         description="show damage",
     )
     @checks.not_blacklisted()
-    async def damage(self, context: Context) -> None:
+    async def damage(self, context: Context, dung: str="dt") -> None:
+        damage_gates = {
+            "dt": {
+                "1": {
+                    "min": 1,
+                    "max": 1
+                },
+                "2": {
+                    "min": 1,
+                    "max": 1
+                },
+                "3": {
+                    "min": 1,
+                    "max": 1
+                },
+                "4": {
+                    "min": 1,
+                    "max": 1
+                },
+                "5": {
+                    "min": 1,
+                    "max": 1
+                }
+            },
+            "wo": {
+                "1": {
+                    "min": 1,
+                    "max": 1
+                },
+                "2": {
+                    "min": 1,
+                    "max": 1
+                },
+                "3": {
+                    "min": 1,
+                    "max": 1
+                },
+                "4": {
+                    "min": 1,
+                    "max": 1
+                },
+                "5": {
+                    "min": 1,
+                    "max": 1
+                }
+            },
+            "pi": {
+                "4": {
+                    "min": 1,
+                    "max": 162916
+                },
+                "5": {
+                    "min": 191235,
+                    "max": 738487
+                }
+            },
+            "kc": {
+                "4": {
+                    "min": 535165,
+                    "max": 1654379
+                },
+                "5": {
+                    "min": 2088819,
+                    "max": 8676735
+                }
+            },
+            "uw": {
+                "4": {
+                    "min": 6688506,
+                    "max": 14573049
+                },
+                "5": {
+                    "min": 16799953,
+                    "max": 36958863
+                }
+            },
+            "sp": {
+                "4": {
+                    "min": 31209706,
+                    "max": 61558932
+                },
+                "5": {
+                    "min": 71419739,
+                    "max": 181983567
+                }
+            },
+            "tc": {
+                "4": {
+                    "min": 154809912,
+                    "max": 419825999
+                },
+                "5": {
+                    "min": 474640773,
+                    "max": 893671521
+                }
+            },
+            "gh": {
+                "4": {
+                    "min": 823893521,
+                    "max": 1738592292
+                },
+                "5": {
+                    "min": 2058318255,
+                    "max": 5580019482
+                }
+            },
+            "ss": {
+                "4": {
+                    "min": 4657113019,
+                    "max": 10270841120
+                },
+                "5": {
+                    "min": 11705582096,
+                    "max": 30571979892
+                }
+            },
+            "br": {
+                "1": {
+                    "min": 11705582096,
+                    "max": 30571979892
+                }
+            },
+            "oo": {
+                "4": {
+                    "min": 23995449334,
+                    "max": 443050348144
+                },
+                "5": {
+                    "min": 504875542240,
+                    "max": 1401043912623
+                }
+            },
+            "vc": {
+                "4": {
+                    "min": 964821448986,
+                    "max": 2511647524847
+                },
+                "5": {
+                    "min": 2877237671616,
+                    "max": 7628358177706
+                }
+            },
+            "at": {
+                "4": {
+                    "min": 0,
+                    "max": 12606801168245
+                },
+                "5": {
+                    "min": 14337730222784,
+                    "max": 37088616556535
+                }
+            },
+            "ef": {
+                "4": {
+                    "min": 32774594079959,
+                    "max": 63859672403788
+                },
+                "5": {
+                    "min": 72995838225664,
+                    "max": 188668177076686
+                }
+            },
+            "nl": {
+                "4": {
+                    "min": 166717093145820,
+                    "max": 312611214558692
+                },
+                "5": {
+                    "min": 357409906702600,
+                    "max": 904717196044072
+                }
+            },
+            "gs": {
+                "4": {
+                    "min": 805370505409657,
+                    "max": 1512304433113689
+                },
+                "5": {
+                    "min": 1721815753587184,
+                    "max": 4495306129317689
+                }
+            }
+        }
         db = get_database()
         collection = db[str(context.message.author.id)]
         userdata = collection.find_one()
@@ -139,9 +321,47 @@ class General(commands.Cog, name="equip"):
         else:
             SPELL_MULT = 1
         damage = math.floor((wep * (0.6597 + 0.013202 * skill)*((arm+helm)*0.0028))*SPELL_MULT)
+        diff = 4
+        if damage >= damage_gates[dung][str(diff)]["max"]:
+            cleared = True
+            percent = 100
+        elif damage < damage_gates[dung][str(diff)]["min"]:
+            cleared = False
+            percent = 0
+        else:
+            percent = math.floor(damage - damage_gates[dung][str(diff)]["min"]) / (
+                        damage_gates[dung][str(diff)]["max"] - damage_gates[dung][str(diff)]["min"])
+            roll = random.randint(0, 100)
+            if roll <= percent:
+                cleared = True
+
         embed.add_field(
             name="Your total damage is",
             value=damage,
+            inline=True
+        )
+        embed.add_field(
+            name="Your clear chance of " + dung + " insane is:",
+            value=str(percent) + "%",
+            inline=True
+        )
+
+        diff = 5
+        if damage >= damage_gates[dung][str(diff)]["max"]:
+            percent = 100
+            cleared = True
+        elif damage < damage_gates[dung][str(diff)]["min"]:
+            cleared = False
+            percent = 0
+        else:
+            percent = math.floor(damage - damage_gates[dung][str(diff)]["min"]) / (
+                        damage_gates[dung][str(diff)]["max"] - damage_gates[dung][str(diff)]["min"])
+            roll = random.randint(0, 100)
+            if roll <= percent:
+                cleared = True
+        embed.add_field(
+            name="Your clear chance of " + dung + " nightmare is:",
+            value=str(percent) + "%",
             inline=True
         )
         embed.set_footer(
