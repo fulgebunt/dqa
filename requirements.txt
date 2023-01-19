@@ -1,4 +1,4 @@
 aiohttp
 aiosqlite
 discord.py
-pymongo.py
+pymongo.py==4.3.3
