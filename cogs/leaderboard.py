@@ -3,6 +3,7 @@ import platform
 import random
 import aiohttp
 import discord
+from utilities import get_database
 from discord import app_commands, client
 from discord.ext import commands
 from discord.ext.commands import Context
@@ -25,11 +26,13 @@ class General(commands.Cog, name="inventory"):
     @app_commands.describe(type="leaderboard type")
     async def leaderboard(self, context: Context, type: str = "lvl") -> None:
         rankedlist = {}
-        with open('userstats.json') as json_file:
-            userstats = json.load(json_file)
-        users = userstats.keys()
+        users = get_database().list_collection_names()
+
         for i in users:
-            temp = userstats[i]["level"]
+            db = get_database()
+            collection = db[str(i)]
+            userdata = collection.find_one()
+            temp = userdata['stats']["level"]
             if temp in rankedlist:
                 rankedlist[temp].append(i)
             else:

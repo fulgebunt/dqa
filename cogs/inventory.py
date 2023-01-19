@@ -1,7 +1,9 @@
 import math
 import platform
 import random
-
+import pymongo
+from utilities import get_adminlist
+from utilities import get_database
 import aiohttp
 import discord
 from discord import app_commands
@@ -13,7 +15,7 @@ from helpers import checks
 
 
 class General(commands.Cog, name="inv"):
-    adminlist = [421086209431961600, 383710782686232597, 426402208515620864]
+    adminlist = get_adminlist()
 
     def __init__(self, bot):
         self.bot = bot
@@ -24,46 +26,48 @@ class General(commands.Cog, name="inv"):
     )
     @checks.not_blacklisted()
     @app_commands.describe(page="The page number")
-    async def inventory(self, context: Context, page: int = 1) -> None:
-        with open('userinv.json') as json_file:
-            data = json.load(json_file)
-        if str(context.message.author.id) in data:
-            pass
-        else:
-            data[context.message.author.id] = {}
-            with open('userinv.json', 'w') as fp:
-                json.dump(data, fp)
+    #Command to get user inventory
+    async def inventory(self, context: Context, page: int = 1, userid: int = 0) -> None:
+        #Setup
+        if userid == 0:
+            userid = context.message.author.id
+        #Fetching user userdata
+        db = get_database()
+        collection = db[str(userid)]
+        userdata = collection.find_one()
+
+        #Printing user userdata
         if page < 1:
             page = 1
-        if page > math.ceil(len(data[str(context.message.author.id)])/5):
-            page = math.ceil(len(data[str(context.message.author.id)])/5)
+        if page > math.ceil(len(userdata['inventory'])/5):
+            page = math.ceil(len(userdata['inventory'])/5)
         embed = discord.Embed(
-            description="Page: " + str(page) + "/" + str(math.ceil(len(data[str(context.message.author.id)])/5)),
+            description="Page: " + str(page) + "/" + str(math.ceil(len(userdata['inventory'])/5)),
             color=0x9C84EF
         )
         embed.set_author(
             name="Inventory"
         )
         if page == 0:
-            for i in range(len(data[str(context.message.author.id)])):
+            for i in range(len(userdata['inventory'])):
                 embed.add_field(
-                    name=str(i + 1) + ". " + data[str(context.message.author.id)][str(i)]["name"],
-                    value=data[str(context.message.author.id)][str(i)]["stats"],
+                    name=str(i + 1) + ". " + userdata['inventory'][str(i)]["name"],
+                    value=userdata['inventory'][str(i)]["stats"],
                     inline=False
                 )
-        elif str(context.message.author.id) in data:
-            if page > math.floor(len(data[str(context.message.author.id)]) / 5):
-                for i in range((page-1) * 5, len(data[str(context.message.author.id)])):
+        elif len(userdata['inventory']) > 0:
+            if page > math.floor(len(userdata['inventory']) / 5):
+                for i in range((page-1) * 5, len(userdata['inventory'])):
                     embed.add_field(
-                        name=str(i + 1) + ". " + data[str(context.message.author.id)][str(i)]["name"],
-                        value=data[str(context.message.author.id)][str(i)]["stats"],
+                        name=str(i + 1) + ". " + userdata['inventory'][str(i)]["name"],
+                        value=userdata['inventory'][str(i)]["stats"],
                         inline=False
                     )
             else:
                 for i in range((page-1)*5, page*5):
                     embed.add_field(
-                        name=str(i+1) + ". " + data[str(context.message.author.id)][str(i)]["name"],
-                        value=data[str(context.message.author.id)][str(i)]["stats"],
+                        name=str(i+1) + ". " + userdata['inventory'][str(i)]["name"],
+                        value=userdata['inventory'][str(i)]["stats"],
                         inline=False
                     )
 
@@ -84,46 +88,46 @@ class General(commands.Cog, name="inv"):
     )
     @checks.not_blacklisted()
     @app_commands.describe(page="The page number")
-    async def inv(self, context: Context, page: int = 1) -> None:
-        with open('userinv.json') as json_file:
-            data = json.load(json_file)
-        if str(context.message.author.id) in data:
-            pass
-        else:
-            data[context.message.author.id] = {}
-            with open('userinv.json', 'w') as fp:
-                json.dump(data, fp)
+    async def inv(self, context: Context, page: int = 1, userid: int =0) -> None:
+
+        if userid == 0:
+            userid = context.message.author.id
+        # Fetching user userdata
+        db = get_database()
+        collection = db[str(userid)]
+        userdata = collection.find_one()
+
         if page < 1:
             page = 1
-        if page > math.ceil(len(data[str(context.message.author.id)]) / 5):
-            page = math.ceil(len(data[str(context.message.author.id)]) / 5)
+        if page > math.ceil(len(userdata['inventory']) / 5):
+            page = math.ceil(len(userdata['inventory']) / 5)
         embed = discord.Embed(
-            description="Page: " + str(page) + "/" + str(math.ceil(len(data[str(context.message.author.id)]) / 5)),
+            description="Page: " + str(page) + "/" + str(math.ceil(len(userdata['inventory']) / 5)),
             color=0x9C84EF
         )
         embed.set_author(
             name="Inventory"
         )
         if page == 0:
-            for i in range(len(data[str(context.message.author.id)])):
+            for i in range(len(userdata['inventory'])):
                 embed.add_field(
-                    name=str(i + 1) + ". " + data[str(context.message.author.id)][str(i)]["name"],
-                    value=data[str(context.message.author.id)][str(i)]["stats"],
+                    name=str(i + 1) + ". " + userdata['inventory'][str(i)]["name"],
+                    value=userdata['inventory'][str(i)]["stats"],
                     inline=False
                 )
-        elif str(context.message.author.id) in data:
-            if page > math.floor(len(data[str(context.message.author.id)]) / 5):
-                for i in range((page-1) * 5, len(data[str(context.message.author.id)])):
+        elif len(userdata['inventory']) > 0:
+            if page > math.floor(len(userdata['inventory']) / 5):
+                for i in range((page-1) * 5, len(userdata['inventory'])):
                     embed.add_field(
-                        name=str(i + 1) + ". " + data[str(context.message.author.id)][str(i)]["name"],
-                        value=data[str(context.message.author.id)][str(i)]["stats"],
+                        name=str(i + 1) + ". " + userdata['inventory'][str(i)]["name"],
+                        value=userdata['inventory'][str(i)]["stats"],
                         inline=False
                     )
             else:
                 for i in range((page-1)*5, page*5):
                     embed.add_field(
-                        name=str(i+1) + ". " + data[str(context.message.author.id)][str(i)]["name"],
-                        value=data[str(context.message.author.id)][str(i)]["stats"],
+                        name=str(i+1) + ". " + userdata['inventory'][str(i)]["name"],
+                        value=userdata['inventory'][str(i)]["stats"],
                         inline=False
                     )
         else:
@@ -142,10 +146,15 @@ class General(commands.Cog, name="inv"):
         description="clear inventory",
     )
     @checks.not_blacklisted()
-    async def clearinv(self, context: Context, tag: str="all") -> None:
-        with open('userinv.json') as json_file:
-            userinv = json.load(json_file)
-
+    async def clearinv(self, context: Context, tag: str="all", userid: int = 0) -> None:
+        if context.message.author.id not in get_adminlist():
+            userid = context.message.author.id
+        elif userid == 0:
+            userid = context.message.author.id
+        # Fetching user userdata
+        db = get_database()
+        collection = db[str(userid)]
+        userdata = collection.find_one()
         leg_list = ["Desert Fury", "Crystalised Greatsword", "Soulstealer Greatsword", "Staff of the Gods",
                     "Beast Master War Scythe", "Beast Master Spell Scythe", "Dual Phoenix Daggers",
                     "Phoenix Greatstaff",
@@ -252,50 +261,45 @@ class General(commands.Cog, name="inv"):
             color=0x9C84EF
         )
         if tag == "all":
-            if str(context.message.author.id) in userinv:
-                userinv[str(context.message.author.id)] = {}
-                embed.set_author(
-                    name="Inventory Cleared"
-                )
+            userdata['inventory'] = {}
+            embed.set_author(
+                name="Inventory Cleared"
+            )
         elif tag == "trash":
             keeplist = {}
             itemnum = 0
-            if str(context.message.author.id) in userinv:
-                for i in range(len(userinv[str(context.message.author.id)])):
-                    if userinv[str(context.message.author.id)][str(i)]["name"] in leg_list or userinv[str(context.message.author.id)][str(i)]["name"] in t3_list or userinv[str(context.message.author.id)][str(i)]["name"] in t3_guard_list:
-                        keeplist[str(itemnum)] = userinv[str(context.message.author.id)][str(i)]
-                        itemnum += 1
-                userinv[str(context.message.author.id)] = keeplist
-                embed.set_author(
-                    name="Inventory Cleared of Trash"
-                )
+            for i in range(len(userdata['inventory'])):
+                if userdata['inventory'][str(i)]["name"] in leg_list or userdata['inventory'][str(i)]["name"] in t3_list or userdata['inventory'][str(i)]["name"] in t3_guard_list:
+                    keeplist[str(itemnum)] = userdata['inventory'][str(i)]
+                    itemnum += 1
+            userdata['inventory'] = keeplist
+            embed.set_author(
+                name="Inventory Cleared of Trash"
+            )
         elif tag == "moretrash":
             keeplist = {}
             itemnum = 0
-            if str(context.message.author.id) in userinv:
-                for i in range(len(userinv[str(context.message.author.id)])):
-                    if userinv[str(context.message.author.id)][str(i)]["name"] in leg_list or \
-                            userinv[str(context.message.author.id)][str(i)]["name"] in t3_list or \
-                            userinv[str(context.message.author.id)][str(i)]["name"] in t3_guard_list:
-                        if "Rarity: Gray" in userinv[str(context.message.author.id)][str(i)]["stats"] or \
-                        "Rarity: Green" in userinv[str(context.message.author.id)][str(i)]["stats"] or \
-                        "Rarity: Blue" in userinv[str(context.message.author.id)][str(i)]["stats"]:
-                            pass
-                        else:
-                            keeplist[str(itemnum)] = userinv[str(context.message.author.id)][str(i)]
-                            itemnum += 1
-                userinv[str(context.message.author.id)] = keeplist
-                embed.set_author(
-                    name="Inventory Cleared of Trash"
-                )
+            for i in range(len(userdata['inventory'])):
+                if userdata['inventory'][str(i)]["name"] in leg_list or \
+                        userdata['inventory'][str(i)]["name"] in t3_list or \
+                        userdata['inventory'][str(i)]["name"] in t3_guard_list:
+                    if "Rarity: Gray" in userdata['inventory'][str(i)]["stats"] or \
+                    "Rarity: Green" in userdata['inventory'][str(i)]["stats"] or \
+                    "Rarity: Blue" in userdata['inventory'][str(i)]["stats"]:
+                        pass
+                    else:
+                        keeplist[str(itemnum)] = userdata['inventory'][str(i)]
+                        itemnum += 1
+            userdata['inventory'] = keeplist
+            embed.set_author(
+                name="Inventory Cleared of Trash"
+            )
         else:
             embed.set_author(
                 name="Invalid Tag"
             )
-        with open('userinv.json', 'w') as fp:
-            json.dump(userinv, fp)
-
-
+        collection.drop()
+        collection.insert_one(userdata)
         embed.set_footer(
             text=f"Requested by {context.author}"
         )
@@ -308,24 +312,19 @@ class General(commands.Cog, name="inv"):
     @checks.not_blacklisted()
     @app_commands.describe(userid="The user's id",page="The page number")
     async def viewinv(self, context: Context, userid: int = 0, page: int = 1) -> None:
-        with open('userinv.json') as json_file:
-            data = json.load(json_file)
         if page < 1:
             page = 1
 
-        print(userid)
-        if str(userid) not in data:
-            data[userid] = {}
-            with open('userinv.json', 'w') as fp:
-                json.dump(data, fp)
-        print(page)
+        # Fetching user userdata
+        db = get_database()
+        collection = db[str(userid)]
+        userdata = collection.find_one()
 
-
-        if page > math.ceil(len(data[str(userid)]) / 5):
-            page = math.ceil(len(data[str(userid)])/ 5)
+        if page > math.ceil(len(userdata['inventory']) / 5):
+            page = math.ceil(len(userdata['inventory'])/ 5)
         print(page)
         embed = discord.Embed(
-            description="Page: " + str(page) + "/" + str(math.ceil(len(data[str(userid)]) / 5)),
+            description="Page: " + str(page) + "/" + str(math.ceil(len(userdata['inventory']) / 5)),
             color=0x9C84EF
         )
         embed.set_author(
@@ -333,25 +332,25 @@ class General(commands.Cog, name="inv"):
         )
 
         if page == 0:
-            for i in range(len(data[str(userid)])):
+            for i in range(len(userdata['inventory'])):
                 embed.add_field(
-                    name=str(i + 1) + ". " + data[str(userid)][str(i)]["name"],
-                    value=data[str(userid)][str(i)]["stats"],
+                    name=str(i + 1) + ". " + userdata['inventory'][str(i)]["name"],
+                    value=userdata['inventory'][str(i)]["stats"],
                     inline=False
                 )
-        elif str(context.message.author.id) in data:
-            if page > math.floor(len(data[str(userid)]) / 5):
-                for i in range((page-1) * 5, len(data[str(userid)])):
+        elif str(context.message.author.id) in userdata:
+            if page > math.floor(len(userdata['inventory']) / 5):
+                for i in range((page-1) * 5, len(userdata['inventory'])):
                     embed.add_field(
-                        name=str(i + 1) + ". " + data[str(userid)][str(i)]["name"],
-                        value=data[str(userid)][str(i)]["stats"],
+                        name=str(i + 1) + ". " + userdata['inventory'][str(i)]["name"],
+                        value=userdata['inventory'][str(i)]["stats"],
                         inline=False
                     )
             else:
                 for i in range((page-1)*5, page*5):
                     embed.add_field(
-                        name=str(i+1) + ". " + data[str(userid)][str(i)]["name"],
-                        value=data[str(userid)][str(i)]["stats"],
+                        name=str(i+1) + ". " + userdata['inventory'][str(i)]["name"],
+                        value=userdata['inventory'][str(i)]["stats"],
                         inline=False
                     )
         else:
@@ -371,8 +370,9 @@ class General(commands.Cog, name="inv"):
     )
     @checks.not_blacklisted()
     async def profile(self, context: Context) -> None:
-        with open('userstats.json') as json_file:
-            userstats = json.load(json_file)
+        db = get_database()
+        collection = db[str(userid)]
+        userdata = collection.find_one()
         level_dict = {
             "1": 84,
             "2": 94,
@@ -674,19 +674,7 @@ class General(commands.Cog, name="inv"):
             "298": 488176647548518592,
             "299": 551639611729825920
         }
-        if str(context.message.author.id) in userstats:
-            pass
-        else:
-            userstats[str(context.message.author.id)] = {}
-            userstats[str(context.message.author.id)]["level"] = 1
-            userstats[str(context.message.author.id)]["exp"] = 1
-            userstats[str(context.message.author.id)]["gold"] = 1
-            userstats[str(context.message.author.id)]["war"] = 0
-            userstats[str(context.message.author.id)]["mage"] = 0
-            userstats[str(context.message.author.id)]["health"] = 0
-            userstats[str(context.message.author.id)]["free"] = 0
-            with open('userstats.json', 'w') as fp:
-                json.dump(userstats, fp)
+
         embed = discord.Embed(
             color=0x9C84EF
         )
@@ -695,8 +683,8 @@ class General(commands.Cog, name="inv"):
         )
         embed.add_field(
             name="Stats",
-            value="Level: " + str(userstats[str(context.message.author.id)]["level"]) + "\nExp: " + str(userstats[str(context.message.author.id)]["exp"]) + " / " + str(level_dict[str(userstats[str(context.message.author.id)]["level"])]) +
-            "\nGold: " + str(userstats[str(context.message.author.id)]["gold"]),
+            value="Level: " + str(userdata["stats"]["level"]) + "\nExp: " + str(userdata["stats"]["exp"]) + " / " + str(level_dict[str(userdata["stats"]["level"])]) +
+            "\nGold: " + str(userdata["stats"]["gold"]),
             inline=True
         )
         embed.set_footer(
@@ -711,11 +699,12 @@ class General(commands.Cog, name="inv"):
     @checks.not_blacklisted()
     async def setlevel(self, context: Context, userid: int=0, level: int=0) -> None:
         if context.message.author.id in self.adminlist:
-            with open('userstats.json') as json_file:
-                userstats = json.load(json_file)
-            userstats[str(userid)]["level"] = level
-            with open('userstats.json', 'w') as fp:
-                json.dump(userstats, fp)
+            db = get_database()
+            collection = db[str(userid)]
+            userdata = collection.find_one()
+            userdata["stats"]["level"] = level
+            collection.drop()
+            collection.insert_one(userdata)
 
             embed = discord.Embed(
                 color=0x9C84EF
@@ -725,7 +714,7 @@ class General(commands.Cog, name="inv"):
             )
             embed.add_field(
                 name="level set",
-                value="Level: " + str(userstats[str(userid)]["level"]),
+                value="Level: " + str(level),
                 inline=True
             )
             embed.set_footer(

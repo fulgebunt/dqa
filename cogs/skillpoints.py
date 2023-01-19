@@ -1,7 +1,7 @@
 import math
 import platform
 import random
-
+from utilities import get_database
 import aiohttp
 import discord
 from discord import app_commands
@@ -24,21 +24,9 @@ class General(commands.Cog, name="skillpoints"):
     )
     @checks.not_blacklisted()
     async def skillpoints(self, context: Context) -> None:
-        with open('userstats.json') as json_file:
-            userstats = json.load(json_file)
-        if str(context.message.author.id) in userstats:
-            pass
-        else:
-            userstats[str(context.message.author.id)] = {}
-            userstats[str(context.message.author.id)]["level"] = 1
-            userstats[str(context.message.author.id)]["exp"] = 1
-            userstats[str(context.message.author.id)]["gold"] = 1
-            userstats[str(context.message.author.id)]["war"] = 0
-            userstats[str(context.message.author.id)]["mage"] = 0
-            userstats[str(context.message.author.id)]["health"] = 0
-            userstats[str(context.message.author.id)]["free"] = 0
-            with open('userstats.json', 'w') as fp:
-                json.dump(userstats, fp)
+        db = get_database()
+        collection = db[str(context.message.author.id)]
+        userdata = collection.find_one()
         embed = discord.Embed(
             color=0x9C84EF
         )
@@ -47,8 +35,8 @@ class General(commands.Cog, name="skillpoints"):
         )
         embed.add_field(
             name="Skill Point Distribution",
-            value="War SP: " + str(userstats[str(context.message.author.id)]["war"]) + "\nMage SP: " + str(userstats[str(context.message.author.id)]["mage"]) +
-            "\nHealth SP: " + str(userstats[str(context.message.author.id)]["health"]) + "\nFree SP: " + str(userstats[str(context.message.author.id)]["free"]),
+            value="War SP: " + str(userdata["stats"]["war"]) + "\nMage SP: " + str(userdata["stats"]["mage"]) +
+            "\nHealth SP: " + str(userdata["stats"]["health"]) + "\nFree SP: " + str(userdata["stats"]["free"]),
             inline=True
         )
         embed.set_footer(
@@ -62,22 +50,10 @@ class General(commands.Cog, name="skillpoints"):
     )
     @checks.not_blacklisted()
     async def assignsp(self, context: Context, war: int=0, mage: int=0, health: int=0) -> None:
-        with open('userstats.json') as json_file:
-            userstats = json.load(json_file)
-        if str(context.message.author.id) in userstats:
-            pass
-        else:
-            userstats[str(context.message.author.id)] = {}
-            userstats[str(context.message.author.id)]["level"] = 1
-            userstats[str(context.message.author.id)]["exp"] = 1
-            userstats[str(context.message.author.id)]["gold"] = 1
-            userstats[str(context.message.author.id)]["war"] = 0
-            userstats[str(context.message.author.id)]["mage"] = 0
-            userstats[str(context.message.author.id)]["health"] = 0
-            userstats[str(context.message.author.id)]["free"] = 0
-            with open('userstats.json', 'w') as fp:
-                json.dump(userstats, fp)
-        if (war + mage + health) >= int(userstats[str(context.message.author.id)]["level"]):
+        db = get_database()
+        collection = db[str(context.message.author.id)]
+        userdata = collection.find_one()
+        if (war + mage + health) >= int(userdata["stats"]["level"]):
             embed = discord.Embed(
                 color=0x9C84EF
             )
@@ -110,10 +86,10 @@ class General(commands.Cog, name="skillpoints"):
             )
             await context.send(embed=embed)
         else:
-            userstats[str(context.message.author.id)]["war"] = war
-            userstats[str(context.message.author.id)]["mage"] = mage
-            userstats[str(context.message.author.id)]["health"] = health
-            userstats[str(context.message.author.id)]["free"] = userstats[str(context.message.author.id)]["level"] - (war + mage + health)
+            userdata["stats"]["war"] = war
+            userdata["stats"]["mage"] = mage
+            userdata["stats"]["health"] = health
+            userdata["stats"]["free"] = userdata["stats"]["level"] - (war + mage + health)
             with open('userstats.json', 'w') as fp:
                 json.dump(userstats, fp)
             embed = discord.Embed(
@@ -124,10 +100,10 @@ class General(commands.Cog, name="skillpoints"):
             )
             embed.add_field(
                 name="Skill Point Distribution",
-                value="War SP: " + str(userstats[str(context.message.author.id)]["war"]) + "\nMage SP: " + str(
-                    userstats[str(context.message.author.id)]["mage"]) +
-                      "\nHealth SP: " + str(userstats[str(context.message.author.id)]["health"]) + "\nFree SP: " + str(
-                    userstats[str(context.message.author.id)]["free"]),
+                value="War SP: " + str(userdata["stats"]["war"]) + "\nMage SP: " + str(
+                    userdata["stats"]["mage"]) +
+                      "\nHealth SP: " + str(userdata["stats"]["health"]) + "\nFree SP: " + str(
+                    userdata["stats"]["free"]),
                 inline=True
             )
             embed.set_footer(
