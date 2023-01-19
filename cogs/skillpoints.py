@@ -90,8 +90,8 @@ class General(commands.Cog, name="skillpoints"):
             userdata["stats"]["mage"] = mage
             userdata["stats"]["health"] = health
             userdata["stats"]["free"] = userdata["stats"]["level"] - (war + mage + health)
-            with open('userstats.json', 'w') as fp:
-                json.dump(userstats, fp)
+            collection.drop()
+            collection.insert_one(userdata)
             embed = discord.Embed(
                 color=0x9C84EF
             )
