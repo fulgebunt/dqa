@@ -57,6 +57,9 @@ class General(commands.Cog, name="dungeon"):
             'ef': 0xAD1457,
             'nl': 0x95A5A6,
             'gs': 0xFFBF00,
+            'om': 0xFFFFFF,
+            'wt': 0xE8BCF0,
+            'ec': 0xA020F0,
         }
         leg_list = ["Desert Fury","Crystalised Greatsword","Soulstealer Greatsword","Staff of the Gods",
                     "Beast Master War Scythe","Beast Master Spell Scythe","Dual Phoenix Daggers","Phoenix Greatstaff",
@@ -64,7 +67,7 @@ class General(commands.Cog, name="dungeon"):
                     "Sea Serpent Wings","Inventors Greatsword","Inventors Spellblade","Galactic Dual Blades",
                     "Galactic Pike","Lava Kings Warscythe","Lava Kings Spell Daggers","Sea Kings Greatstaff",
                     "Sea Kings Trident","Eldenbark Greatsword","Eldenbark Greatstaff","Mjolnir","Gungnir","Hofund",
-                    "Laevateinn","Gildenscale Oath and Aegis","Daybreak and Gildensong"]
+                    "Laevateinn","Gildenscale Oath and Aegis","Daybreak and Gildensong","Fulmen","Fuscina","Shattered Skies","Stormy Seas","Ghost Kings Halberd","Ghost Kings Tome","Gladius Imperialis","Magicus Imperialis","Storsvero","Vigamenn","Theospathia","Theosevis"]
         leg_dict = {
             "dt": {
                 "War": "Desert Fury",
@@ -125,12 +128,36 @@ class General(commands.Cog, name="dungeon"):
             "gs": {
                 "War": "Gildenscale Oath and Aegis",
                 "Mage": "Daybreak and Gildensong"
+            },
+            "om": {
+                "War": "Fuscina",
+                "Mage": "Fulmen"
+            },
+            "wt": {
+                "War": "Ghost Kings Halberd",
+                "Mage": "Ghost Kings Tome"
+            },
+            "ec": {
+                "War": "Gladius Imperialis",
+                "Mage": "Magicus Imperialis"
             }
         }
         ult_dict = {
             "nl": {
                 "War": "Hofund",
                 "Mage": "Laevateinn"
+            },
+            "om": {
+                "War": "Stormy Seas",
+                "Mage": "Shattered Skies"
+            },
+            "wt": {
+                "War": "Storsvero",
+                "Mage": "Vigamenn"
+            },
+            "ec": {
+                "War": "Theospathia",
+                "Mage": "Theosevis"
             }
         }
         t3_dict = {
@@ -146,7 +173,10 @@ class General(commands.Cog, name="dungeon"):
             "at": "Triton",
             "ef": "Eldenbark",
             "nl": "Valhalla",
-            "gs": "Gildenscale"
+            "gs": "Gildenscale",
+            "om": "Thunder Gods",
+            "wt": "Soulshard",
+            "ec": "Gods Chosen"
         }
         t3_guard_dict = {
             "pi": "Godly Guardian",
@@ -161,7 +191,10 @@ class General(commands.Cog, name="dungeon"):
             "at": "Triton Guardian",
             "ef": "Eldenbark Guardian",
             "nl": "Valhalla Guardian",
-            "gs": "Gildenscale Guardian"
+            "gs": "Gildenscale Guardian",
+            "om": "Thunder Gods Guardian",
+            "wt": "Soulshard Guardian",
+            "ec": "Gods Chosen Guardian"
         }
         exp_dict = {
             "dt": {
@@ -230,7 +263,20 @@ class General(commands.Cog, name="dungeon"):
             "gs": {
                 4: 63500000000,
                 5: 115500000000
+            },
+            "om": {
+                4: 207900000000,
+                5: 374220000000
+            },
+            "wt": {
+                4: 673596000000,
+                5: 1212472800000,
+            },
+            "ec": {
+                4: 2182451040000,
+                5: 3928411872000,
             }
+
         }
         gold_dict = {
             "dt": {
@@ -299,6 +345,18 @@ class General(commands.Cog, name="dungeon"):
             "gs": {
                 4: 300000000,
                 5: 410000000
+            },
+            "om": {
+                4: 450000000,
+                5: 550000000
+            },
+            "wt": {
+                4: 600000000,
+                5: 750000000
+            },
+            "ec": {
+                4: 900000000,
+                5: 1050000000
             }
         }
         lvl_dict = {
@@ -368,6 +426,18 @@ class General(commands.Cog, name="dungeon"):
             "gs": {
                 4: 190,
                 5: 195
+            },
+            "om": {
+                4: 200,
+                5: 205
+            },
+            "wt": {
+                4: 210,
+                5: 215
+            },
+            "ec": {
+                4: 220,
+                5: 225
             }
         }
         level_dict = {
@@ -808,7 +878,7 @@ class General(commands.Cog, name="dungeon"):
   },
   "at": {
     "4": {
-      "min": 6192742783893,
+      "min": 0,
       "max": 12606801168245
     },
     "5": {
@@ -844,6 +914,36 @@ class General(commands.Cog, name="dungeon"):
     "5": {
       "min": 1512304433113689,
       "max": 4495306129317689
+    }
+  },
+  "om": {
+    "4": {
+      "min": 3719325425193000,
+      "max": 7047476787972479
+    },
+    "5": {
+      "min": 7047476787972479,
+      "max": 20634397774821292
+    }
+  },
+  "wt": {
+    "4": {
+      "min": 17509964108529648,
+      "max": 34376434213563368
+    },
+    "5": {
+      "min": 34376434213563368,
+      "max": 99472216092176352
+    }
+  },
+  "ec": {
+    "4": {
+      "min": 83539188234517840,
+      "max": 174070594276045376
+    },
+    "5": {
+      "min": 174070594276045376,
+      "max": 499207900505063296
     }
   }
 }
@@ -917,6 +1017,9 @@ class General(commands.Cog, name="dungeon"):
                 'ef': 'Enchanted Forest',
                 'nl': 'Northern Lands',
                 'gs': 'Gilded Skies',
+                'om': 'Olympus Mons',
+                'wt': 'Warlords Tomb',
+                'ec': 'Emperors Colosseum'
             }
             if dung in dungeon_dictionary:
                 dungeon = dungeon_dictionary[dung]
@@ -1084,6 +1187,8 @@ class General(commands.Cog, name="dungeon"):
                 if diff == 5:
                     while (("Legendary" in self.data[dung][dropname]) or ("Ultimate" in self.data[dung][dropname]) or (dropname in t3_dict.values()) or (dropname in t3_guard_dict.values()) or (int(lvlrq) % 10 < 4) or (int(lvlrq) % 10 > 7)):
                         dropname = random.choice(list(self.data[dung]))
+                        print(dropname)
+
                         lvlrq = self.data[dung][dropname]["lvlrq"]
                 elif diff == 4:
                     while (("Legendary" in self.data[dung][dropname]) or ("Ultimate" in self.data[dung][dropname]) or (dropname in t3_dict.values()) or (dropname in t3_guard_dict.values()) or ((int(lvlrq) % 10 > 3) and (int(lvlrq) % 10 < 8))):
@@ -1097,24 +1202,43 @@ class General(commands.Cog, name="dungeon"):
                     lvlrq = self.data[dung][dropname]["lvlrq"]
                 dropstats = ""
                 classname = self.data[dung][dropname]["class"]
+
+            # Buff armor chances
+            if random.randint(1,4) == 1:
+                if dung != "dt" and dung != "wo":
+                    if diff == 5:
+                        while ((int(lvlrq) % 10 < 4) or (int(lvlrq) % 10 > 7) or classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict)):
+                            dropname = random.choice(list(self.data[dung]))
+                            classname = self.data[dung][dropname]["class"]
+                            lvlrq = self.data[dung][dropname]["lvlrq"]
+                            print(1)
+                    elif diff == 4:
+                        while (((int(lvlrq) % 10 > 3) and (int(lvlrq) % 10 < 8) or classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict))):
+                            dropname = random.choice(list(self.data[dung]))
+                            classname = self.data[dung][dropname]["class"]
+                            lvlrq = self.data[dung][dropname]["lvlrq"]
+                            print(2)
+                    dropstats = ""
+                    classname = self.data[dung][dropname]["class"]
+
             # Get type of weapon
             type = "Gray"
-            if classname != "Guardian" and classname != "DPS Armor":
+            if classname != "Guardian" and classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict):
                 rand = random.randint(1,2000)
                 if rand <= 4:
-                    if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                    if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
                         if diff == 5:
                             type = "Legendary"
-                            if dung == "nl":
+                            if dung == "nl" or dung == "om" or dung == "wt" or dung == "ec":
                                 if random.randint(1,4) == 1:
                                     type = "Ultimate"
                 if rand <= 20:
                     if rand <= 4:
-                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
                             if diff == 5:
                                 pass
                     else:
-                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
                             pass
                         else:
                             if diff == 5:
@@ -1132,7 +1256,7 @@ class General(commands.Cog, name="dungeon"):
                 else:
                     type = "Gray"
             # Get pot of weapon
-            if classname != "Guardian" and classname != "DPS Armor":
+            if classname != "Guardian" and classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict):
 
                 #Legendary Catch Code
                 if type == "Legendary":
@@ -1250,25 +1374,43 @@ class General(commands.Cog, name="dungeon"):
                     lvlrq = self.data[dung][dropname2]["lvlrq"]
                 dropstats2 = ""
                 classname = self.data[dung][dropname2]["class"]
+            # Buff Armor Chances
+            if random.randint(1, 4) == 1:
+                if dung != "dt" and dung != "wo":
+                    if diff == 5:
+                        while ((int(lvlrq) % 10 < 4) or (int(lvlrq) % 10 > 7) or classname != "DPS Armor" or (dropname2 in t3_dict) or (dropname2 in t3_guard_dict)):
+                            dropname2 = random.choice(list(self.data[dung]))
+                            classname = self.data[dung][dropname2]["class"]
+                            lvlrq = self.data[dung][dropname2]["lvlrq"]
+                            print(3)
+                    elif diff == 4:
+                        while (((int(lvlrq) % 10 > 3) and (int(lvlrq) % 10 < 8) or classname != "DPS Armor" or (dropname2 in t3_dict) or (dropname2 in t3_guard_dict))):
+                            dropname2 = random.choice(list(self.data[dung]))
+                            classname = self.data[dung][dropname2]["class"]
+                            lvlrq = self.data[dung][dropname2]["lvlrq"]
+                            print(4)
+                    dropstats2 = ""
+                    classname = self.data[dung][dropname2]["class"]
+
             # Get type of weapon
             type = "Gray"
-            if classname != "Guardian" and classname != "DPS Armor":
+            if classname != "Guardian" and classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict):
                 rand = random.randint(1, 2000)
 
                 if rand <= 4:
-                    if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                    if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
                         if diff == 5:
                             type = "Legendary"
-                            if dung == "nl":
+                            if dung == "nl" or dung == "om" or dung == "wt" or dung == "ec":
                                 if random.randint(1, 4) == 1:
                                     type = "Ultimate"
                 if rand <= 20:
                     if rand <= 4:
-                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
                             if diff == 5:
                                 pass
                     else:
-                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
                             pass
                         else:
                             if diff == 5:
@@ -1286,7 +1428,7 @@ class General(commands.Cog, name="dungeon"):
                 else:
                     type = "Gray"
             # Get pot of weapon
-            if classname != "Guardian" and classname != "DPS Armor":
+            if classname != "Guardian" and classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict):
 
                 # Legendary Catch Code
                 if type == "Legendary":
@@ -1640,7 +1782,9 @@ class General(commands.Cog, name="dungeon"):
                     "Sea Serpent Wings", "Inventors Greatsword", "Inventors Spellblade", "Galactic Dual Blades",
                     "Galactic Pike", "Lava Kings Warscythe", "Lava Kings Spell Daggers", "Sea Kings Greatstaff",
                     "Sea Kings Trident", "Eldenbark Greatsword", "Eldenbark Greatstaff", "Mjolnir", "Gungnir", "Hofund",
-                    "Laevateinn", "Gildenscale Oath and Aegis", "Daybreak and Gildensong"]
+                    "Laevateinn", "Gildenscale Oath and Aegis", "Daybreak and Gildensong", "Fulmen", "Fuscina",
+                    "Shattered Skies", "Stormy Seas", "Ghost Kings Halberd", "Ghost Kings Tome", "Gladius Imperialis",
+                    "Magicus Imperialis", "Storsvero", "Vigamenn", "Theospathia", "Theosevis"]
         leg_dict = {
             "dt": {
                 "War": "Desert Fury",
@@ -1701,13 +1845,73 @@ class General(commands.Cog, name="dungeon"):
             "gs": {
                 "War": "Gildenscale Oath and Aegis",
                 "Mage": "Daybreak and Gildensong"
+            },
+            "om": {
+                "War": "Fuscina",
+                "Mage": "Fulmen"
+            },
+            "wt": {
+                "War": "Ghost Kings Halberd",
+                "Mage": "Ghost Kings Tome"
+            },
+            "ec": {
+                "War": "Gladius Imperialis",
+                "Mage": "Magicus Imperialis"
             }
         }
         ult_dict = {
             "nl": {
                 "War": "Hofund",
                 "Mage": "Laevateinn"
+            },
+            "om": {
+                "War": "Stormy Seas",
+                "Mage": "Shattered Skies"
+            },
+            "wt": {
+                "War": "Storsvero",
+                "Mage": "Vigamenn"
+            },
+            "ec": {
+                "War": "Theospathia",
+                "Mage": "Theosevis"
             }
+        }
+        t3_dict = {
+            "pi": "Godly",
+            "kc": "TitanForged",
+            "uw": "Glorious",
+            "sp": "Ancestral",
+            "tc": "Overlords",
+            "gh": "Mythical",
+            "ss": "WarForged",
+            "oo": "Alien",
+            "vc": "Lava Kings",
+            "at": "Triton",
+            "ef": "Eldenbark",
+            "nl": "Valhalla",
+            "gs": "Gildenscale",
+            "om": "Thunder Gods",
+            "wt": "Soulshard",
+            "ec": "Gods Chosen"
+        }
+        t3_guard_dict = {
+            "pi": "Godly Guardian",
+            "kc": "TitanForged Guardian",
+            "uw": "Glorious Guardian",
+            "sp": "Ancestral Guardian",
+            "tc": "Overlords Guardian",
+            "gh": "Mythical Guardian",
+            "ss": "WarForged Guardian",
+            "oo": "Alien Guardian",
+            "vc": "Lava Kings Guardian",
+            "at": "Triton Guardian",
+            "ef": "Eldenbark Guardian",
+            "nl": "Valhalla Guardian",
+            "gs": "Gildenscale Guardian",
+            "om": "Thunder Gods Guardian",
+            "wt": "Soulshard Guardian",
+            "ec": "Gods Chosen Guardian"
         }
         raids_dict = {
             "inventor": ["Bioforged Quickblade", "Sunken Blade", "Bioforged Cog Spellblade", "Fusion Magic Keyblade"],
@@ -1727,36 +1931,6 @@ class General(commands.Cog, name="dungeon"):
                 "War": "Twisted Wood Greatsword",
                 "Mage": "Twisted Wood Greatstaff"
             }
-        }
-        t3_dict = {
-            "pi": "Godly",
-            "kc": "TitanForged",
-            "uw": "Glorious",
-            "sp": "Ancestral",
-            "tc": "Overlords",
-            "gh": "Mythical",
-            "ss": "WarForged",
-            "oo": "Alien",
-            "vc": "Lava Kings",
-            "at": "Triton",
-            "ef": "Eldenbark",
-            "nl": "Valhalla",
-            "gs": "Gildenscale"
-        }
-        t3_guard_dict = {
-            "pi": "Godly Guardian",
-            "kc": "TitanForged Guardian",
-            "uw": "Glorious Guardian",
-            "sp": "Ancestral Guardian",
-            "tc": "Overlords Guardian",
-            "gh": "Mythical Guardian",
-            "ss": "WarForged Guardian",
-            "oo": "Alien Guardian",
-            "vc": "Lava Kings Guardian",
-            "at": "Triton Guardian",
-            "ef": "Eldenbark Guardian",
-            "nl": "Valhalla Guardian",
-            "gs": "Gildenscale Guardian"
         }
         t3chance = 5
         with open('spells.json') as json_file:
@@ -1896,24 +2070,40 @@ class General(commands.Cog, name="dungeon"):
                             lvlrq = self.data[dung][dropname]["lvlrq"]
                         dropstats = ""
                         classname = self.data[dung][dropname]["class"]
+                    #Buff armor chances
+                    if random.randint(1, 4) == 1:
+                        if dung != "dt" and dung != "wo":
+                            if diff == 5:
+                                while ((int(lvlrq) % 10 < 4) or (int(lvlrq) % 10 > 7) or classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict)):
+                                    dropname = random.choice(list(self.data[dung]))
+                                    classname = self.data[dung][dropname]["class"]
+                                    lvlrq = self.data[dung][dropname]["lvlrq"]
+                            elif diff == 4:
+                                while (((int(lvlrq) % 10 > 3) and (int(lvlrq) % 10 < 8) or classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict))):
+                                    dropname = random.choice(list(self.data[dung]))
+                                    classname = self.data[dung][dropname]["class"]
+                                    lvlrq = self.data[dung][dropname]["lvlrq"]
+                            dropstats = ""
+                            classname = self.data[dung][dropname]["class"]
+
                     # Get type of weapon
                     type = "Gray"
-                    if classname != "Guardian" and classname != "DPS Armor":
+                    if classname != "Guardian" and classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict):
                         rand = random.randint(1, 2000)
                         if rand <= 4:
-                            if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                            if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
                                 if diff == 5:
                                     type = "Legendary"
-                                    if dung == "gs":
+                                    if dung == "nl" or dung == "om" or dung == "wt" or dung == "ec":
                                         if random.randint(1, 4) == 1:
                                             type = "Ultimate"
                         if rand <= 20:
                             if rand <= 4:
-                                if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                                if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
                                     if diff == 5:
                                         pass
                             else:
-                                if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at":
+                                if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
                                     pass
                                 else:
                                     if diff == 5:
@@ -1932,7 +2122,7 @@ class General(commands.Cog, name="dungeon"):
                             type = "Gray"
                     # Get pot of weapon
 
-                    if classname != "Guardian" and classname != "DPS Armor":
+                    if classname != "Guardian" and classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict):
 
                         # Legendary Catch Code
                         if type == "Legendary" or type == "Ultimate":

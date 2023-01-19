@@ -857,6 +857,114 @@
             }
         ]
       },
+      "om": {
+        "4": [
+          {
+                "name": "Lightning Smite",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Sky Pierce",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Storm Surge",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Thunderstorm",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Trident Call",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "Hurricane",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
+      "wt": {
+        "4": [
+          {
+                "name": "Vitality Surge",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Anger Surge",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Spirit Lash",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Soul Strike",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Dead Army",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "Skeleton Whip",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
+      "ec": {
+        "4": [
+          {
+                "name": "Mages Inscription",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Gladiators Net",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Magic Storm",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Skyfall",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Sword Storm",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "Earthrise",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
       "br": {
           "inventor": [{
               "name": "Explosive Punch",
