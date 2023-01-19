@@ -1,0 +1,11 @@
+{
+  "prefix": "$",
+  "token": "MTA2NDczODMzMDU2ODMxMDkzNQ.GTX5xK.xVJMRpkabmarYEh_X9daR4hHPlc1Si5LwwhRZg",
+  "permissions": "8",
+  "application_id": "1064738330568310935",
+  "sync_commands_globally": false,
+  "owners": [
+    123456789,
+    987654321
+  ]
+}

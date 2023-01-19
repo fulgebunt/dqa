@@ -1,0 +1,2699 @@
+{
+    "0": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "593750",
+                "maxpot": "656250",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "608000",
+                "maxpot": "672000",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "636500",
+                "maxpot": "703500",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "674500",
+                "maxpot": "745500",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "731500",
+                "maxpot": "808500",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "72200",
+                "maxpot": "79800",
+                "minhp": "418000",
+                "maxhp": "462000"
+            },
+            "Green": {
+                "minpot": "76950",
+                "maxpot": "85050",
+                "minhp": "456000",
+                "maxhp": "504000"
+            },
+            "Blue": {
+                "minpot": "81700",
+                "maxpot": "90300",
+                "minhp": "494000",
+                "maxhp": "546000"
+            },
+            "Purple": {
+                "minpot": "85500",
+                "maxpot": "94500",
+                "minhp": "541500",
+                "maxhp": "598500"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "632700",
+                "maxpot": "699300",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "690650",
+                "maxpot": "763350",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "748600",
+                "maxpot": "827400",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "816050",
+                "maxpot": "901950",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "1": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "623435",
+                "maxpot": "689055",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "638400",
+                "maxpot": "705600",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "668320",
+                "maxpot": "738670",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "708225",
+                "maxpot": "782775",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "768075",
+                "maxpot": "848925",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "75805",
+                "maxpot": "83785",
+                "minhp": "459800",
+                "maxhp": "508200"
+            },
+            "Green": {
+                "minpot": "80795",
+                "maxpot": "89295",
+                "minhp": "501600",
+                "maxhp": "554400"
+            },
+            "Blue": {
+                "minpot": "85785",
+                "maxpot": "94815",
+                "minhp": "543400",
+                "maxhp": "600600"
+            },
+            "Purple": {
+                "minpot": "89767",
+                "maxpot": "99223",
+                "minhp": "595650",
+                "maxhp": "658350"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "693780",
+                "maxpot": "766810",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "757480",
+                "maxpot": "837210",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "821180",
+                "maxpot": "907620",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "895320",
+                "maxpot": "989570",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "2": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "653120",
+                "maxpot": "721870",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "668800",
+                "maxpot": "739200",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "700150",
+                "maxpot": "773850",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "741950",
+                "maxpot": "820050",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "804650",
+                "maxpot": "889350",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "79420",
+                "maxpot": "87780",
+                "minhp": "501600",
+                "maxhp": "554400"
+            },
+            "Green": {
+                "minpot": "84640",
+                "maxpot": "93550",
+                "minhp": "547200",
+                "maxhp": "604800"
+            },
+            "Blue": {
+                "minpot": "89870",
+                "maxpot": "99330",
+                "minhp": "592800",
+                "maxhp": "655200"
+            },
+            "Purple": {
+                "minpot": "94045",
+                "maxpot": "103945",
+                "minhp": "649800",
+                "maxhp": "718200"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "754870",
+                "maxpot": "834330",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "824310",
+                "maxpot": "911080",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "893760",
+                "maxpot": "987840",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "974600",
+                "maxpot": "1077190",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "3": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "682805",
+                "maxpot": "754685",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "699200",
+                "maxpot": "772800",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "731970",
+                "maxpot": "809020",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "775675",
+                "maxpot": "857325",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "841225",
+                "maxpot": "929775",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "83025",
+                "maxpot": "91765",
+                "minhp": "543400",
+                "maxhp": "600600"
+            },
+            "Green": {
+                "minpot": "88485",
+                "maxpot": "97805",
+                "minhp": "592800",
+                "maxhp": "655200"
+            },
+            "Blue": {
+                "minpot": "93955",
+                "maxpot": "103845",
+                "minhp": "642200",
+                "maxhp": "709800"
+            },
+            "Purple": {
+                "minpot": "98322",
+                "maxpot": "108668",
+                "minhp": "703950",
+                "maxhp": "778050"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "815950",
+                "maxpot": "901840",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "891140",
+                "maxpot": "984950",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "966340",
+                "maxpot": "1068060",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1053880",
+                "maxpot": "1164810",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "4": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "712500",
+                "maxpot": "787500",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "729600",
+                "maxpot": "806400",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "763800",
+                "maxpot": "844200",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "809400",
+                "maxpot": "894600",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "877800",
+                "maxpot": "970200",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "86640",
+                "maxpot": "95760",
+                "minhp": "585200",
+                "maxhp": "646800"
+            },
+            "Green": {
+                "minpot": "92340",
+                "maxpot": "102060",
+                "minhp": "638400",
+                "maxhp": "705600"
+            },
+            "Blue": {
+                "minpot": "98040",
+                "maxpot": "108360",
+                "minhp": "691600",
+                "maxhp": "764400"
+            },
+            "Purple": {
+                "minpot": "102600",
+                "maxpot": "113400",
+                "minhp": "758100",
+                "maxhp": "837900"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "877040",
+                "maxpot": "969360",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "957980",
+                "maxpot": "1058820",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1038920",
+                "maxpot": "1148280",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1133160",
+                "maxpot": "1252440",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "5": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "742185",
+                "maxpot": "820305",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "760000",
+                "maxpot": "840000",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "795620",
+                "maxpot": "879370",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "843125",
+                "maxpot": "931875",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "914375",
+                "maxpot": "1010625",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "90245",
+                "maxpot": "99745",
+                "minhp": "627000",
+                "maxhp": "693000"
+            },
+            "Green": {
+                "minpot": "96185",
+                "maxpot": "106305",
+                "minhp": "684000",
+                "maxhp": "756000"
+            },
+            "Blue": {
+                "minpot": "102125",
+                "maxpot": "112875",
+                "minhp": "741000",
+                "maxhp": "819000"
+            },
+            "Purple": {
+                "minpot": "106867",
+                "maxpot": "118123",
+                "minhp": "812250",
+                "maxhp": "897750"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "938120",
+                "maxpot": "1036870",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1024810",
+                "maxpot": "1132680",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1111500",
+                "maxpot": "1228500",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1212430",
+                "maxpot": "1340060",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "6": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "771870",
+                "maxpot": "853120",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "790400",
+                "maxpot": "873600",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "827450",
+                "maxpot": "914550",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "876850",
+                "maxpot": "969150",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "950950",
+                "maxpot": "1051050",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "93860",
+                "maxpot": "103740",
+                "minhp": "668800",
+                "maxhp": "739200"
+            },
+            "Green": {
+                "minpot": "100030",
+                "maxpot": "110560",
+                "minhp": "729600",
+                "maxhp": "806400"
+            },
+            "Blue": {
+                "minpot": "106210",
+                "maxpot": "117390",
+                "minhp": "790400",
+                "maxhp": "873600"
+            },
+            "Purple": {
+                "minpot": "111145",
+                "maxpot": "122845",
+                "minhp": "866400",
+                "maxhp": "957600"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "999210",
+                "maxpot": "1104390",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1091640",
+                "maxpot": "1206550",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1184080",
+                "maxpot": "1308720",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1291710",
+                "maxpot": "1427680",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "7": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "801555",
+                "maxpot": "885935",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "820800",
+                "maxpot": "907200",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "859270",
+                "maxpot": "949720",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "910575",
+                "maxpot": "1006425",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "987525",
+                "maxpot": "1091475",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "97465",
+                "maxpot": "107725",
+                "minhp": "710600",
+                "maxhp": "785400"
+            },
+            "Green": {
+                "minpot": "103875",
+                "maxpot": "114815",
+                "minhp": "775200",
+                "maxhp": "856800"
+            },
+            "Blue": {
+                "minpot": "110295",
+                "maxpot": "121905",
+                "minhp": "839800",
+                "maxhp": "928200"
+            },
+            "Purple": {
+                "minpot": "115422",
+                "maxpot": "127568",
+                "minhp": "920550",
+                "maxhp": "1017450"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1060290",
+                "maxpot": "1171900",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1158470",
+                "maxpot": "1280420",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1256660",
+                "maxpot": "1388940",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1370990",
+                "maxpot": "1515300",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "8": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "831250",
+                "maxpot": "918750",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "851200",
+                "maxpot": "940800",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "891100",
+                "maxpot": "984900",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "944300",
+                "maxpot": "1043700",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1024100",
+                "maxpot": "1131900",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "101080",
+                "maxpot": "111720",
+                "minhp": "752400",
+                "maxhp": "831600"
+            },
+            "Green": {
+                "minpot": "107730",
+                "maxpot": "119070",
+                "minhp": "820800",
+                "maxhp": "907200"
+            },
+            "Blue": {
+                "minpot": "114380",
+                "maxpot": "126420",
+                "minhp": "889200",
+                "maxhp": "982800"
+            },
+            "Purple": {
+                "minpot": "119700",
+                "maxpot": "132300",
+                "minhp": "974700",
+                "maxhp": "1077300"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1121380",
+                "maxpot": "1239420",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1225310",
+                "maxpot": "1354290",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1329240",
+                "maxpot": "1469160",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1450270",
+                "maxpot": "1602930",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "9": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "860935",
+                "maxpot": "951555",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "881600",
+                "maxpot": "974400",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "922920",
+                "maxpot": "1020070",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "978025",
+                "maxpot": "1080975",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1060675",
+                "maxpot": "1172325",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "104685",
+                "maxpot": "115705",
+                "minhp": "794200",
+                "maxhp": "877800"
+            },
+            "Green": {
+                "minpot": "111575",
+                "maxpot": "123315",
+                "minhp": "866400",
+                "maxhp": "957600"
+            },
+            "Blue": {
+                "minpot": "118465",
+                "maxpot": "130935",
+                "minhp": "938600",
+                "maxhp": "1037400"
+            },
+            "Purple": {
+                "minpot": "123967",
+                "maxpot": "137023",
+                "minhp": "1028850",
+                "maxhp": "1137150"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1182460",
+                "maxpot": "1306930",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1292140",
+                "maxpot": "1428150",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1401820",
+                "maxpot": "1549380",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1529540",
+                "maxpot": "1690550",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "10": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "890620",
+                "maxpot": "984370",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "912000",
+                "maxpot": "1008000",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "954750",
+                "maxpot": "1055250",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1011750",
+                "maxpot": "1118250",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1097250",
+                "maxpot": "1212750",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "108300",
+                "maxpot": "119700",
+                "minhp": "836000",
+                "maxhp": "924000"
+            },
+            "Green": {
+                "minpot": "115420",
+                "maxpot": "127570",
+                "minhp": "912000",
+                "maxhp": "1008000"
+            },
+            "Blue": {
+                "minpot": "122550",
+                "maxpot": "135450",
+                "minhp": "988000",
+                "maxhp": "1092000"
+            },
+            "Purple": {
+                "minpot": "128245",
+                "maxpot": "141745",
+                "minhp": "1083000",
+                "maxhp": "1197000"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1243550",
+                "maxpot": "1374450",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1358970",
+                "maxpot": "1502020",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1474400",
+                "maxpot": "1629600",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1608820",
+                "maxpot": "1778170",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "11": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "920305",
+                "maxpot": "1017185",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "942400",
+                "maxpot": "1041600",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "986570",
+                "maxpot": "1090420",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1045475",
+                "maxpot": "1155525",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1133825",
+                "maxpot": "1253175",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "111905",
+                "maxpot": "123685",
+                "minhp": "877800",
+                "maxhp": "970200"
+            },
+            "Green": {
+                "minpot": "119265",
+                "maxpot": "131825",
+                "minhp": "957600",
+                "maxhp": "1058400"
+            },
+            "Blue": {
+                "minpot": "126635",
+                "maxpot": "139965",
+                "minhp": "1037400",
+                "maxhp": "1146600"
+            },
+            "Purple": {
+                "minpot": "132522",
+                "maxpot": "146468",
+                "minhp": "1137150",
+                "maxhp": "1256850"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1304630",
+                "maxpot": "1441960",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1425800",
+                "maxpot": "1575890",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1546980",
+                "maxpot": "1709820",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1688100",
+                "maxpot": "1865790",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "12": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "950000",
+                "maxpot": "1050000",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "972800",
+                "maxpot": "1075200",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1018400",
+                "maxpot": "1125600",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1079200",
+                "maxpot": "1192800",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1170400",
+                "maxpot": "1293600",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "115520",
+                "maxpot": "127680",
+                "minhp": "919600",
+                "maxhp": "1016400"
+            },
+            "Green": {
+                "minpot": "123120",
+                "maxpot": "136080",
+                "minhp": "1003200",
+                "maxhp": "1108800"
+            },
+            "Blue": {
+                "minpot": "130720",
+                "maxpot": "144480",
+                "minhp": "1086800",
+                "maxhp": "1201200"
+            },
+            "Purple": {
+                "minpot": "136800",
+                "maxpot": "151200",
+                "minhp": "1191300",
+                "maxhp": "1316700"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1365720",
+                "maxpot": "1509480",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1492640",
+                "maxpot": "1649760",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1619560",
+                "maxpot": "1790040",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1767380",
+                "maxpot": "1953420",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "13": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "979685",
+                "maxpot": "1082805",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1003200",
+                "maxpot": "1108800",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1050220",
+                "maxpot": "1160770",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1112925",
+                "maxpot": "1230075",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1206975",
+                "maxpot": "1334025",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "119125",
+                "maxpot": "131665",
+                "minhp": "961400",
+                "maxhp": "1062600"
+            },
+            "Green": {
+                "minpot": "126965",
+                "maxpot": "140325",
+                "minhp": "1048800",
+                "maxhp": "1159200"
+            },
+            "Blue": {
+                "minpot": "134805",
+                "maxpot": "148995",
+                "minhp": "1136200",
+                "maxhp": "1255800"
+            },
+            "Purple": {
+                "minpot": "141067",
+                "maxpot": "155923",
+                "minhp": "1245450",
+                "maxhp": "1376550"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1426800",
+                "maxpot": "1576990",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1559470",
+                "maxpot": "1723620",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1692140",
+                "maxpot": "1870260",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1846650",
+                "maxpot": "2041040",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "14": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1009370",
+                "maxpot": "1115620",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1033600",
+                "maxpot": "1142400",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1082050",
+                "maxpot": "1195950",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1146650",
+                "maxpot": "1267350",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1243550",
+                "maxpot": "1374450",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "122740",
+                "maxpot": "135660",
+                "minhp": "1003200",
+                "maxhp": "1108800"
+            },
+            "Green": {
+                "minpot": "130810",
+                "maxpot": "144580",
+                "minhp": "1094400",
+                "maxhp": "1209600"
+            },
+            "Blue": {
+                "minpot": "138890",
+                "maxpot": "153510",
+                "minhp": "1185600",
+                "maxhp": "1310400"
+            },
+            "Purple": {
+                "minpot": "145345",
+                "maxpot": "160645",
+                "minhp": "1299600",
+                "maxhp": "1436400"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1487890",
+                "maxpot": "1644510",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1626300",
+                "maxpot": "1797490",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1764720",
+                "maxpot": "1950480",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1925930",
+                "maxpot": "2128660",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "15": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1039055",
+                "maxpot": "1148435",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1064000",
+                "maxpot": "1176000",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1113870",
+                "maxpot": "1231120",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1180375",
+                "maxpot": "1304625",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1280125",
+                "maxpot": "1414875",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "126345",
+                "maxpot": "139645",
+                "minhp": "1045000",
+                "maxhp": "1155000"
+            },
+            "Green": {
+                "minpot": "134655",
+                "maxpot": "148835",
+                "minhp": "1140000",
+                "maxhp": "1260000"
+            },
+            "Blue": {
+                "minpot": "142975",
+                "maxpot": "158025",
+                "minhp": "1235000",
+                "maxhp": "1365000"
+            },
+            "Purple": {
+                "minpot": "149622",
+                "maxpot": "165368",
+                "minhp": "1353750",
+                "maxhp": "1496250"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1548970",
+                "maxpot": "1712020",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1693130",
+                "maxpot": "1871360",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1837300",
+                "maxpot": "2030700",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "2005210",
+                "maxpot": "2216280",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "16": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1068750",
+                "maxpot": "1181250",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1094400",
+                "maxpot": "1209600",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1145700",
+                "maxpot": "1266300",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1214100",
+                "maxpot": "1341900",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1316700",
+                "maxpot": "1455300",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "129960",
+                "maxpot": "143640",
+                "minhp": "1086800",
+                "maxhp": "1201200"
+            },
+            "Green": {
+                "minpot": "138510",
+                "maxpot": "153090",
+                "minhp": "1185600",
+                "maxhp": "1310400"
+            },
+            "Blue": {
+                "minpot": "147060",
+                "maxpot": "162540",
+                "minhp": "1284400",
+                "maxhp": "1419600"
+            },
+            "Purple": {
+                "minpot": "153900",
+                "maxpot": "170100",
+                "minhp": "1407900",
+                "maxhp": "1556100"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1610060",
+                "maxpot": "1779540",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1759970",
+                "maxpot": "1945230",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1909880",
+                "maxpot": "2110920",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "2084490",
+                "maxpot": "2303910",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "17": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1098435",
+                "maxpot": "1214055",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1124800",
+                "maxpot": "1243200",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1177520",
+                "maxpot": "1301470",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1247825",
+                "maxpot": "1379175",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1353275",
+                "maxpot": "1495725",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "133565",
+                "maxpot": "147625",
+                "minhp": "1128600",
+                "maxhp": "1247400"
+            },
+            "Green": {
+                "minpot": "142355",
+                "maxpot": "157335",
+                "minhp": "1231200",
+                "maxhp": "1360800"
+            },
+            "Blue": {
+                "minpot": "151145",
+                "maxpot": "167055",
+                "minhp": "1333800",
+                "maxhp": "1474200"
+            },
+            "Purple": {
+                "minpot": "158167",
+                "maxpot": "174823",
+                "minhp": "1462050",
+                "maxhp": "1615950"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1671140",
+                "maxpot": "1847050",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1826800",
+                "maxpot": "2019090",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1982460",
+                "maxpot": "2191140",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "2163760",
+                "maxpot": "2391530",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "18": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1128120",
+                "maxpot": "1246870",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1155200",
+                "maxpot": "1276800",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1209350",
+                "maxpot": "1336650",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1281550",
+                "maxpot": "1416450",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1389850",
+                "maxpot": "1536150",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "137180",
+                "maxpot": "151620",
+                "minhp": "1170400",
+                "maxhp": "1293600"
+            },
+            "Green": {
+                "minpot": "146200",
+                "maxpot": "161590",
+                "minhp": "1276800",
+                "maxhp": "1411200"
+            },
+            "Blue": {
+                "minpot": "155230",
+                "maxpot": "171570",
+                "minhp": "1383200",
+                "maxhp": "1528800"
+            },
+            "Purple": {
+                "minpot": "162445",
+                "maxpot": "179545",
+                "minhp": "1516200",
+                "maxhp": "1675800"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1732230",
+                "maxpot": "1914570",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1893630",
+                "maxpot": "2092960",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "2055040",
+                "maxpot": "2271360",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "2243040",
+                "maxpot": "2479150",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "19": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1157805",
+                "maxpot": "1279685",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1185600",
+                "maxpot": "1310400",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1241170",
+                "maxpot": "1371820",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1315275",
+                "maxpot": "1453725",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1426425",
+                "maxpot": "1576575",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "140785",
+                "maxpot": "155605",
+                "minhp": "1212200",
+                "maxhp": "1339800"
+            },
+            "Green": {
+                "minpot": "150045",
+                "maxpot": "165845",
+                "minhp": "1322400",
+                "maxhp": "1461600"
+            },
+            "Blue": {
+                "minpot": "159315",
+                "maxpot": "176085",
+                "minhp": "1432600",
+                "maxhp": "1583400"
+            },
+            "Purple": {
+                "minpot": "166722",
+                "maxpot": "184268",
+                "minhp": "1570350",
+                "maxhp": "1735650"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1793310",
+                "maxpot": "1982080",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1960460",
+                "maxpot": "2166830",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "2127620",
+                "maxpot": "2351580",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "2322320",
+                "maxpot": "2566770",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "20": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1187500",
+                "maxpot": "1312500",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1216000",
+                "maxpot": "1344000",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1273000",
+                "maxpot": "1407000",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1349000",
+                "maxpot": "1491000",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1463000",
+                "maxpot": "1617000",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "144400",
+                "maxpot": "159600",
+                "minhp": "1254000",
+                "maxhp": "1386000"
+            },
+            "Green": {
+                "minpot": "153900",
+                "maxpot": "170100",
+                "minhp": "1368000",
+                "maxhp": "1512000"
+            },
+            "Blue": {
+                "minpot": "163400",
+                "maxpot": "180600",
+                "minhp": "1482000",
+                "maxhp": "1638000"
+            },
+            "Purple": {
+                "minpot": "171000",
+                "maxpot": "189000",
+                "minhp": "1624500",
+                "maxhp": "1795500"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1854400",
+                "maxpot": "2049600",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "2027300",
+                "maxpot": "2240700",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "2200200",
+                "maxpot": "2431800",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "2401600",
+                "maxpot": "2654400",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "21": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1217185",
+                "maxpot": "1345305",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1246400",
+                "maxpot": "1377600",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1304820",
+                "maxpot": "1442170",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1382725",
+                "maxpot": "1528275",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1499575",
+                "maxpot": "1657425",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "148005",
+                "maxpot": "163585",
+                "minhp": "1295800",
+                "maxhp": "1432200"
+            },
+            "Green": {
+                "minpot": "157745",
+                "maxpot": "174345",
+                "minhp": "1413600",
+                "maxhp": "1562400"
+            },
+            "Blue": {
+                "minpot": "167485",
+                "maxpot": "185115",
+                "minhp": "1531400",
+                "maxhp": "1692600"
+            },
+            "Purple": {
+                "minpot": "175267",
+                "maxpot": "193723",
+                "minhp": "1678650",
+                "maxhp": "1855350"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1915480",
+                "maxpot": "2117110",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "2094130",
+                "maxpot": "2314560",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "2272780",
+                "maxpot": "2512020",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "2480870",
+                "maxpot": "2742020",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "22": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1246870",
+                "maxpot": "1378120",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1276800",
+                "maxpot": "1411200",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1336650",
+                "maxpot": "1477350",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1416450",
+                "maxpot": "1565550",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1536150",
+                "maxpot": "1697850",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "151620",
+                "maxpot": "167580",
+                "minhp": "1337600",
+                "maxhp": "1478400"
+            },
+            "Green": {
+                "minpot": "161590",
+                "maxpot": "178600",
+                "minhp": "1459200",
+                "maxhp": "1612800"
+            },
+            "Blue": {
+                "minpot": "171570",
+                "maxpot": "189630",
+                "minhp": "1580800",
+                "maxhp": "1747200"
+            },
+            "Purple": {
+                "minpot": "179545",
+                "maxpot": "198445",
+                "minhp": "1732800",
+                "maxhp": "1915200"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "1976570",
+                "maxpot": "2184630",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "2160960",
+                "maxpot": "2388430",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "2345360",
+                "maxpot": "2592240",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "2560150",
+                "maxpot": "2829640",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "23": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1276555",
+                "maxpot": "1410935",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1307200",
+                "maxpot": "1444800",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1368470",
+                "maxpot": "1512520",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1450175",
+                "maxpot": "1602825",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1572725",
+                "maxpot": "1738275",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "155225",
+                "maxpot": "171565",
+                "minhp": "1379400",
+                "maxhp": "1524600"
+            },
+            "Green": {
+                "minpot": "165435",
+                "maxpot": "182855",
+                "minhp": "1504800",
+                "maxhp": "1663200"
+            },
+            "Blue": {
+                "minpot": "175655",
+                "maxpot": "194145",
+                "minhp": "1630200",
+                "maxhp": "1801800"
+            },
+            "Purple": {
+                "minpot": "183822",
+                "maxpot": "203168",
+                "minhp": "1786950",
+                "maxhp": "1975050"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "2037650",
+                "maxpot": "2252140",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "2227790",
+                "maxpot": "2462300",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "2417940",
+                "maxpot": "2672460",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "2639430",
+                "maxpot": "2917260",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "24": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1306250",
+                "maxpot": "1443750",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1337600",
+                "maxpot": "1478400",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1400300",
+                "maxpot": "1547700",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1483900",
+                "maxpot": "1640100",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1609300",
+                "maxpot": "1778700",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "158840",
+                "maxpot": "175560",
+                "minhp": "1421200",
+                "maxhp": "1570800"
+            },
+            "Green": {
+                "minpot": "169290",
+                "maxpot": "187110",
+                "minhp": "1550400",
+                "maxhp": "1713600"
+            },
+            "Blue": {
+                "minpot": "179740",
+                "maxpot": "198660",
+                "minhp": "1679600",
+                "maxhp": "1856400"
+            },
+            "Purple": {
+                "minpot": "188100",
+                "maxpot": "207900",
+                "minhp": "1841100",
+                "maxhp": "2034900"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "2098740",
+                "maxpot": "2319660",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "2294630",
+                "maxpot": "2536170",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "2490520",
+                "maxpot": "2752680",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "2718710",
+                "maxpot": "3004890",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "25": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1335935",
+                "maxpot": "1476555",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1368000",
+                "maxpot": "1512000",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1432120",
+                "maxpot": "1582870",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1517625",
+                "maxpot": "1677375",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1645875",
+                "maxpot": "1819125",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "162445",
+                "maxpot": "179545",
+                "minhp": "1463000",
+                "maxhp": "1617000"
+            },
+            "Green": {
+                "minpot": "173135",
+                "maxpot": "191355",
+                "minhp": "1596000",
+                "maxhp": "1764000"
+            },
+            "Blue": {
+                "minpot": "183825",
+                "maxpot": "203175",
+                "minhp": "1729000",
+                "maxhp": "1911000"
+            },
+            "Purple": {
+                "minpot": "192367",
+                "maxpot": "212623",
+                "minhp": "1895250",
+                "maxhp": "2094750"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "2159820",
+                "maxpot": "2387170",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "2361460",
+                "maxpot": "2610030",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "2563100",
+                "maxpot": "2832900",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "2797980",
+                "maxpot": "3092510",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "26": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1365620",
+                "maxpot": "1509370",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1398400",
+                "maxpot": "1545600",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1463950",
+                "maxpot": "1618050",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1551350",
+                "maxpot": "1714650",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1682450",
+                "maxpot": "1859550",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "166060",
+                "maxpot": "183540",
+                "minhp": "1504800",
+                "maxhp": "1663200"
+            },
+            "Green": {
+                "minpot": "176980",
+                "maxpot": "195610",
+                "minhp": "1641600",
+                "maxhp": "1814400"
+            },
+            "Blue": {
+                "minpot": "187910",
+                "maxpot": "207690",
+                "minhp": "1778400",
+                "maxhp": "1965600"
+            },
+            "Purple": {
+                "minpot": "196645",
+                "maxpot": "217345",
+                "minhp": "1949400",
+                "maxhp": "2154600"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "2220910",
+                "maxpot": "2454690",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "2428290",
+                "maxpot": "2683900",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "2635680",
+                "maxpot": "2913120",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "2877260",
+                "maxpot": "3180130",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "27": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1395305",
+                "maxpot": "1542185",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1428800",
+                "maxpot": "1579200",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1495770",
+                "maxpot": "1653220",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1585075",
+                "maxpot": "1751925",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1719025",
+                "maxpot": "1899975",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "169665",
+                "maxpot": "187525",
+                "minhp": "1546600",
+                "maxhp": "1709400"
+            },
+            "Green": {
+                "minpot": "180825",
+                "maxpot": "199865",
+                "minhp": "1687200",
+                "maxhp": "1864800"
+            },
+            "Blue": {
+                "minpot": "191995",
+                "maxpot": "212205",
+                "minhp": "1827800",
+                "maxhp": "2020200"
+            },
+            "Purple": {
+                "minpot": "200922",
+                "maxpot": "222068",
+                "minhp": "2003550",
+                "maxhp": "2214450"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "2281990",
+                "maxpot": "2522200",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "2495120",
+                "maxpot": "2757770",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "2708260",
+                "maxpot": "2993340",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "2956540",
+                "maxpot": "3267750",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "28": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1425000",
+                "maxpot": "1575000",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1459200",
+                "maxpot": "1612800",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1527600",
+                "maxpot": "1688400",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1618800",
+                "maxpot": "1789200",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1755600",
+                "maxpot": "1940400",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "173280",
+                "maxpot": "191520",
+                "minhp": "1588400",
+                "maxhp": "1755600"
+            },
+            "Green": {
+                "minpot": "184680",
+                "maxpot": "204120",
+                "minhp": "1732800",
+                "maxhp": "1915200"
+            },
+            "Blue": {
+                "minpot": "196080",
+                "maxpot": "216720",
+                "minhp": "1877200",
+                "maxhp": "2074800"
+            },
+            "Purple": {
+                "minpot": "205200",
+                "maxpot": "226800",
+                "minhp": "2057700",
+                "maxhp": "2274300"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "2343080",
+                "maxpot": "2589720",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "2561960",
+                "maxpot": "2831640",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "2780840",
+                "maxpot": "3073560",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "3035820",
+                "maxpot": "3355380",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "29": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1454685",
+                "maxpot": "1607805",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1489600",
+                "maxpot": "1646400",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1559420",
+                "maxpot": "1723570",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1652525",
+                "maxpot": "1826475",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1792175",
+                "maxpot": "1980825",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "176885",
+                "maxpot": "195505",
+                "minhp": "1630200",
+                "maxhp": "1801800"
+            },
+            "Green": {
+                "minpot": "188525",
+                "maxpot": "208365",
+                "minhp": "1778400",
+                "maxhp": "1965600"
+            },
+            "Blue": {
+                "minpot": "200165",
+                "maxpot": "221235",
+                "minhp": "1926600",
+                "maxhp": "2129400"
+            },
+            "Purple": {
+                "minpot": "209467",
+                "maxpot": "231523",
+                "minhp": "2111850",
+                "maxhp": "2334150"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "2404160",
+                "maxpot": "2657230",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "2628790",
+                "maxpot": "2905500",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "2853420",
+                "maxpot": "3153780",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "3115090",
+                "maxpot": "3443000",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    },
+    "30": {
+        "Weapon": {
+            "Gray": {
+                "minpot": "1484370",
+                "maxpot": "1640620",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "1520000",
+                "maxpot": "1680000",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "1591250",
+                "maxpot": "1758750",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "1686250",
+                "maxpot": "1863750",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Legendary": {
+                "minpot": "1828750",
+                "maxpot": "2021250",
+                "minhp": "",
+                "maxhp": ""
+            }
+        },
+        "lvlrq": "140",
+        "Armor": {
+            "Gray": {
+                "minpot": "180500",
+                "maxpot": "199500",
+                "minhp": "1672000",
+                "maxhp": "1848000"
+            },
+            "Green": {
+                "minpot": "192370",
+                "maxpot": "212620",
+                "minhp": "1824000",
+                "maxhp": "2016000"
+            },
+            "Blue": {
+                "minpot": "204250",
+                "maxpot": "225750",
+                "minhp": "1976000",
+                "maxhp": "2184000"
+            },
+            "Purple": {
+                "minpot": "213745",
+                "maxpot": "236245",
+                "minhp": "2166000",
+                "maxhp": "2394000"
+            }
+        },
+        "Guardian": {
+            "Gray": {
+                "minpot": "2465250",
+                "maxpot": "2724750",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Green": {
+                "minpot": "2695620",
+                "maxpot": "2979370",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Blue": {
+                "minpot": "2926000",
+                "maxpot": "3234000",
+                "minhp": "",
+                "maxhp": ""
+            },
+            "Purple": {
+                "minpot": "3194370",
+                "maxpot": "3530620",
+                "minhp": "",
+                "maxhp": ""
+            }
+        }
+    }
+}

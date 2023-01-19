@@ -1,0 +1,912 @@
+{
+      "dt": {
+          "1": [
+              {
+                  "name": "Fireball",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Taunt",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+              {
+                  "name": "Whirlwind",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+              {
+                  "name": "Blue Fireball",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              }
+          ],
+          "2": [
+              {
+                  "name": "Arcane Spray",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Redemption",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+              {
+                  "name": "Whirlwind",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+              {
+                  "name": "Blue Fireball",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              }
+          ],
+          "3": [
+              {
+                  "name": "Arcane Spray",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Redemption",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+              {
+                  "name": "Whirlwind",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+              {
+                  "name": "Blue Fireball",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Poison Cloud",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Holy Barrier",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              }
+          ],
+          "4": [
+              {
+                  "name": "Arcane Spray",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Redemption",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+              {
+                  "name": "Whirlwind",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+              {
+                  "name": "Poison Cloud",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Holy Barrier",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+              {
+                  "name": "Lightning Strikes",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              }
+          ],
+          "5": [
+              {
+                  "name": "Poison Cloud",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Lightning Strikes",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Battle Shout",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+              {
+                  "name": "Innervate",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Holy Circle",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              }
+          ]
+      },
+      "wo": {
+          "1": [
+              {
+                  "name": "Battle Shout",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+              {
+                  "name": "Innervate",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Gale Slice",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+              {
+                  "name": "Ice Needles",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Rejuvenating Spray",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              }
+
+          ],
+          "2": [
+              {
+                  "name": "Gale Slice",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+              {
+                  "name": "Ice Needles",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Rejuvenating Spray",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+              {
+                  "name": "Taunting Aura",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+              {
+                  "name": "Lightning Beam",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              }
+          ],
+          "3": [
+              {
+                  "name": "Rejuvenating Spray",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+              {
+                  "name": "Taunting Aura",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+              {
+                  "name": "Lightning Beam",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Aura Of Life",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+              {
+                  "name": "Arcane Barrage",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+              {
+                  "name": "Fire Bomb",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              }
+          ],
+          "4": [
+              {
+                  "name": "Aura Of Life",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+              {
+                  "name": "Arcane Barrage",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+              {
+                  "name": "Fire Bomb",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Taunting Aura",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+              {
+                  "name": "Searing Beam",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              }
+          ],
+          "5": [
+              {
+                  "name": "Aura Of Life",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+              {
+                  "name": "Searing Beam",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+              {
+                  "name": "Ground Slam",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+              {
+                  "name": "Piercing Rain",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              }
+          ]
+      },
+      "pi": {
+          "4": [
+            {
+                  "name": "Ghostly Cannon Barrage",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Demonic Strike",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Guardian Call",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+            {
+                  "name": "Universal Heal",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              }
+          ],
+          "5": [
+            {
+                  "name": "Universal Heal",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+            {
+                  "name": "Pulsefire",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Phantom Flames",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Enchanted Spinning Blades",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ]
+      },
+      "kc": {
+          "4": [
+            {
+                  "name": "Thunderous Blast",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Glacial Blows",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Chain Heal",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+            {
+                  "name": "Guardian's Blessing",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              }
+          ],
+          "5": [
+            {
+                  "name": "Chain Heal",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+            {
+                  "name": "Guardian's Blessing",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+            {
+                  "name": "Void Beam",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Electric Boom",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Blade Throw",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ]
+      },
+      "uw": {
+          "4": [
+            {
+                  "name": "Infernal Orbs",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Demonic Spikes",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Rending Slice",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ],
+          "5": [
+            {
+                  "name": "Ice Totem",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Ice Nova",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Infernal Strike",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ]
+      },
+      "sp": {
+          "4": [
+            {
+                  "name": "Hand Cannon",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Earth Clap",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Enchanted Shuriken",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Lava Lash",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Berserk",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Guardian Roar",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              }
+          ],
+          "5": [
+            {
+                  "name": "Berserk",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Guardian Roar",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              },
+            {
+                  "name": "Ghostly Rampage",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Illusion Blast",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Flame Cyclone",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ]
+      },
+      "tc": {
+          "4": [
+            {
+                  "name": "Tsunami",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Earth Kick",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Icicle Barrage",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Runic Strike",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Electric Slash",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Life Pulse",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              }
+          ],
+          "5": [
+            {
+                  "name": "Forgotten Army",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Vortex",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Blade Storm",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Blade Revolver",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Life Pulse",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              }
+          ]
+      },
+      "gh": {
+          "4": [
+            {
+                  "name": "Spirit Bomb",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Smite",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Earth Spikes",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Mighty Leap",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ],
+          "5": [
+            {
+                  "name": "Void Spheres",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Phantom Striker",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Pulse Beam",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Phantom Blades",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ]
+      },
+      "ss": {
+          "4": [
+            {
+                  "name": "Starfall",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Pulse Waves",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Star Barrage",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Arrow Rain",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Life Dash",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              }
+          ],
+          "5": [
+            {
+                  "name": "Chromatic Rain",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Overcharge",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Chained Energy Blasts",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Triple Blade Throw",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ]
+      },
+      "oo": {
+          "4": [
+            {
+                  "name": "Mystery Matter",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Focus Beam",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ],
+          "5": [
+            {
+                  "name": "Electric Field",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Energy Orb",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Explosive Mine",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Vortex Grenade",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ]
+      },
+      "vc": {
+          "4": [
+            {
+                  "name": "Inner Focus",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Inner Rage",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Lava Beam Orb",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Molten Shards",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ],
+          "5": [
+            {
+                  "name": "Amethyst Blast",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Blade Fall",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Lava Cage",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Lava Barrage",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ]
+      },
+      "at": {
+          "4": [
+            {
+                  "name": "Water Orb",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Spear Strike",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ],
+          "5": [
+            {
+                  "name": "Aquatic Smite",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Ice Spikes",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Ice Barrage",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Ice Crash",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ]
+      },
+      "ef": {
+          "4": [
+            {
+                  "name": "Fungal Poison",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Piercing Roots",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Revitalize",
+                  "dmgscale": 1,
+                  "class": "Guard"
+              }
+          ],
+          "5": [
+            {
+                  "name": "Agony Orbs",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Lightning Burst",
+                  "dmgscale": 1,
+                  "class": "Mage"
+              },
+            {
+                  "name": "Crystalline Cannon",
+                  "dmgscale": 1,
+                  "class": "War"
+              },
+            {
+                  "name": "Wind Blast",
+                  "dmgscale": 1,
+                  "class": "War"
+              }
+          ]
+      },
+      "nl": {
+        "4": [
+          {
+            "name": "Flame Strike",
+            "dmgscale": 1,
+            "class": "Mage"
+          },
+          {
+            "name": "Frost Cone",
+            "dmgscale": 1,
+            "class": "War"
+          }
+        ],
+        "5": [
+          {
+            "name": "Soul Drain",
+            "dmgscale": 1,
+            "class": "Mage"
+          },
+          {
+            "name": "Geyser",
+            "dmgscale": 1,
+            "class": "Mage"
+          },
+          {
+            "name": "Flame Shuriken",
+            "dmgscale": 1,
+            "class": "War"
+          },
+          {
+            "name": "Gale Barrage",
+            "dmgscale": 1,
+            "class": "War"
+          }
+        ]
+      },
+      "gs": {
+        "4": [
+          {
+                "name": "Jade Roller",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Solar Beam",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Amethyst Beams",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Jade Rain",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Blade Barrage",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "God Spear",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
+      "br": {
+          "inventor": [{
+              "name": "Explosive Punch",
+              "dmgscale": 1,
+              "class": "War"
+          },
+          {
+              "name": "Orb of Destruction",
+              "dmgscale": 1,
+              "class": "Mage"
+          }],
+          "heavenly": [{
+              "name": "Arrow Barrage",
+              "dmgscale": 1,
+              "class": "War"
+          },
+          {
+              "name": "Chain Lightning",
+              "dmgscale": 1,
+              "class": "Mage"
+          },
+          {
+              "name": "Ground Stomp",
+              "dmgscale": 1,
+              "class": "War"
+          },
+          {
+              "name": "Infernal Blast",
+              "dmgscale": 1,
+              "class": "Mage"
+          }],
+          "nature": [{
+              "name": "Electric Grinder",
+              "dmgscale": 1,
+              "class": "War"
+          },
+          {
+              "name": "Demonic Curse",
+              "dmgscale": 1,
+              "class": "Mage"
+          },
+          {
+              "name": "Twin Slash",
+              "dmgscale": 1,
+              "class": "War"
+          },
+          {
+              "name": "Molten Ball",
+              "dmgscale": 1,
+              "class": "Mage"
+          }]
+      }
+}

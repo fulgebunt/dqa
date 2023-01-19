@@ -1,0 +1,783 @@
+{
+  "Geyser": {
+    "imageId": "rbxassetid://8349314058",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 11900
+  },
+  "Pulsefire": {
+    "imageId": "rbxassetid://2985730646",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 170
+  },
+  "Arcane Spray": {
+    "imageId": "rbxassetid://2744123452",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 200
+  },
+  "Battle Shout": {
+    "imageId": "rbxassetid://2621050486",
+    "abilityType": "spell",
+    "cooldownLength": 20
+  },
+  "Rejuvenating Spray": {
+    "imageId": "rbxassetid://2923911030",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 15
+  },
+  "Gale Slice": {
+    "imageId": "rbxassetid://2823986768",
+    "abilityType": "spell",
+    "cooldownLength": 7,
+    "Damage": 120
+  },
+  "Inner Rage": {
+    "imageId": "http://www.roblox.com/asset/?id=5251638613",
+    "abilityType": "spell",
+    "cooldownLength": 6
+  },
+  "Rending Slice": {
+    "imageId": "rbxassetid://3115155894",
+    "abilityType": "spell",
+    "cooldownLength": 7,
+    "Damage": 120
+  },
+  "Soul Drain": {
+    "imageId": "rbxassetid://8349313894",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 1983
+  },
+  "Spirit Bomb": {
+    "imageId": "http://www.roblox.com/asset/?id=3734426616",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 3800
+  },
+  "Crystalline Cannon": {
+    "imageId": "rbxassetid://6874804900",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 10700
+  },
+  "Infernal Strike": {
+    "imageId": "rbxassetid://3115156596",
+    "abilityType": "spell",
+    "cooldownLength": 7,
+    "Damage": 490
+  },
+  "Universal Heal": {
+    "imageId": "rbxassetid://2985730059",
+    "abilityType": "spell",
+    "cooldownLength": 14,
+    "Damage": 12
+  },
+  "Frost Cone": {
+    "imageId": "rbxassetid://8349313309",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 11200
+  },
+  "Gale Barrage": {
+    "imageId": "rbxassetid://8349313462",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 3966
+  },
+  "Lava Beam Orb": {
+    "imageId": "http://www.roblox.com/asset/?id=5251637778",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 7500
+  },
+  "Piercing Roots": {
+    "imageId": "rbxassetid://6874804342",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 10000
+  },
+  "Mystery Matter": {
+    "imageId": "http://www.roblox.com/asset/?id=4626316551",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 2045
+  },
+  "Triple Blade Throw": {
+    "imageId": "http://www.roblox.com/asset/?id=4111028069",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 2100
+  },
+  "Life Pulse": {
+    "imageId": "rbxassetid://3484490246",
+    "abilityType": "spell",
+    "cooldownLength": 8.25,
+    "Damage": 25
+  },
+  "Lightning Strikes": {
+    "imageId": "rbxassetid://2610930929",
+    "abilityType": "spell",
+    "cooldownLength": 3.5,
+    "Damage": 520
+  },
+  "Demonic Curse": {
+    "imageId": "http://www.roblox.com/asset/?id=4510338450",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 460
+  },
+  "Lava Lash": {
+    "imageId": "rbxassetid://3276265493",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 870
+  },
+  "Ice Spikes": {
+    "imageId": "http://www.roblox.com/asset/?id=6207984085",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 9200
+  },
+  "Void Beam": {
+    "imageId": "rbxassetid://3040155194",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 465
+  },
+  "Enchanted Shuriken": {
+    "imageId": "rbxassetid://3276264470",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 1300
+  },
+  "Lightning Beam": {
+    "imageId": "rbxassetid://2923912159",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 250
+  },
+  "Holy Barrier": {
+    "imageId": "rbxassetid://2610744829",
+    "abilityType": "shield",
+    "cooldownLength": 15,
+    "Damage": 50
+  },
+  "Ghostly Cannon Barrage": {
+    "imageId": "rbxassetid://2985731919",
+    "abilityType": "spell",
+    "cooldownLength": 10,
+    "Damage": 230
+  },
+  "Piercing Rain": {
+    "imageId": "rbxassetid://2923912884",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 150
+  },
+  "Lightning Burst": {
+    "imageId": "rbxassetid://6874804760",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 10700
+  },
+  "Molten Shards": {
+    "imageId": "http://www.roblox.com/asset/?id=5251637482",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 7500
+  },
+  "Aquatic Smite": {
+    "imageId": "http://www.roblox.com/asset/?id=6207983767",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 9200
+  },
+  "Chain Lightning": {
+    "imageId": "http://www.roblox.com/asset/?id=4452299003",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 3800
+  },
+  "Runic Strike": {
+    "imageId": "rbxassetid://3484481774",
+    "abilityType": "spell",
+    "cooldownLength": 2,
+    "Damage": 1850
+  },
+  "Life Dash": {
+    "imageId": "http://www.roblox.com/asset/?id=4111026739",
+    "abilityType": "spell",
+    "cooldownLength": 6.5,
+    "Damage": 25
+  },
+  "Earth Clap": {
+    "imageId": "rbxassetid://3276264186",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 2100
+  },
+  "Concussive Blast": {
+    "imageId": "http://www.roblox.com/asset/?id=6207983948",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 9200
+  },
+  "Ice Crash": {
+    "imageId": "http://www.roblox.com/asset/?id=6207983948",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 9200
+  },
+  "Energy Orb": {
+    "imageId": "http://www.roblox.com/asset/?id=4626316892",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 6500
+  },
+  "Amethyst Blast": {
+    "imageId": "http://www.roblox.com/asset/?id=5251636956",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 8200
+  },
+  "Ice Barrage": {
+    "imageId": "http://www.roblox.com/asset/?id=6207983645",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 9200
+  },
+  "Void Spheres": {
+    "imageId": "http://www.roblox.com/asset/?id=3734426882",
+    "abilityType": "spell",
+    "cooldownLength": 4.5,
+    "Damage": 430
+  },
+  "Lava Cage": {
+    "imageId": "http://www.roblox.com/asset/?id=5251636715",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 1680
+  },
+  "Ice Totem": {
+    "imageId": "rbxassetid://3115157403",
+    "abilityType": "spell",
+    "cooldownLength": 10,
+    "Damage": 310
+  },
+  "Blade Throw": {
+    "imageId": "rbxassetid://3040144692",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 620
+  },
+  "Poison Cloud": {
+    "imageId": "rbxassetid://2621358544",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 220
+  },
+  "Pulse Waves": {
+    "imageId": "http://www.roblox.com/asset/?id=4111027068",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 550
+  },
+  "Fireball": {
+    "imageId": "rbxassetid://114317124",
+    "abilityType": "spell",
+    "cooldownLength": 2,
+    "Damage": 200
+  },
+  "Water Orb": {
+    "imageId": "http://www.roblox.com/asset/?id=6207984172",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 8600
+  },
+  "Pulse Beam": {
+    "imageId": "http://www.roblox.com/asset/?id=3734488053",
+    "abilityType": "spell",
+    "cooldownLength": 3.5,
+    "Damage": 1650
+  },
+  "Flame Cyclone": {
+    "imageId": "rbxassetid://3276266137",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 260
+  },
+  "Fungal Poison": {
+    "imageId": "rbxassetid://6874804603",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 1670
+  },
+  "Electric Boom": {
+    "imageId": "rbxassetid://3040145096",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 425
+  },
+  "Chromatic Rain": {
+    "imageId": "http://www.roblox.com/asset/?id=4111033824",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 610
+  },
+  "Molten Ball": {
+    "imageId": "http://www.roblox.com/asset/?id=4510338078",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 2000
+  },
+  "Mighty Leap": {
+    "imageId": "http://www.roblox.com/asset/?id=3734464505",
+    "abilityType": "spell",
+    "cooldownLength": 3.5,
+    "Damage": 2470
+  },
+  "Infernal Blast": {
+    "imageId": "http://www.roblox.com/asset/?id=4452299619",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 4350
+  },
+  "Spear Strike": {
+    "imageId": "http://www.roblox.com/asset/?id=6207983856",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 8600
+  },
+  "Enhanced Inner Rage": {
+    "imageId": "http://www.roblox.com/asset/?id=5251638613",
+    "abilityType": "spell",
+    "cooldownLength": 6
+  },
+  "Forgotten Army": {
+    "imageId": "rbxassetid://3484489972",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 410
+  },
+  "Ice Nova": {
+    "imageId": "rbxassetid://3115157056",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 225
+  },
+  "Guardian's Blessing": {
+    "imageId": "rbxassetid://3040146215",
+    "abilityType": "spell",
+    "cooldownLength": 14
+  },
+  "Vortex": {
+    "imageId": "rbxassetid://3484489695",
+    "abilityType": "spell",
+    "cooldownLength": 2,
+    "Damage": 415
+  },
+  "Inner Focus": {
+    "imageId": "http://www.roblox.com/asset/?id=5251638369",
+    "abilityType": "spell",
+    "cooldownLength": 6
+  },
+  "Aura of Life": {
+    "imageId": "rbxassetid://2923911354",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 12
+  },
+  "Fire Bomb": {
+    "imageId": "rbxassetid://2923910451",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 1650
+  },
+  "Starfall": {
+    "imageId": "http://www.roblox.com/asset/?id=4111027423",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 3800
+  },
+  "Thunderous Blast": {
+    "imageId": "rbxassetid://3040146940",
+    "abilityType": "spell",
+    "cooldownLength": 3,
+    "Damage": 900
+  },
+  "Berserk": {
+    "imageId": "rbxassetid://3276265847",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 260
+  },
+  "Blade Fall": {
+    "imageId": "http://www.roblox.com/asset/?id=5251637214",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 8200
+  },
+  "Electric Slash": {
+    "imageId": "rbxassetid://3484482695",
+    "abilityType": "spell",
+    "cooldownLength": 7,
+    "Damage": 1920
+  },
+  "Smite": {
+    "imageId": "http://www.roblox.com/asset/?id=3734463726",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 2500
+  },
+  "Lava Barrage": {
+    "imageId": "http://www.roblox.com/asset/?id=5251638063",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 2080
+  },
+  "Taunt": {
+    "imageId": "rbxassetid://2614310269",
+    "abilityType": "spell",
+    "cooldownLength": 8
+  },
+  "Focus Beam": {
+    "imageId": "http://www.roblox.com/asset/?id=4626316615",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 4700
+  },
+  "Earth Kick": {
+    "imageId": "rbxassetid://3484482939",
+    "abilityType": "spell",
+    "cooldownLength": 2.5,
+    "Damage": 2200
+  },
+  "Glacial Blows": {
+    "imageId": "rbxassetid://3040144363",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 420
+  },
+  "Ghostly Rampage": {
+    "imageId": "rbxassetid://3276264842",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 510
+  },
+  "Phantom Flames": {
+    "imageId": "http://www.roblox.com/asset/?id=4318579122",
+    "abilityType": "spell",
+    "cooldownLength": 10,
+    "Damage": 365
+  },
+  "Revitalize": {
+    "imageId": "rbxassetid://6874805273",
+    "abilityType": "spell",
+    "cooldownLength": 8,
+    "Damage": 50
+  },
+  "Ice Needles": {
+    "imageId": "rbxassetid://2923911770",
+    "abilityType": "spell",
+    "cooldownLength": 4.5,
+    "Damage": 160
+  },
+  "Vortex Grenade": {
+    "imageId": "http://www.roblox.com/asset/?id=4626316715",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 1250
+  },
+  "Taunting Aura": {
+    "imageId": "rbxassetid://2923909998",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 10
+  },
+  "Twin Slash": {
+    "imageId": "http://www.roblox.com/asset/?id=4510338216",
+    "abilityType": "spell",
+    "cooldownLength": 2,
+    "Damage": 1100
+  },
+  "Electric Field": {
+    "imageId": "http://www.roblox.com/asset/?id=4626316975",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 1670
+  },
+  "Whirlwind": {
+    "imageId": "rbxassetid://2768520109",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 100
+  },
+  "Holy Circle": {
+    "imageId": "rbxassetid://2520304152",
+    "abilityType": "heal",
+    "cooldownLength": 20,
+    "Damage": 10
+  },
+  "Chained Energy Blasts": {
+    "imageId": "http://www.roblox.com/asset/?id=4111034625",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 1100
+  },
+  "Electric Grinder": {
+    "imageId": "http://www.roblox.com/asset/?id=4510338336",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 1050
+  },
+  "Enhanced Inner Focus": {
+    "imageId": "http://www.roblox.com/asset/?id=5251638369",
+    "abilityType": "spell",
+    "cooldownLength": 6
+  },
+  "Earth Spikes": {
+    "imageId": "http://www.roblox.com/asset/?id=3734464227",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 3200
+  },
+  "Star Barrage": {
+    "imageId": "http://www.roblox.com/asset/?id=4111027727",
+    "abilityType": "spell",
+    "cooldownLength": 4.5,
+    "Damage": 740
+  },
+  "Demonic Spikes": {
+    "imageId": "rbxassetid://3115156334",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 226
+  },
+  "Agony Orbs": {
+    "imageId": "rbxassetid://6874804465",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 10700
+  },
+  "Illusion Blast": {
+    "imageId": "rbxassetid://3276265175",
+    "abilityType": "spell",
+    "cooldownLength": 8,
+    "Damage": 950
+  },
+  "Chain Heal": {
+    "imageId": "rbxassetid://3040144898",
+    "abilityType": "spell",
+    "cooldownLength": 6
+  },
+  "Arrow Barrage": {
+    "imageId": "http://www.roblox.com/asset/?id=4452299440",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 4000
+  },
+  "Icicle Barrage": {
+    "imageId": "rbxassetid://3484488104",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 1650
+  },
+  "Infernal Orbs": {
+    "imageId": "rbxassetid://3115156166",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 220
+  },
+  "Arrow Rain": {
+    "imageId": "http://www.roblox.com/asset/?id=4111026362",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 350
+  },
+  "Explosive Punch": {
+    "imageId": "http://www.roblox.com/asset/?id=4284636463",
+    "abilityType": "spell",
+    "cooldownLength": 3,
+    "Damage": 3700
+  },
+  "Orb Of Destruction": {
+    "imageId": "http://www.roblox.com/asset/?id=4284635863",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 850
+  },
+  "Demonic Strike": {
+    "imageId": "rbxassetid://2985732756",
+    "abilityType": "spell",
+    "cooldownLength": 3,
+    "Damage": 550
+  },
+  "Ground Slam": {
+    "imageId": "rbxassetid://2924294282",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 1200
+  },
+  "Ground Stomp": {
+    "imageId": "http://www.roblox.com/asset/?id=4452299205",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 3200
+  },
+  "Wind Blast": {
+    "imageId": "rbxassetid://6874804146",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 10700
+  },
+  "Flame Strike": {
+    "imageId": "rbxassetid://8349313743",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 11200
+  },
+  "Phantom Striker": {
+    "imageId": "http://www.roblox.com/asset/?id=3734463449",
+    "abilityType": "spell",
+    "cooldownLength": 4.5,
+    "Damage": 680
+  },
+  "Phantom Blades": {
+    "imageId": "http://www.roblox.com/asset/?id=3734464926",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 580
+  },
+  "Guardian Call": {
+    "imageId": "rbxassetid://2985915527",
+    "abilityType": "spell",
+    "cooldownLength": 10
+  },
+  "Explosive Mine": {
+    "imageId": "http://www.roblox.com/asset/?id=4626316807",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 5300
+  },
+  "Blue Fireball": {
+    "imageId": "http://www.roblox.com/asset/?id=384797849",
+    "abilityType": "spell",
+    "cooldownLength": 2,
+    "Damage": 275
+  },
+  "Redemption": {
+    "imageId": "rbxassetid://2520313327",
+    "abilityType": "heal",
+    "cooldownLength": 16
+  },
+  "Hand Cannon": {
+    "imageId": "rbxassetid://3276263848",
+    "abilityType": "spell",
+    "cooldownLength": 2.5,
+    "Damage": 1200
+  },
+  "Enchanted Spinning Blades": {
+    "imageId": "rbxassetid://2985732294",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 175
+  },
+  "Tsunami": {
+    "imageId": "rbxassetid://3484489072",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 2950
+  },
+  "Blade Revolver": {
+    "imageId": "rbxassetid://3484481154",
+    "abilityType": "spell",
+    "cooldownLength": 4.5,
+    "Damage": 570
+  },
+  "Arcane Barrage": {
+    "imageId": "rbxassetid://2859306211",
+    "abilityType": "spell",
+    "cooldownLength": 7,
+    "Damage": 120
+  },
+  "Searing Beam": {
+    "imageId": "rbxassetid://2923913298",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 290
+  },
+  "Guardian Roar": {
+    "imageId": "rbxassetid://3276266442",
+    "abilityType": "spell",
+    "cooldownLength": 9,
+    "Damage": 10
+  },
+  "Flame Shuriken": {
+    "imageId": "rbxassetid://8349313620",
+    "abilityType": "spell",
+    "cooldownLength": 6,
+    "Damage": 11900
+  },
+  "Overcharge": {
+    "imageId": "http://www.roblox.com/asset/?id=4111034252",
+    "abilityType": "spell",
+    "cooldownLength": 5,
+    "Damage": 885
+  },
+  "Innervate": {
+    "imageId": "rbxassetid://2621336370",
+    "abilityType": "spell",
+    "cooldownLength": 10
+  },
+  "Blade Storm": {
+    "imageId": "rbxassetid://3484482431",
+    "abilityType": "spell",
+    "cooldownLength": 4,
+    "Damage": 390
+  },
+  "Skull Flames": {
+    "imageId": "rbxassetid://2985729775",
+    "abilityType": "spell",
+    "cooldownLength": 10,
+    "Damage": 365
+  },
+  "Jade Roller": {
+    "imageId": "rbxassetid://2985729775",
+    "abilityType": "spell",
+    "cooldownLength": 10,
+    "Damage": 100
+  },
+  "Solar Beam": {
+    "imageId": "rbxassetid://2985729775",
+    "abilityType": "spell",
+    "cooldownLength": 10,
+    "Damage": 100
+  },
+  "Amethyst Beams": {
+    "imageId": "rbxassetid://2985729775",
+    "abilityType": "spell",
+    "cooldownLength": 10,
+    "Damage": 100
+  },
+  "Jade Rain": {
+    "imageId": "rbxassetid://2985729775",
+    "abilityType": "spell",
+    "cooldownLength": 10,
+    "Damage": 100
+  },
+  "Blade Barrage": {
+    "imageId": "rbxassetid://2985729775",
+    "abilityType": "spell",
+    "cooldownLength": 10,
+    "Damage": 100
+  },
+  "God Spear": {
+    "imageId": "rbxassetid://2985729775",
+    "abilityType": "spell",
+    "cooldownLength": 10,
+    "Damage": 100
+  }
+}
