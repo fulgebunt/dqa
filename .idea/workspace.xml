@@ -4,16 +4,8 @@
     <list default="true" id="11a5977c-5cb8-4655-95d9-a28fdf3af2ce" name="Changes" comment="changed to use mongodb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/dungeon.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/dungeon.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/equip.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/equip.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/help.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/inventory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discord.log" beforeDir="false" afterPath="$PROJECT_DIR$/discord.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itemValues.json" beforeDir="false" afterPath="$PROJECT_DIR$/itemValues.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/special.py" beforeDir="false" afterPath="$PROJECT_DIR$/special.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spellData.json" beforeDir="false" afterPath="$PROJECT_DIR$/spellData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spells.json" beforeDir="false" afterPath="$PROJECT_DIR$/spells.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp.json" beforeDir="false" afterPath="$PROJECT_DIR$/temp.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +69,7 @@
       <workItem from="1674091952236" duration="4694000" />
       <workItem from="1674098240442" duration="8714000" />
       <workItem from="1674106995450" duration="148000" />
-      <workItem from="1674107156006" duration="29489000" />
+      <workItem from="1674107156006" duration="30509000" />
     </task>
     <task id="LOCAL-00001" summary="changed to use mongodb">
       <created>1674106674377</created>
@@ -122,7 +114,7 @@
     <SUITE FILE_PATH="coverage/dqa$special.coverage" NAME="special Coverage Results" MODIFIED="1674167548688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dqa$help.coverage" NAME="help Coverage Results" MODIFIED="1674100758863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cogs" />
     <SUITE FILE_PATH="coverage/dqa$main.coverage" NAME="main Coverage Results" MODIFIED="1674110831740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dqa$bot.coverage" NAME="bot Coverage Results" MODIFIED="1674170642720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dqa$bot.coverage" NAME="bot Coverage Results" MODIFIED="1674170955219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dqa$inventory.coverage" NAME="inventory Coverage Results" MODIFIED="1674102622763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/cogs" />
     <SUITE FILE_PATH="coverage/dqa$python_test_query.coverage" NAME="python_test_query Coverage Results" MODIFIED="1674106298018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

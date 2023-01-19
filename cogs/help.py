@@ -203,6 +203,7 @@ class General(commands.Cog, name="help"):
         }
         dbname = get_database()
         collection = dbname[str(context.message.author.id)]
+        userdata = collection.find_one()
         collection.drop()
         collection = dbname[str(context.message.author.id)]
         collection.insert_one(new)
