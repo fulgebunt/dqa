@@ -40,7 +40,7 @@ class General(commands.Cog, name="dungeon"):
         dungeon = "N/A"
         dung = dung.lower()
         mode = mode.upper()
-        t3chance = 5
+        t3chance = 20
         color_dict = {
             'dt': 0xFFFF00,
             'wo': 0xFFFFFF,
@@ -1204,7 +1204,7 @@ class General(commands.Cog, name="dungeon"):
                 classname = self.data[dung][dropname]["class"]
 
             # Buff armor chances
-            if random.randint(1,4) == 1:
+            if random.randint(1,6) == 1:
                 if dung != "dt" and dung != "wo":
                     if diff == 5:
                         while ((int(lvlrq) % 10 < 4) or (int(lvlrq) % 10 > 7) or classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict)):
@@ -1375,7 +1375,7 @@ class General(commands.Cog, name="dungeon"):
                 dropstats2 = ""
                 classname = self.data[dung][dropname2]["class"]
             # Buff Armor Chances
-            if random.randint(1, 4) == 1:
+            if random.randint(1, 6) == 1:
                 if dung != "dt" and dung != "wo":
                     if diff == 5:
                         while ((int(lvlrq) % 10 < 4) or (int(lvlrq) % 10 > 7) or classname != "DPS Armor" or (dropname2 in t3_dict) or (dropname2 in t3_guard_dict)):
@@ -2071,7 +2071,7 @@ class General(commands.Cog, name="dungeon"):
                         dropstats = ""
                         classname = self.data[dung][dropname]["class"]
                     #Buff armor chances
-                    if random.randint(1, 4) == 1:
+                    if random.randint(1, 6) == 1:
                         if dung != "dt" and dung != "wo":
                             if diff == 5:
                                 while ((int(lvlrq) % 10 < 4) or (int(lvlrq) % 10 > 7) or classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict)):
