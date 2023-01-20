@@ -34,12 +34,12 @@ class General(commands.Cog, name="help"):
             )
             embed.add_field(
                 name="$new",
-                value="Refresh your profile",
+                value="Begin a new game and clear any existing profile",
                 inline=False
             )
             embed.add_field(
                 name="$raid (dungeon) (difficulty) (mode)",
-                value="Dungeon Codes: DT, WO, PI, KC, UW, SP, TC, GH, SS,\nBR1-BR30, OO, VC, AT, EF, NL, GS\n\nDifficulty Codes: Easy (1), Medium (2), \nHard (3), Insane (4), Nightmare (5)\n\nMode Codes: Non-Hardcore (NHC), Hardcore (HC), or Waves (WVS).\n",
+                value="Dungeon Codes: DT, WO, PI, KC, UW, SP, TC, GH, SS,\nBR1-BR30, OO, VC, AT, EF, NL, GS,\nOM, WT, EC, CL, MK\n\nDifficulty Codes: Easy (1), Medium (2), \nHard (3), Insane (4), Nightmare (5)\n\nMode Codes: Non-Hardcore (NHC), Hardcore (HC), or Waves (WVS).\n",
                 inline=False
             )
             embed.add_field(
@@ -180,22 +180,22 @@ class General(commands.Cog, name="help"):
             "inventory": {
             },
             "stats": {
-                "level": 230,
+                "level": 250,
                 "exp": 0,
                 "gold": 0,
                 "war": 0,
-                "mage": 230,
+                "mage": 250,
                 "health": 0,
                 "free": 0
             },
             "equipped": {
-                "helmname": "Gods Chosen",
-                "armorname": "Gods Chosen",
-                "weapname": "Theosevis",
-                "helmstats": "Class: Mage Helm\nPot: 122662692\nHealth: 9456885438\nLvl Req: 226\nRarity: Purple",
-                "armorstats": "Class: Mage Armor\nPot: 122662692\nHealth: 9456885438\nLvl Req: 226\nRarity: Purple",
-                "weapstats": "Class: Mage Helm\nPot: 1512195236\nLvl Req: 196\nRarity: Ultimate",
-                "spellname": "Skyfall",
+                "helmname": "Glimmershine",
+                "armorname": "Glimmershine",
+                "weapname": "Myriminion",
+                "helmstats": "Class: Mage Helm\nPot: 519782356\nHealth: 77353540129\nLvl Req: 246\nRarity: Purple",
+                "armorstats": "Class: Mage Armor\nPot: 519782356\nHealth: 77353540129\nLvl Req: 246\nRarity: Purple",
+                "weapstats": "Class: Mage Helm\nPot: 6711095564\nLvl Req: 246\nRarity: Ultimate",
+                "spellname": "Stormy Sea",
                 "spellstats": "Class: Mage"
             },
             "trades": {

@@ -206,82 +206,122 @@ damage_gates = {
             "min": 1,
             "max": 4495306129317689
         },
+    },
+    "cl": {
+        4: {
+            "min": 1,
+            "max": 1
+        },
+        5: {
+            "min": 1,
+            "max": 4495306129317689
+        },
+    },
+    "mk": {
+        4: {
+            "min": 1,
+            "max": 1
+        },
+        5: {
+            "min": 1,
+            "max": 4495306129317689
+        },
     }
 }
+leg_list = ["Desert Fury", "Crystalised Greatsword", "Soulstealer Greatsword", "Staff of the Gods",
+            "Beast Master War Scythe", "Beast Master Spell Scythe", "Dual Phoenix Daggers", "Phoenix Greatstaff",
+            "Sakura Katana", "Sakura Greatstaff", "Overlords Rageblade", "Overlords Manablade", "Kraken Slayer",
+            "Sea Serpent Wings", "Inventors Greatsword", "Inventors Spellblade", "Galactic Dual Blades",
+            "Galactic Pike", "Lava Kings Warscythe", "Lava Kings Spell Daggers", "Sea Kings Greatstaff",
+            "Sea Kings Trident", "Eldenbark Greatsword", "Eldenbark Greatstaff", "Mjolnir", "Gungnir", "Hofund",
+            "Laevateinn", "Gildenscale Oath and Aegis", "Daybreak and Gildensong", "Fulmen", "Fuscina",
+            "Shattered Skies", "Stormy Seas", "Ghost Kings Halberd", "Ghost Kings Tome",
+            "Gladius Imperialis", "Magicus Imperialis", "Storsvero", "Vigamenn", "Theospathia",
+            "Theosevis", "Demonic Sacrificial Dagger", "Demonic Ritual Wand", "Uhenyth", "Shuggoth",
+            "Glimmershine Battlesword",
+            "Glimmershine Artefact", "Myrimidion", "Myriminion"]
 leg_dict = {
-            "dt": {
-                "War": "Desert Fury",
-                "Mage": "Desert Fury"
-            },
-            "wo": {
-                "War": "Crystalised Greatsword",
-                "Mage": "Crystalised Greatsword"
-            },
-            "pi": {
-                "War": "Soulstealer Greatsword",
-                "Mage": "Staff of the Gods"
-            },
-            "kc": {
-                "War": "Beast Master War Scythe",
-                "Mage": "Beast Master Spell Scythe"
-            },
-            "uw": {
-                "War": "Dual Phoenix Daggers",
-                "Mage": "Phoenix Greatstaff"
-            },
-            "sp": {
-                "War": "Sakura Katana",
-                "Mage": "Sakura Greatstaff"
-            },
-            "tc": {
-                "War": "Overlords Rageblade",
-                "Mage": "Overlords Manablade"
-            },
-            "gh": {
-                "War": "Kraken Slayer",
-                "Mage": "Sea Serpent Wings"
-            },
-            "ss": {
-                "War": "Inventors Greatsword",
-                "Mage": "Inventors Spellblade"
-            },
-            "oo": {
-                "War": "Galactic Dual Blades",
-                "Mage": "Galactic Pike"
-            },
-            "vc": {
-                "War": "Lava Kings Warscythe",
-                "Mage": "Lava Kings Spell Daggers"
-            },
-            "at": {
-                "War": "Sea Kings Trident",
-                "Mage": "Sea Kings Greatstaff"
-            },
-            "ef": {
-                "War": "Eldenbark Greatsword",
-                "Mage": "Eldenbark Greatstaff"
-            },
-            "nl": {
-                "War": "Mjolnir",
-                "Mage": "Gungnir"
-            },
-            "gs": {
-                "War": "Gildenscale Oath and Aegis",
-                "Mage": "Daybreak and Gildensong"
-            },
-            "om": {
-                "War": "Fuscina",
-                "Mage": "Fulmen"
-            },
-            "wt": {
-                "War": "Ghost Kings Halberd",
-                "Mage": "Ghost Kings Tome"
-            },
-            "ec": {
-                "War": "Gladius Imperialis",
-                "Mage": "Magicus Imperialis"
-            }
-        }
+    "dt": {
+        "War": "Desert Fury",
+        "Mage": "Desert Fury"
+    },
+    "wo": {
+        "War": "Crystalised Greatsword",
+        "Mage": "Crystalised Greatsword"
+    },
+    "pi": {
+        "War": "Soulstealer Greatsword",
+        "Mage": "Staff of the Gods"
+    },
+    "kc": {
+        "War": "Beast Master War Scythe",
+        "Mage": "Beast Master Spell Scythe"
+    },
+    "uw": {
+        "War": "Dual Phoenix Daggers",
+        "Mage": "Phoenix Greatstaff"
+    },
+    "sp": {
+        "War": "Sakura Katana",
+        "Mage": "Sakura Greatstaff"
+    },
+    "tc": {
+        "War": "Overlords Rageblade",
+        "Mage": "Overlords Manablade"
+    },
+    "gh": {
+        "War": "Kraken Slayer",
+        "Mage": "Sea Serpent Wings"
+    },
+    "ss": {
+        "War": "Inventors Greatsword",
+        "Mage": "Inventors Spellblade"
+    },
+    "oo": {
+        "War": "Galactic Dual Blades",
+        "Mage": "Galactic Pike"
+    },
+    "vc": {
+        "War": "Lava Kings Warscythe",
+        "Mage": "Lava Kings Spell Daggers"
+    },
+    "at": {
+        "War": "Sea Kings Trident",
+        "Mage": "Sea Kings Greatstaff"
+    },
+    "ef": {
+        "War": "Eldenbark Greatsword",
+        "Mage": "Eldenbark Greatstaff"
+    },
+    "nl": {
+        "War": "Mjolnir",
+        "Mage": "Gungnir"
+    },
+    "gs": {
+        "War": "Gildenscale Oath and Aegis",
+        "Mage": "Daybreak and Gildensong"
+    },
+    "om": {
+        "War": "Fuscina",
+        "Mage": "Fulmen"
+    },
+    "wt": {
+        "War": "Ghost Kings Halberd",
+        "Mage": "Ghost Kings Tome"
+    },
+    "ec": {
+        "War": "Gladius Imperialis",
+        "Mage": "Magicus Imperialis"
+    },
+    "cl": {
+        "War": "Demonic Sacrificial Dagger",
+        "Mage": "Demonic Ritual Wand"
+    },
+    "mk": {
+        "War": "Glimmershine Battlesword",
+        "Mage": "Glimmershine Artefact"
+    }
+}
 ult_dict = {
     "nl": {
         "War": "Hofund",
@@ -298,6 +338,14 @@ ult_dict = {
     "ec": {
         "War": "Theospathia",
         "Mage": "Theosevis"
+    },
+    "cl": {
+        "War": "Uhenyth",
+        "Mage": "Shuggoth"
+    },
+    "mk": {
+        "War": "Myrimidion",
+        "Mage": "Myriminion"
     }
 }
 t3_dict = {
@@ -316,7 +364,9 @@ t3_dict = {
     "gs": "Gildenscale",
     "om": "Thunder Gods",
     "wt": "Soulshard",
-    "ec": "Gods Chosen"
+    "ec": "Gods Chosen",
+    "cl": "Demonic Cultists",
+    "mk": "Glimmershine"
 }
 t3_guard_dict = {
     "pi": "Godly Guardian",
@@ -334,7 +384,9 @@ t3_guard_dict = {
     "gs": "Gildenscale Guardian",
     "om": "Thunder Gods Guardian",
     "wt": "Soulshard Guardian",
-    "ec": "Gods Chosen Guardian"
+    "ec": "Gods Chosen Guardian",
+    "cl": "Demonic Cultists Guardian",
+    "mk": "Glimmershine Guardian"
 }
 exp_dict = {
     "dt": {
@@ -415,6 +467,14 @@ exp_dict = {
     "ec": {
         4: 2182451040000,
         5: 3928411872000,
+    },
+    "cl": {
+        4: 7071141369600,
+        5: 12728054465280,
+    },
+    "mk": {
+        4: 22910498037504,
+        5: 41238896467507,
     }
 
 }
@@ -497,6 +557,14 @@ gold_dict = {
     "ec": {
         4: 900000000,
         5: 1050000000
+    },
+    "cl": {
+        4: 1200000000,
+        5: 1350000000
+    },
+    "mk": {
+        4: 1500000000,
+        5: 1650000000
     }
 }
 lvl_dict = {
@@ -578,7 +646,16 @@ lvl_dict = {
     "ec": {
         4: 220,
         5: 225
+    },
+    "cl": {
+        4: 230,
+        5: 235
+    },
+    "mk": {
+        4: 240,
+        5: 245
     }
+
 }
 dunglist = list(t3_dict.keys())
 with open('spells.json') as json_file:
@@ -604,7 +681,9 @@ ins_dict = {
     "gs": "Dracani",
     "om": "Olympian",
     "wt": "Skeleton",
-    "ec": "Centurion"
+    "ec": "Centurion",
+    "cl": "Initiates",
+    "mk": "Glistening"
 }
 ins_weap_dict = {
     "pi": "Cultist Blade",
@@ -622,7 +701,9 @@ ins_weap_dict = {
     "gs": "Dracani Royal Glaive",
     "om": "Heavenly Staff and Tome",
     "wt": "Cracked Greatsword",
-    "ec": "Praetorian Godstaff"
+    "ec": "Praetorian Godstaff",
+    "cl": "Demonstaff",
+    "mk": "Scaled Shields"
 }
 
 for dung in dunglist:
@@ -640,6 +721,7 @@ for dung in dunglist:
     damage = math.floor((wep * (0.6597 + 0.013202 * skill) * ((arm + helm) * 0.0028)) * SPELL_MULT)
 
     damage_gates[dung][5]["max"] = damage
+    print(damage)
 dunglistbackup = dunglist
 dunglist = dunglist[:-1]
 
@@ -677,7 +759,7 @@ for dung in dunglist:
     SPELL_MULT = int(spelldata[spell["name"]]["Damage"])/100
 
     damage = math.floor((wep * (0.6597 + 0.013202 * skill) * ((arm + helm) * 0.0028)) * SPELL_MULT)
-
+    print(damage)
     damage_gates[dung][5]["min"] = damage
 for dung in dunglist:
     skill = lvl_dict[dung][4]

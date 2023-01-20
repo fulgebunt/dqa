@@ -663,5 +663,65 @@
     "abilityType": "spell",
     "Damage": 18500,
     "Dungeon": "ec"
+  },
+  "Black Magic": {
+    "abilityType": "spell",
+    "Damage": 19000,
+    "Dungeon": "cl"
+  },
+  "Darkened Sword": {
+    "abilityType": "spell",
+    "Damage": 19000,
+    "Dungeon": "cl"
+  },
+  "Blood Blade": {
+    "abilityType": "spell",
+    "Damage": 20000,
+    "Dungeon": "ec"
+  },
+  "Evil Contract": {
+    "abilityType": "spell",
+    "Damage": 20000,
+    "Dungeon": "cl"
+  },
+  "Devil Summon": {
+    "abilityType": "spell",
+    "Damage": 20000,
+    "Dungeon": "cl"
+  },
+  "Sacrificial Slice" : {
+    "abilityType": "spell",
+    "Damage": 20000,
+    "Dungeon": "cl"
+  },
+  "Soaring Wind": {
+    "abilityType": "spell",
+    "Damage": 20800,
+    "Dungeon": "mk"
+  },
+  "Landfall": {
+    "abilityType": "spell",
+    "Damage": 20800,
+    "Dungeon": "mk"
+  },
+  "Capsize": {
+    "abilityType": "spell",
+    "Damage": 22000,
+    "Dungeon": "mk"
+  },
+  "Stormy Sea": {
+    "abilityType": "spell",
+    "Damage": 22000,
+    "Dungeon": "mk"
+  },
+  "Wave Crash": {
+    "abilityType": "spell",
+    "Damage": 22000,
+    "Dungeon": "mk"
+  },
+  "Cyclone": {
+    "abilityType": "spell",
+    "Damage": 22000,
+    "Dungeon": "mk"
   }
 }

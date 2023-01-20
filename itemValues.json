@@ -11710,5 +11710,1099 @@
             },
             "lvlrq": "226"
         }
+    },
+    "cl": {
+        "Ancient Ritual Blade": {
+            "class": "War",
+            "lvlrq": "230",
+            "Gray": {
+                "minpot": "1146606001",
+                "maxpot": "1267301378",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "1222388480",
+                "maxpot": "1351060965",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "1279340824",
+                "maxpot": "1414008297",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "1336293178",
+                "maxpot": "1476955630",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Ancient Ritual Staff": {
+            "lvlrq": "230",
+            "class": "Mage",
+            "Gray": {
+                "minpot": "1146606001",
+                "maxpot": "1267301378",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "1222388480",
+                "maxpot": "1351060965",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "1279340824",
+                "maxpot": "1414008297",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "1336293178",
+                "maxpot": "1476955630",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Sacrifical Daggers": {
+            "lvlrq": "230",
+            "class": "War",
+            "Gray": {
+                "minpot": "1336293178",
+                "maxpot": "1476955630",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "1412075657",
+                "maxpot": "1560715216",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "1469028001",
+                "maxpot": "1623662539",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "1525980355",
+                "maxpot": "1686609871",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Ritual Wand": {
+            "lvlrq": "230",
+            "class": "Mage",
+            "Gray": {
+                "minpot": "1336293178",
+                "maxpot": "1476955630",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "1412075657",
+                "maxpot": "1560715216",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "1469028001",
+                "maxpot": "1623662539",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "1525980355",
+                "maxpot": "1686609871",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Demonsword": {
+            "lvlrq": "230",
+            "class": "War",
+            "Gray": {
+                "minpot": "1525980355",
+                "maxpot": "1686609871",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "1601762833",
+                "maxpot": "1770369457",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "1658715177",
+                "maxpot": "1833316790",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "1715709522",
+                "maxpot": "1896310532",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Demonstaff": {
+            "lvlrq": "230",
+            "class": "Mage",
+            "Gray": {
+                "minpot": "1525980355",
+                "maxpot": "1686609871",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "1601762833",
+                "maxpot": "1770369457",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "1658715177",
+                "maxpot": "1833316790",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "1715709522",
+                "maxpot": "1896310532",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Black Rock Shortsword": {
+            "lvlrq": "235",
+            "class": "War",
+            "Gray": {
+                "minpot": "1715709522",
+                "maxpot": "1896310532",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "1790619705",
+                "maxpot": "1979106009",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "1865109949",
+                "maxpot": "2061437315",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "1939600183",
+                "maxpot": "2143768631",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Black Rock Spellsword": {
+            "lvlrq": "235",
+            "class": "Mage",
+            "Gray": {
+                "minpot": "1715709522",
+                "maxpot": "1896310532",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "1790619705",
+                "maxpot": "1979106009",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "1865109949",
+                "maxpot": "2061437315",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "1939600183",
+                "maxpot": "2143768631",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Unholy Javelin": {
+            "lvlrq": "235",
+            "class": "War",
+            "Gray": {
+                "minpot": "1939600183",
+                "maxpot": "2143768631",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "2014510367",
+                "maxpot": "2226564107",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "2089000611",
+                "maxpot": "2308895424",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "2163453184",
+                "maxpot": "2391185116",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Unholy Greatstaff": {
+            "lvlrq": "235",
+            "class": "Mage",
+            "Gray": {
+                "minpot": "1939600183",
+                "maxpot": "2143768631",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "2014510367",
+                "maxpot": "2226564107",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "2089000611",
+                "maxpot": "2308895424",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "2163453184",
+                "maxpot": "2391185116",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Inheritance Lance": {
+            "lvlrq": "235",
+            "class": "War",
+            "Gray": {
+                "minpot": "2163453184",
+                "maxpot": "2391185116",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "2238363368",
+                "maxpot": "2473980582",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "2312853612",
+                "maxpot": "2556311898",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "2387362676",
+                "maxpot": "2638664027",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Inheritance Spelltome": {
+            "lvlrq": "235",
+            "class": "Mage",
+            "Gray": {
+                "minpot": "2163453184",
+                "maxpot": "2391185116",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "2238363368",
+                "maxpot": "2473980582",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "2312853612",
+                "maxpot": "2556311898",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "2387362676",
+                "maxpot": "2638664027",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Initiates": {
+            "lvlrq": "230",
+            "class": "DPS Armor",
+            "Gray": {
+                "minpot": "115094051",
+                "maxpot": "127209224",
+                "minhp": "10233250699",
+                "maxhp": "11310434984"
+            },
+            "Green": {
+                "minpot": "127232022",
+                "maxpot": "140624887",
+                "minhp": "11377340840",
+                "maxhp": "12574955666"
+            },
+            "Blue": {
+                "minpot": "139370002",
+                "maxpot": "154040539",
+                "minhp": "12521430980",
+                "maxhp": "13839476347"
+            },
+            "Purple": {
+                "minpot": "151507983",
+                "maxpot": "167456202",
+                "minhp": "13665521120",
+                "maxhp": "15103997029"
+            }
+        },
+        "Initiates Guardian": {
+            "lvlrq": "230",
+            "class": "Guardian",
+            "Gray": {
+                "minpot": "4856521966",
+                "maxpot": "5367734815",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "5387110035",
+                "maxpot": "5954174270",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "5917698114",
+                "maxpot": "6540613715",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "6448305023",
+                "maxpot": "7127073983",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Cultists": {
+            "lvlrq": "235",
+            "class": "DPS Armor",
+            "Gray": {
+                "minpot": "151507983",
+                "maxpot": "167456202",
+                "minhp": "13665521120",
+                "maxhp": "15103997029"
+            },
+            "Green": {
+                "minpot": "163635659",
+                "maxpot": "180860468",
+                "minhp": "15593503688",
+                "maxhp": "17234925130"
+            },
+            "Blue": {
+                "minpot": "175763326",
+                "maxpot": "194264744",
+                "minhp": "17521486256",
+                "maxhp": "19365853232"
+            },
+            "Purple": {
+                "minpot": "187718692",
+                "maxpot": "S",
+                "minhp": "19449532385",
+                "maxhp": "21496851585"
+            }
+        },
+        "Cultists Guardian": {
+            "lvlrq": "235",
+            "class": "Guardian",
+            "Gray": {
+                "minpot": "6448305023",
+                "maxpot": "7127073983",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "7356125716",
+                "maxpot": "8130454741",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "8263946399",
+                "maxpot": "9133835509",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "9171575952",
+                "maxpot": "10137005010",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Demonic Cultists": {
+            "lvlrq": "236",
+            "class": "DPS Armor",
+            "Gray": {
+                "minpot": "187718692",
+                "maxpot": "207478564",
+                "minhp": "19449532385",
+                "maxhp": "21496851585"
+            },
+            "Green": {
+                "minpot": "200973472",
+                "maxpot": "222128585",
+                "minhp": "21123082018",
+                "maxhp": "23346564337"
+            },
+            "Blue": {
+                "minpot": "214228252",
+                "maxpot": "236778606",
+                "minhp": "22796631651",
+                "maxhp": "25196277089"
+            },
+            "Purple": {
+                "minpot": "227478701",
+                "maxpot": "251423842",
+                "minhp": "24470816890",
+                "maxhp": "27046692353"
+            }
+        },
+        "Demonic Cultists Guardian": {
+            "lvlrq": "236",
+            "class": "Guardian",
+            "Gray": {
+                "minpot": "9171575952",
+                "maxpot": "10137005010",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "9959389492",
+                "maxpot": "11007746292",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "10747203033",
+                "maxpot": "11878487575",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "11534974583",
+                "maxpot": "12749182448",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Demonic Sacrificial Dagger": {
+            "lvlrq": "236",
+            "class": "War Legend",
+            "Legendary": {
+                "minpot": "2662499369",
+                "maxpot": "2942762472",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Demonic Ritual Wand": {
+            "lvlrq": "236",
+            "class": "Mage Legend",
+            "Legendary": {
+                "minpot": "2662499369",
+                "maxpot": "2942762472",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Uhenyth": {
+            "lvlrq": "236",
+            "class": "War Ultimate",
+            "Ultimate": {
+                "minpot": "2954275793",
+                "maxpot": "3190617860",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Shuggoth": {
+            "lvlrq": "236",
+            "class": "Mage Ultimate",
+            "Ultimate": {
+                "minpot": "2954275793",
+                "maxpot": "3190617860",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        }
+    },
+    "mk": {
+        "Fishhook Javelin": {
+            "class": "War",
+            "lvlrq": "240",
+            "Green": {
+                "minpot": "2567848188",
+                "maxpot": "2838148008",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Gray": {
+                "minpot": "2408252031",
+                "maxpot": "2661752263",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "2687712761",
+                "maxpot": "2970629907",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "2807577333",
+                "maxpot": "3103111796",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+
+        "Scaled Wand": {
+            "lvlrq": "240",
+            "class": "Mage",
+            "Gray": {
+                "minpot": "2408252031",
+                "maxpot": "2661752263",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "2567848188",
+                "maxpot": "2838148008",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "2687712761",
+                "maxpot": "2970629907",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "2807577333",
+                "maxpot": "3103111796",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Fishhook Halberd": {
+            "lvlrq": "240",
+            "class": "War",
+            "Gray": {
+                "minpot": "2807577333",
+                "maxpot": "3103111796",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "2967173480",
+                "maxpot": "3279507550",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "3087038053",
+                "maxpot": "3411989439",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "3206902625",
+                "maxpot": "3544471328",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Scaled Battlestaff": {
+            "lvlrq": "240",
+            "class": "Mage",
+            "Gray": {
+                "minpot": "2807577333",
+                "maxpot": "3103111796",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "2967173480",
+                "maxpot": "3279507550",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "3087038053",
+                "maxpot": "3411989439",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "3206902625",
+                "maxpot": "3544471328",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Fishook Scimitars": {
+            "lvlrq": "240",
+            "class": "War",
+            "Gray": {
+                "minpot": "3206902625",
+                "maxpot": "3544471328",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "3366498772",
+                "maxpot": "3720867083",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "3486363344",
+                "maxpot": "3853348971",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "3606288807",
+                "maxpot": "3985898170",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Scaled Shields": {
+            "lvlrq": "240",
+            "class": "Mage",
+            "Gray": {
+                "minpot": "3206902625",
+                "maxpot": "3544471328",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "3366498772",
+                "maxpot": "3720867083",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "3486363344",
+                "maxpot": "3853348971",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "3606288807",
+                "maxpot": "3985898170",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Shining Shortsword": {
+            "lvlrq": "245",
+            "class": "War",
+            "Gray": {
+                "minpot": "3606288807",
+                "maxpot": "3985898170",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "3763240638",
+                "maxpot": "4159371247",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "3919583539",
+                "maxpot": "4332171294",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "4075926450",
+                "maxpot": "4504971350",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Shining Tome": {
+            "lvlrq": "245",
+            "class": "Mage",
+            "Gray": {
+                "minpot": "3606288807",
+                "maxpot": "3985898170",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "3763240638",
+                "maxpot": "4159371247",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "3919583539",
+                "maxpot": "4332171294",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "4075926450",
+                "maxpot": "4504971350",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Enchanted Coral Dagger": {
+            "lvlrq": "245",
+            "class": "War",
+            "Gray": {
+                "minpot": "4075926450",
+                "maxpot": "4504971350",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "4232878281",
+                "maxpot": "4678444427",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "4389221182",
+                "maxpot": "4851244474",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "4545484629",
+                "maxpot": "5023956703",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Enchanted Coral Staff": {
+            "lvlrq": "245",
+            "class": "Mage",
+            "Gray": {
+                "minpot": "4075926450",
+                "maxpot": "4504971350",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "4232878281",
+                "maxpot": "4678444427",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "4389221182",
+                "maxpot": "4851244474",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "4545484629",
+                "maxpot": "5023956703",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Mermaids Roar": {
+            "lvlrq": "245",
+            "class": "War",
+            "Gray": {
+                "minpot": "4545484629",
+                "maxpot": "5023956703",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "4702436460",
+                "maxpot": "5197429780",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "4858779361",
+                "maxpot": "5370229827",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "5015161994",
+                "maxpot": "5543073797",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Mermaids Song": {
+            "lvlrq": "245",
+            "class": "Mage",
+            "Gray": {
+                "minpot": "4545484629",
+                "maxpot": "5023956703",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "4702436460",
+                "maxpot": "5197429780",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "4858779361",
+                "maxpot": "5370229827",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "5015161994",
+                "maxpot": "5543073797",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Glistening": {
+            "lvlrq": "240",
+            "class": "DPS Armor",
+            "Gray": {
+                "minpot": "238968128",
+                "maxpot": "264122677",
+                "minhp": "29267097001",
+                "maxhp": "32347844054"
+            },
+            "Green": {
+                "minpot": "264024928",
+                "maxpot": "291817040",
+                "minhp": "32539194802",
+                "maxhp": "35964373203"
+            },
+            "Blue": {
+                "minpot": "289081729",
+                "maxpot": "319511394",
+                "minhp": "35811292603",
+                "maxhp": "39580902352"
+            },
+            "Purple": {
+                "minpot": "314138529",
+                "maxpot": "347205758",
+                "minhp": "39083390405",
+                "maxhp": "43197431501"
+            }
+        },
+        "Glistening Guardian": {
+            "lvlrq": "240",
+            "class": "Guardian",
+            "Gray": {
+                "minpot": "10243381028",
+                "maxpot": "11321631672",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "11362367536",
+                "maxpot": "12558406238",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "12481354044",
+                "maxpot": "13795180795",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "13600380284",
+                "maxpot": "15031999276",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Shining": {
+            "lvlrq": "245",
+            "class": "DPS Armor",
+            "Gray": {
+                "minpot": "314138529",
+                "maxpot": "347205758",
+                "minhp": "39083390405",
+                "maxhp": "43197431501"
+            },
+            "Green": {
+                "minpot": "338757846",
+                "maxpot": "374416570",
+                "minhp": "44597420550",
+                "maxhp": "49291885872"
+            },
+            "Blue": {
+                "minpot": "363377153",
+                "maxpot": "401627393",
+                "minhp": "50111450694",
+                "maxhp": "55386340242"
+            },
+            "Purple": {
+                "minpot": "387771473",
+                "maxpot": "428589533",
+                "minhp": "55625662623",
+                "maxhp": "61480995531"
+            }
+        },
+        "Shining Guardian": {
+            "lvlrq": "245",
+            "class": "Guardian",
+            "Gray": {
+                "minpot": "13600380284",
+                "maxpot": "15031999276",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "15514911866",
+                "maxpot": "17148060487",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "17429443438",
+                "maxpot": "19264121709",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "19343710292",
+                "maxpot": "21379890334",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Glimmershine": {
+            "lvlrq": "246",
+            "class": "DPS Armor",
+            "Gray": {
+                "minpot": "387771473",
+                "maxpot": "428589533",
+                "minhp": "55625662623",
+                "maxhp": "61480995531"
+            },
+            "Green": {
+                "minpot": "415267878",
+                "maxpot": "458980292",
+                "minhp": "60412014573",
+                "maxhp": "66771174003"
+            },
+            "Blue": {
+                "minpot": "442764283",
+                "maxpot": "489371060",
+                "minhp": "65198366524",
+                "maxhp": "72061352475"
+            },
+            "Purple": {
+                "minpot": "470279261",
+                "maxpot": "519782356",
+                "minhp": "69986536306",
+                "maxhp": "77353540129"
+            }
+        },
+        "Glimmershine Guardian": {
+            "lvlrq": "246",
+            "class": "Guardian",
+            "Gray": {
+                "minpot": "19343710292",
+                "maxpot": "21379890334",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Green": {
+                "minpot": "21005525681",
+                "maxpot": "23216633653",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Blue": {
+                "minpot": "22667341071",
+                "maxpot": "25053376983",
+                "minhp": "0",
+                "maxhp": "0"
+            },
+            "Purple": {
+                "minpot": "24329095570",
+                "maxpot": "26890053013",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Glimmershine Battlesword": {
+            "lvlrq": "246",
+            "class": "War Legend",
+            "Legendary": {
+                "minpot": "5594314595",
+                "maxpot": "6183189823",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Glimmershine Artefact": {
+            "lvlrq": "246",
+            "class": "Mage Legend",
+            "Legendary": {
+                "minpot": "5594314595",
+                "maxpot": "6183189823",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Myrimidion": {
+            "lvlrq": "246",
+            "class": "War Ultimate",
+            "Ultimate": {
+                "minpot": "6213977358",
+                "maxpot": "6711095564",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        },
+        "Myriminion": {
+            "lvlrq": "246",
+            "class": "Mage Ultimate",
+            "Ultimate": {
+                "minpot": "6213977358",
+                "maxpot": "6711095564",
+                "minhp": "0",
+                "maxhp": "0"
+            }
+        }
     }
+
 }
