@@ -965,6 +965,78 @@
             }
         ]
       },
+      "cl": {
+        "4": [
+          {
+                "name": "Black Magic",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Darkened Sword",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Evil Contract",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Devil Summon",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Blood Blade",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "Sacrifical Slice",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
+      "mk": {
+        "4": [
+          {
+                "name": "Soaring Wind",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Landfall",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Capsize",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Stormy Sea",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Wave Crash",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "Cyclone",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
       "br": {
           "inventor": [{
               "name": "Explosive Punch",

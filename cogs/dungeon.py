@@ -60,6 +60,8 @@ class General(commands.Cog, name="dungeon"):
             'om': 0xFFFFFF,
             'wt': 0xE8BCF0,
             'ec': 0xA020F0,
+            'cl': 0x301934,
+            'mk': 0x0096FF
         }
         leg_list = ["Desert Fury","Crystalised Greatsword","Soulstealer Greatsword","Staff of the Gods",
                     "Beast Master War Scythe","Beast Master Spell Scythe","Dual Phoenix Daggers","Phoenix Greatstaff",
@@ -67,7 +69,11 @@ class General(commands.Cog, name="dungeon"):
                     "Sea Serpent Wings","Inventors Greatsword","Inventors Spellblade","Galactic Dual Blades",
                     "Galactic Pike","Lava Kings Warscythe","Lava Kings Spell Daggers","Sea Kings Greatstaff",
                     "Sea Kings Trident","Eldenbark Greatsword","Eldenbark Greatstaff","Mjolnir","Gungnir","Hofund",
-                    "Laevateinn","Gildenscale Oath and Aegis","Daybreak and Gildensong","Fulmen","Fuscina","Shattered Skies","Stormy Seas","Ghost Kings Halberd","Ghost Kings Tome","Gladius Imperialis","Magicus Imperialis","Storsvero","Vigamenn","Theospathia","Theosevis"]
+                    "Laevateinn","Gildenscale Oath and Aegis","Daybreak and Gildensong","Fulmen","Fuscina",
+                    "Shattered Skies","Stormy Seas","Ghost Kings Halberd","Ghost Kings Tome",
+                    "Gladius Imperialis","Magicus Imperialis","Storsvero","Vigamenn","Theospathia",
+                    "Theosevis","Demonic Sacrificial Dagger", "Demonic Ritual Wand","Uhenyth","Shuggoth","Glimmershine Battlesword",
+                    "Glimmershine Artefact", "Myrimidion","Myriminion"]
         leg_dict = {
             "dt": {
                 "War": "Desert Fury",
@@ -140,6 +146,14 @@ class General(commands.Cog, name="dungeon"):
             "ec": {
                 "War": "Gladius Imperialis",
                 "Mage": "Magicus Imperialis"
+            },
+            "cl": {
+                "War": "Demonic Sacrificial Dagger",
+                "Mage": "Demonic Ritual Wand"
+            },
+            "mk": {
+                "War": "Glimmershine Battlesword",
+                "Mage": "Glimmershine Artefact"
             }
         }
         ult_dict = {
@@ -158,6 +172,14 @@ class General(commands.Cog, name="dungeon"):
             "ec": {
                 "War": "Theospathia",
                 "Mage": "Theosevis"
+            },
+            "cl": {
+                "War": "Uhenyth",
+                "Mage": "Shuggoth"
+            },
+            "mk": {
+                "War": "Myrimidion",
+                "Mage": "Myriminion"
             }
         }
         t3_dict = {
@@ -176,7 +198,9 @@ class General(commands.Cog, name="dungeon"):
             "gs": "Gildenscale",
             "om": "Thunder Gods",
             "wt": "Soulshard",
-            "ec": "Gods Chosen"
+            "ec": "Gods Chosen",
+            "cl": "Demonic Cultists",
+            "mk": "Glimmershine"
         }
         t3_guard_dict = {
             "pi": "Godly Guardian",
@@ -194,7 +218,9 @@ class General(commands.Cog, name="dungeon"):
             "gs": "Gildenscale Guardian",
             "om": "Thunder Gods Guardian",
             "wt": "Soulshard Guardian",
-            "ec": "Gods Chosen Guardian"
+            "ec": "Gods Chosen Guardian",
+            "cl": "Demonic Cultists Guardian",
+            "mk": "Glimmershine Guardian"
         }
         exp_dict = {
             "dt": {
@@ -275,6 +301,14 @@ class General(commands.Cog, name="dungeon"):
             "ec": {
                 4: 2182451040000,
                 5: 3928411872000,
+            },
+            "cl": {
+                4: 7071141369600,
+                5: 12728054465280,
+            },
+            "mk": {
+                4: 22910498037504,
+                5: 41238896467507,
             }
 
         }
@@ -357,6 +391,14 @@ class General(commands.Cog, name="dungeon"):
             "ec": {
                 4: 900000000,
                 5: 1050000000
+            },
+            "cl": {
+                4: 1200000000,
+                5: 1350000000
+            },
+            "mk": {
+                4: 1500000000,
+                5: 1650000000
             }
         }
         lvl_dict = {
@@ -438,7 +480,16 @@ class General(commands.Cog, name="dungeon"):
             "ec": {
                 4: 220,
                 5: 225
+            },
+            "cl": {
+                4: 230,
+                5: 235
+            },
+            "mk": {
+                4: 240,
+                5: 245
             }
+
         }
         level_dict = {
           "1": 84,
@@ -878,7 +929,7 @@ class General(commands.Cog, name="dungeon"):
   },
   "at": {
     "4": {
-      "min": 0,
+      "min": 6192742783893,
       "max": 12606801168245
     },
     "5": {
@@ -944,6 +995,26 @@ class General(commands.Cog, name="dungeon"):
     "5": {
       "min": 174070594276045376,
       "max": 499207900505063296
+    }
+  },
+  "cl": {
+    "4": {
+      "min": 406989918318624384,
+      "max": 843652167695517312
+    },
+    "5": {
+      "min": 843652167695517312,
+      "max": 2403381403039392768
+    }
+  },
+  "mk": {
+    "4": {
+      "min": 2000677448873062912,
+      "max": 4192049971884345856
+    },
+    "5": {
+      "min": 4192049971884345856,
+      "max": 11883580434684469248
     }
   }
 }
@@ -1019,7 +1090,9 @@ class General(commands.Cog, name="dungeon"):
                 'gs': 'Gilded Skies',
                 'om': 'Olympus Mons',
                 'wt': 'Warlords Tomb',
-                'ec': 'Emperors Colosseum'
+                'ec': 'Emperors Colosseum',
+                'cl': 'Cultists Lair',
+                'mk': 'Mermaid Kingdom'
             }
             if dung in dungeon_dictionary:
                 dungeon = dungeon_dictionary[dung]
@@ -1187,7 +1260,6 @@ class General(commands.Cog, name="dungeon"):
                 if diff == 5:
                     while (("Legendary" in self.data[dung][dropname]) or ("Ultimate" in self.data[dung][dropname]) or (dropname in t3_dict.values()) or (dropname in t3_guard_dict.values()) or (int(lvlrq) % 10 < 4) or (int(lvlrq) % 10 > 7)):
                         dropname = random.choice(list(self.data[dung]))
-                        print(dropname)
 
                         lvlrq = self.data[dung][dropname]["lvlrq"]
                 elif diff == 4:
@@ -1211,13 +1283,11 @@ class General(commands.Cog, name="dungeon"):
                             dropname = random.choice(list(self.data[dung]))
                             classname = self.data[dung][dropname]["class"]
                             lvlrq = self.data[dung][dropname]["lvlrq"]
-                            print(1)
                     elif diff == 4:
                         while (((int(lvlrq) % 10 > 3) and (int(lvlrq) % 10 < 8) or classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict))):
                             dropname = random.choice(list(self.data[dung]))
                             classname = self.data[dung][dropname]["class"]
                             lvlrq = self.data[dung][dropname]["lvlrq"]
-                            print(2)
                     dropstats = ""
                     classname = self.data[dung][dropname]["class"]
 
@@ -1225,20 +1295,21 @@ class General(commands.Cog, name="dungeon"):
             type = "Gray"
             if classname != "Guardian" and classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict):
                 rand = random.randint(1,2000)
+                print(rand)
                 if rand <= 4:
-                    if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
+                    if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                         if diff == 5:
                             type = "Legendary"
-                            if dung == "nl" or dung == "om" or dung == "wt" or dung == "ec":
+                            if dung == "nl" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                                 if random.randint(1,4) == 1:
                                     type = "Ultimate"
                 if rand <= 20:
                     if rand <= 4:
-                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
+                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                             if diff == 5:
                                 pass
                     else:
-                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
+                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                             pass
                         else:
                             if diff == 5:
@@ -1382,13 +1453,11 @@ class General(commands.Cog, name="dungeon"):
                             dropname2 = random.choice(list(self.data[dung]))
                             classname = self.data[dung][dropname2]["class"]
                             lvlrq = self.data[dung][dropname2]["lvlrq"]
-                            print(3)
                     elif diff == 4:
                         while (((int(lvlrq) % 10 > 3) and (int(lvlrq) % 10 < 8) or classname != "DPS Armor" or (dropname2 in t3_dict) or (dropname2 in t3_guard_dict))):
                             dropname2 = random.choice(list(self.data[dung]))
                             classname = self.data[dung][dropname2]["class"]
                             lvlrq = self.data[dung][dropname2]["lvlrq"]
-                            print(4)
                     dropstats2 = ""
                     classname = self.data[dung][dropname2]["class"]
 
@@ -1396,21 +1465,22 @@ class General(commands.Cog, name="dungeon"):
             type = "Gray"
             if classname != "Guardian" and classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict):
                 rand = random.randint(1, 2000)
+                print(rand)
 
                 if rand <= 4:
-                    if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
+                    if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                         if diff == 5:
                             type = "Legendary"
-                            if dung == "nl" or dung == "om" or dung == "wt" or dung == "ec":
+                            if dung == "nl" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                                 if random.randint(1, 4) == 1:
                                     type = "Ultimate"
                 if rand <= 20:
                     if rand <= 4:
-                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
+                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                             if diff == 5:
                                 pass
                     else:
-                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
+                        if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                             pass
                         else:
                             if diff == 5:
@@ -1536,7 +1606,7 @@ class General(commands.Cog, name="dungeon"):
             if (userdata["equipped"]["helmstats"] != "Empty") and stat in userdata["equipped"]["helmstats"]:
                 helmstats = userdata["equipped"]["helmstats"].split("\n")
                 helm = int(helmstats[1][5:])
-                print(helm)
+
             else:
                 helm = 1
             if (userdata["equipped"]["armorstats"] != "Empty") and stat in userdata["equipped"]["armorstats"]:
@@ -1575,7 +1645,6 @@ class General(commands.Cog, name="dungeon"):
             if (userdata["equipped"]["helmstats"] != "Empty") and stat in userdata["equipped"]["helmstats"]:
                 helmstats = userdata["equipped"]["helmstats"].split("\n")
                 helm = int(helmstats[1][5:])
-                print(helm)
             else:
                 helm = 1
             if (userdata["equipped"]["armorstats"] != "Empty") and stat in userdata["equipped"]["armorstats"]:
@@ -1775,16 +1844,6 @@ class General(commands.Cog, name="dungeon"):
         quantity="quantity"
     )
     async def drop(self, context: Context, dung: str = "dt", diff: int = 1, mode: str = "NHC", quantity: int = 1) -> None:
-        leg_list = ["Desert Fury", "Crystalised Greatsword", "Soulstealer Greatsword", "Staff of the Gods",
-                    "Beast Master War Scythe", "Beast Master Spell Scythe", "Dual Phoenix Daggers",
-                    "Phoenix Greatstaff",
-                    "Sakura Katana", "Sakura Greatstaff", "Overlords Rageblade", "Overlords Manablade", "Kraken Slayer",
-                    "Sea Serpent Wings", "Inventors Greatsword", "Inventors Spellblade", "Galactic Dual Blades",
-                    "Galactic Pike", "Lava Kings Warscythe", "Lava Kings Spell Daggers", "Sea Kings Greatstaff",
-                    "Sea Kings Trident", "Eldenbark Greatsword", "Eldenbark Greatstaff", "Mjolnir", "Gungnir", "Hofund",
-                    "Laevateinn", "Gildenscale Oath and Aegis", "Daybreak and Gildensong", "Fulmen", "Fuscina",
-                    "Shattered Skies", "Stormy Seas", "Ghost Kings Halberd", "Ghost Kings Tome", "Gladius Imperialis",
-                    "Magicus Imperialis", "Storsvero", "Vigamenn", "Theospathia", "Theosevis"]
         leg_dict = {
             "dt": {
                 "War": "Desert Fury",
@@ -1857,6 +1916,14 @@ class General(commands.Cog, name="dungeon"):
             "ec": {
                 "War": "Gladius Imperialis",
                 "Mage": "Magicus Imperialis"
+            },
+            "cl": {
+                "War": "Demonic Sacrificial Dagger",
+                "Mage": "Demonic Ritual Wand"
+            },
+            "mk": {
+                "War": "Glimmershine Battlesword",
+                "Mage": "Glimmershine Artefact"
             }
         }
         ult_dict = {
@@ -1875,6 +1942,14 @@ class General(commands.Cog, name="dungeon"):
             "ec": {
                 "War": "Theospathia",
                 "Mage": "Theosevis"
+            },
+            "cl": {
+                "War": "Uhenyth",
+                "Mage": "Shuggoth"
+            },
+            "mk": {
+                "War": "Myrimidion",
+                "Mage": "Myriminion"
             }
         }
         t3_dict = {
@@ -1893,7 +1968,9 @@ class General(commands.Cog, name="dungeon"):
             "gs": "Gildenscale",
             "om": "Thunder Gods",
             "wt": "Soulshard",
-            "ec": "Gods Chosen"
+            "ec": "Gods Chosen",
+            "cl": "Demonic Cultists",
+            "mk": "Glimmershine"
         }
         t3_guard_dict = {
             "pi": "Godly Guardian",
@@ -1911,7 +1988,579 @@ class General(commands.Cog, name="dungeon"):
             "gs": "Gildenscale Guardian",
             "om": "Thunder Gods Guardian",
             "wt": "Soulshard Guardian",
-            "ec": "Gods Chosen Guardian"
+            "ec": "Gods Chosen Guardian",
+            "cl": "Demonic Cultists Guardian",
+            "mk": "Glimmershine Guardian"
+        }
+        exp_dict = {
+            "dt": {
+                1: 232,
+                2: 354,
+                3: 680,
+                4: 1118,
+                5: 2253
+
+            },
+            "wo": {
+                1: 6564,
+                2: 9180,
+                3: 16140,
+                4: 27840,
+                5: 46180,
+            },
+            "pi": {
+                4: 51150,
+                5: 82200
+            },
+            "kc": {
+                4: 135900,
+                5: 271800
+            },
+            "uw": {
+                4: 546000,
+                5: 924000
+            },
+            "sp": {
+                4: 1934000,
+                5: 3500000
+            },
+            "tc": {
+                4: 4594000,
+                5: 8005000
+            },
+            "gh": {
+                4: 12840000,
+                5: 24160000
+            },
+            "ss": {
+                4: 35700000,
+                5: 59600000
+            },
+            "oo": {
+                4: 329000000,
+                5: 506500000
+            },
+            "vc": {
+                4: 755000000,
+                5: 1225000000
+            },
+            "at": {
+                4: 2034000000,
+                5: 3564000000
+            },
+            "ef": {
+                4: 6900000000,
+                5: 11280000000
+            },
+            "nl": {
+                4: 21820000000,
+                5: 36600000000
+            },
+            "gs": {
+                4: 63500000000,
+                5: 115500000000
+            },
+            "om": {
+                4: 207900000000,
+                5: 374220000000
+            },
+            "wt": {
+                4: 673596000000,
+                5: 1212472800000,
+            },
+            "ec": {
+                4: 2182451040000,
+                5: 3928411872000,
+            },
+            "cl": {
+                4: 7071141369600,
+                5: 12728054465280,
+            },
+            "mk": {
+                4: 22910498037504,
+                5: 41238896467507,
+            }
+
+        }
+        gold_dict = {
+            "dt": {
+                1: 600,
+                2: 1200,
+                3: 2400,
+                4: 4800,
+                5: 9600
+
+            },
+            "wo": {
+                1: 18000,
+                2: 48000,
+                3: 80000,
+                4: 125000,
+                5: 200000,
+            },
+            "pi": {
+                4: 240000,
+                5: 325000
+            },
+            "kc": {
+                4: 550000,
+                5: 750000
+            },
+            "uw": {
+                4: 1250000,
+                5: 1500000
+            },
+            "sp": {
+                4: 2400000,
+                5: 3625000
+            },
+            "tc": {
+                4: 4875000,
+                5: 6125000
+            },
+            "gh": {
+                4: 8500000,
+                5: 11750000
+            },
+            "ss": {
+                4: 21000000,
+                5: 27500000
+            },
+            "oo": {
+                4: 50000000,
+                5: 60000000
+            },
+            "vc": {
+                4: 90000000,
+                5: 100000000
+            },
+            "at": {
+                4: 110000000,
+                5: 120000000
+            },
+            "ef": {
+                4: 150000000,
+                5: 170000000
+            },
+            "nl": {
+                4: 200000000,
+                5: 225000000
+            },
+            "gs": {
+                4: 300000000,
+                5: 410000000
+            },
+            "om": {
+                4: 450000000,
+                5: 550000000
+            },
+            "wt": {
+                4: 600000000,
+                5: 750000000
+            },
+            "ec": {
+                4: 900000000,
+                5: 1050000000
+            },
+            "cl": {
+                4: 1200000000,
+                5: 1350000000
+            },
+            "mk": {
+                4: 1500000000,
+                5: 1650000000
+            }
+        }
+        lvl_dict = {
+            "dt": {
+                1: 1,
+                2: 6,
+                3: 12,
+                4: 20,
+                5: 27
+
+            },
+            "wo": {
+                1: 33,
+                2: 40,
+                3: 45,
+                4: 50,
+                5: 55,
+            },
+            "pi": {
+                4: 60,
+                5: 65
+            },
+            "kc": {
+                4: 70,
+                5: 75
+            },
+            "uw": {
+                4: 80,
+                5: 85
+            },
+            "sp": {
+                4: 90,
+                5: 95
+            },
+            "tc": {
+                4: 100,
+                5: 105
+            },
+            "gh": {
+                4: 110,
+                5: 115
+            },
+            "ss": {
+                4: 120,
+                5: 125
+            },
+            "oo": {
+                4: 140,
+                5: 145
+            },
+            "vc": {
+                4: 150,
+                5: 155
+            },
+            "at": {
+                4: 160,
+                5: 165
+            },
+            "ef": {
+                4: 170,
+                5: 175
+            },
+            "nl": {
+                4: 180,
+                5: 185
+            },
+            "gs": {
+                4: 190,
+                5: 195
+            },
+            "om": {
+                4: 200,
+                5: 205
+            },
+            "wt": {
+                4: 210,
+                5: 215
+            },
+            "ec": {
+                4: 220,
+                5: 225
+            },
+            "cl": {
+                4: 230,
+                5: 235
+            },
+            "mk": {
+                4: 240,
+                5: 245
+            }
+
+        }
+        level_dict = {
+            "1": 84,
+            "2": 94,
+            "3": 107,
+            "4": 121,
+            "5": 136,
+            "6": 154,
+            "7": 174,
+            "8": 197,
+            "9": 223,
+            "10": 252,
+            "11": 285,
+            "12": 322,
+            "13": 364,
+            "14": 411,
+            "15": 464,
+            "16": 525,
+            "17": 593,
+            "18": 670,
+            "19": 758,
+            "20": 856,
+            "21": 967,
+            "22": 1093,
+            "23": 1235,
+            "24": 1396,
+            "25": 1578,
+            "26": 1783,
+            "27": 2015,
+            "28": 2277,
+            "29": 2573,
+            "30": 2907,
+            "31": 3285,
+            "32": 3712,
+            "33": 4195,
+            "34": 4740,
+            "35": 5357,
+            "36": 6053,
+            "37": 6840,
+            "38": 7730,
+            "39": 8734,
+            "40": 9870,
+            "41": 11153,
+            "42": 12603,
+            "43": 14242,
+            "44": 16093,
+            "45": 18185,
+            "46": 20549,
+            "47": 23221,
+            "48": 26240,
+            "49": 29651,
+            "50": 33506,
+            "51": 37861,
+            "52": 42783,
+            "53": 48345,
+            "54": 54630,
+            "55": 61732,
+            "56": 69757,
+            "57": 78826,
+            "58": 89073,
+            "59": 100653,
+            "60": 113738,
+            "61": 128524,
+            "62": 145232,
+            "63": 164112,
+            "64": 185447,
+            "65": 209555,
+            "66": 236798,
+            "67": 267581,
+            "68": 302367,
+            "69": 341675,
+            "70": 386092,
+            "71": 436285,
+            "72": 493002,
+            "73": 557092,
+            "74": 629514,
+            "75": 711351,
+            "76": 803826,
+            "77": 908324,
+            "78": 1026406,
+            "79": 1159839,
+            "80": 1310618,
+            "81": 1480998,
+            "82": 1673528,
+            "83": 1891087,
+            "84": 2136929,
+            "85": 2414729,
+            "86": 2728644,
+            "87": 3083368,
+            "88": 3484206,
+            "89": 3937153,
+            "90": 4448983,
+            "91": 5027350,
+            "92": 5680906,
+            "93": 6419424,
+            "94": 7253949,
+            "95": 8196962,
+            "96": 9262568,
+            "97": 10466702,
+            "98": 11827373,
+            "99": 13364931,
+            "100": 15102372,
+            "101": 17065681,
+            "102": 19284220,
+            "103": 21791168,
+            "104": 24624020,
+            "105": 27825143,
+            "106": 31442411,
+            "107": 35529925,
+            "108": 40148815,
+            "109": 45368161,
+            "110": 51266022,
+            "111": 57930605,
+            "112": 65461584,
+            "113": 73971590,
+            "114": 83587897,
+            "115": 94454323,
+            "116": 106733385,
+            "117": 120608726,
+            "118": 136287860,
+            "119": 154005282,
+            "120": 174025968,
+            "121": 196649344,
+            "122": 222213759,
+            "123": 251101548,
+            "124": 283744749,
+            "125": 320631567,
+            "126": 362313671,
+            "127": 409414448,
+            "128": 462638326,
+            "129": 522781309,
+            "130": 590742879,
+            "131": 667539453,
+            "132": 754319582,
+            "133": 852381128,
+            "134": 963190674,
+            "135": 1088405462,
+            "136": 1229898172,
+            "137": 1389784935,
+            "138": 1570456976,
+            "139": 1774616383,
+            "140": 2005316513,
+            "141": 2266007660,
+            "142": 2560588656,
+            "143": 2893465181,
+            "144": 3269615655,
+            "145": 3694665690,
+            "146": 4174972230,
+            "147": 4717718620,
+            "148": 5331022041,
+            "149": 6024054906,
+            "150": 6807182044,
+            "151": 7692115710,
+            "152": 8692090752,
+            "153": 9822062550,
+            "154": 11098930681,
+            "155": 12541791670,
+            "156": 14172224587,
+            "157": 16014613784,
+            "158": 18096513575,
+            "159": 20449060340,
+            "160": 23107438185,
+            "161": 26111405149,
+            "162": 29505887818,
+            "163": 33341653234,
+            "164": 37676068155,
+            "165": 42573957015,
+            "166": 48108571427,
+            "167": 54362685713,
+            "168": 61429834856,
+            "169": 69415713387,
+            "170": 78439756127,
+            "171": 88636924424,
+            "172": 100159724599,
+            "173": 113180488797,
+            "174": 127893952341,
+            "175": 144520166145,
+            "176": 163307787744,
+            "177": 184537800151,
+            "178": 208527714170,
+            "179": 235636317013,
+            "180": 266269038224,
+            "181": 300884013194,
+            "182": 339998934909,
+            "183": 384198796447,
+            "184": 434144639985,
+            "185": 490583443184,
+            "186": 554359290797,
+            "187": 626425998601,
+            "188": 707861378419,
+            "189": 799883357614,
+            "190": 903868194104,
+            "191": 1021371059337,
+            "192": 1154149297051,
+            "193": 1304188705668,
+            "194": 1473733237405,
+            "195": 1665318558268,
+            "196": 1881809970843,
+            "197": 2126445267052,
+            "198": 2402883151769,
+            "199": 2715257961499,
+            "200": 3068241496494,
+            "201": 3467112891038,
+            "202": 3917837566873,
+            "203": 4427156450567,
+            "204": 5002686789141,
+            "205": 5653036071729,
+            "206": 6387930761054,
+            "207": 7218361759991,
+            "208": 8156748788790,
+            "209": 9217126131333,
+            "210": 10415352528406,
+            "211": 11769348357099,
+            "212": 13299363643522,
+            "213": 15028280917180,
+            "214": 16981957436413,
+            "215": 19189611903147,
+            "216": 21684261450556,
+            "217": 24503215439128,
+            "218": 27688633446215,
+            "219": 31288155794223,
+            "220": 35355616047472,
+            "221": 39951846133644,
+            "222": 45145586131017,
+            "223": 51014512328050,
+            "224": 57646398930696,
+            "225": 65140430791687,
+            "226": 73608686794606,
+            "227": 83177816077905,
+            "228": 93990932168033,
+            "229": 106209753349877,
+            "230": 120017021285361,
+            "231": 135619234052458,
+            "232": 153249734479278,
+            "233": 173172199961584,
+            "234": 195684585956590,
+            "235": 221123582130947,
+            "236": 249869647807970,
+            "237": 282352702023006,
+            "238": 319058553285997,
+            "239": 360536165213176,
+            "240": 407405866690889,
+            "241": 460368629360705,
+            "242": 520216551177596,
+            "243": 587844702830684,
+            "244": 664264514198673,
+            "245": 750618901044500,
+            "246": 848199358180285,
+            "247": 958465274743722,
+            "248": 1083065760460406,
+            "249": 1223864309320259,
+            "250": 1382966669531892,
+            "251": 1562752336571038,
+            "252": 1765910140325273,
+            "253": 1995478458567558,
+            "254": 2254890658181341,
+            "255": 2548026443744915,
+            "256": 2879269881431754,
+            "257": 3253574966017882,
+            "258": 3676539711600205,
+            "259": 4154489874108232,
+            "260": 4694573557742302,
+            "261": 5304868120248800,
+            "262": 5994500975881144,
+            "263": 6773786102745693,
+            "264": 7654378296102631,
+            "265": 8649447474595973,
+            "266": 9773875646293448,
+            "267": 11044479480311594,
+            "268": 12480261812752102,
+            "269": 14102695848409872,
+            "270": 15936046308703156,
+            "271": 18007732328834564,
+            "272": 20348737531583056,
+            "273": 22994073410688848,
+            "274": 25983302954078400,
+            "275": 29361132338108588,
+            "276": 33178079542062700,
+            "277": 37491229882530848,
+            "278": 42365089767259856,
+            "279": 47872551437003632,
+            "280": 54095983123814096,
+            "281": 61128460929909920,
+            "282": 69075160850798200,
+            "283": 78054931761401968,
+            "284": 88202072890384208,
+            "285": 99668342366134160,
+            "286": 112625226873731584,
+            "287": 127266506367316672,
+            "288": 143811152195067840,
+            "289": 162506601980426624,
+            "290": 183632460237882080,
+            "291": 207504680068806752,
+            "292": 234480288477751584,
+            "293": 264962725979859264,
+            "294": 299407880357240960,
+            "295": 338330904803682240,
+            "296": 382313922428160896,
+            "297": 432014732343821760,
+            "298": 488176647548518592,
+            "299": 551639611729825920
         }
         raids_dict = {
             "inventor": ["Bioforged Quickblade", "Sunken Blade", "Bioforged Cog Spellblade", "Fusion Magic Keyblade"],
@@ -2091,19 +2740,19 @@ class General(commands.Cog, name="dungeon"):
                     if classname != "Guardian" and classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict):
                         rand = random.randint(1, 2000)
                         if rand <= 4:
-                            if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
+                            if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                                 if diff == 5:
                                     type = "Legendary"
-                                    if dung == "nl" or dung == "om" or dung == "wt" or dung == "ec":
+                                    if dung == "nl" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                                         if random.randint(1, 4) == 1:
                                             type = "Ultimate"
                         if rand <= 20:
                             if rand <= 4:
-                                if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
+                                if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                                     if diff == 5:
                                         pass
                             else:
-                                if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec":
+                                if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                                     pass
                                 else:
                                     if diff == 5:
