@@ -40,7 +40,7 @@ class General(commands.Cog, name="dungeon"):
         dungeon = "N/A"
         dung = dung.lower()
         mode = mode.upper()
-        t3chance = 20
+        t3chance = 40
         color_dict = {
             'dt': 0xFFFF00,
             'wo': 0xFFFFFF,
@@ -1932,7 +1932,7 @@ class General(commands.Cog, name="dungeon"):
                 "Mage": "Twisted Wood Greatstaff"
             }
         }
-        t3chance = 5
+        t3chance = 40
         with open('spells.json') as json_file:
             spell_dict = json.load(json_file)
 
