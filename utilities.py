@@ -1,3 +1,5 @@
+import math
+
 from pymongo import MongoClient
 
 
@@ -13,6 +15,91 @@ def get_database():
 
 def get_adminlist():
     return [421086209431961600, 383710782686232597, 426402208515620864]
+
+def shorten(num: int = 0):
+    digits = len(str(num))
+    num = str(num)
+    if digits == 0:
+        return num
+    if digits == 1:
+        return num
+    if digits == 2:
+        return num
+    if digits == 3:
+        return num
+    if digits == 4:
+        shortened = num[0:1] + "." + num[1:2] + "k"
+        return shortened
+    if digits == 5:
+        shortened = num[0:2] + "." + num[2:3] + "k"
+        return shortened
+    if digits == 6:
+        shortened = num[0:3] + "." + num[3:4] + "k"
+        return shortened
+    if digits == 7:
+        shortened = num[0:1] + "." + num[1:2] + "m"
+        return shortened
+    if digits == 8:
+        shortened = num[0:2] + "." + num[2:3] + "m"
+        return shortened
+    if digits == 9:
+        shortened = num[0:3] + "." + num[3:4] + "m"
+        return shortened
+    if digits == 10:
+        shortened = num[0:1] + "." + num[1:2] + "b"
+        return shortened
+    if digits == 11:
+        shortened = num[0:2] + "." + num[2:3] + "b"
+        return shortened
+    if digits == 12:
+        shortened = num[0:3] + "." + num[3:4] + "b"
+        return shortened
+    if digits == 13:
+        shortened = num[0:1] + "." + num[1:2] + "t"
+        return shortened
+    if digits == 14:
+        shortened = num[0:2] + "." + num[2:3] + "t"
+        return shortened
+    if digits == 15:
+        shortened = num[0:3] + "." + num[3:4] + "t"
+        return shortened
+    if digits == 16:
+        shortened = num[0:1] + "." + num[1:2] + "qa"
+        return shortened
+    if digits == 17:
+        shortened = num[0:2] + "." + num[2:3] + "qa"
+        return shortened
+    if digits == 18:
+        shortened = num[0:3] + "." + num[3:4] + "qa"
+        return shortened
+    if digits == 19:
+        shortened = num[0:1] + "." + num[1:2] + "qi"
+        return shortened
+    if digits == 20:
+        shortened = num[0:2] + "." + num[2:3] + "qi"
+        return shortened
+    if digits == 21:
+        shortened = num[0:3] + "." + num[3:4] + "qi"
+        return shortened
+    if digits == 22:
+        shortened = num[0:1] + "." + num[1:2] + "sx"
+        return shortened
+    if digits == 23:
+        shortened = num[0:2] + "." + num[2:3] + "sx"
+        return shortened
+    if digits == 24:
+        shortened = num[0:3] + "." + num[3:4] + "sx"
+        return shortened
+    if digits == 25:
+        shortened = num[0:1] + "." + num[1:2] + "sp"
+        return shortened
+    if digits == 26:
+        shortened = num[0:2] + "." + num[2:3] + "sp"
+        return shortened
+    if digits == 27:
+        shortened = num[0:3] + "." + num[3:4] + "sp"
+        return int(shortened)
+
 
 
 # This is added so that many files can reuse the function get_database()

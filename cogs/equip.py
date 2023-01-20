@@ -3,6 +3,7 @@ import platform
 import random
 import aiohttp
 import discord
+from utilities import shorten
 from utilities import get_database
 from discord import app_commands
 from discord.ext import commands
@@ -383,7 +384,7 @@ class General(commands.Cog, name="equip"):
 
         embed.add_field(
             name="Your total damage is",
-            value=damage,
+            value=shorten(damage),
             inline=True
         )
         embed.add_field(
