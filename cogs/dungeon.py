@@ -1,7 +1,7 @@
 import math
 import platform
 import random
-
+from utilities import shorten
 import aiohttp
 import discord
 from discord import app_commands
@@ -10,6 +10,7 @@ from discord.ext.commands import Context
 import json
 from utilities import get_database
 from helpers import checks
+from utilities import get_adminlist
 
 
 class General(commands.Cog, name="dungeon"):
@@ -19,7 +20,7 @@ class General(commands.Cog, name="dungeon"):
         data = json.load(json_file)
     with open('raidValues.json') as json_file:
         brdata = json.load(json_file)
-    adminlist = [421086209431961600,383710782686232597,426402208515620864]
+    adminlist = get_adminlist()
     def __init__(self, bot):
         self.bot = bot
 
@@ -1213,9 +1214,11 @@ class General(commands.Cog, name="dungeon"):
                 dropstats = "Class: " + classname
                 if classname == "War" or classname == "Mage":
                     classname = "Armor"
-                dropstats += "\nPot: " + str(random.randint(int(self.brdata[str(tier)][classname][rarity]["minpot"]),int(self.brdata[str(tier)][classname][rarity]["maxpot"])))
+                pot = random.randint(int(self.brdata[str(tier)][classname][rarity]["minpot"]),int(self.brdata[str(tier)][classname][rarity]["maxpot"]))
+                dropstats += "\nPot: " + str(pot)
                 if classname == "Armor":
-                    dropstats += "\nHealth: " + str(random.randint(int(self.brdata[str(tier)][classname][rarity]["minhp"]),int(self.brdata[str(tier)][classname][rarity]["maxhp"])))
+                    health = random.randint(int(self.brdata[str(tier)][classname][rarity]["minhp"]),int(self.brdata[str(tier)][classname][rarity]["maxhp"]))
+                    dropstats += "\nHealth: " + str(health)
                 dropstats += "\nLvl Req: 130"
                 dropstats += "\nRarity: " + rarity
                 dropstats += "\nTier: " + str(tier)
@@ -1246,8 +1249,8 @@ class General(commands.Cog, name="dungeon"):
                 else:
                     dropname = random.choice(raids_dict[map])
                 dropstats = "Class: " + classname
-                dropstats += "\nPot: " + str(random.randint(int(self.brdata[str(tier)][classname][rarity]["minpot"]),
-                                                            int(self.brdata[str(tier)][classname][rarity]["maxpot"])))
+                pot = random.randint(int(self.brdata[str(tier)][classname][rarity]["minpot"]),int(self.brdata[str(tier)][classname][rarity]["maxpot"]))
+                dropstats += "\nPot: " + str(pot)
                 dropstats += "\nLvl Req: 130"
                 dropstats += "\nRarity: " + rarity
                 dropstats += "\nTier: " + str(tier)
@@ -1295,7 +1298,6 @@ class General(commands.Cog, name="dungeon"):
             type = "Gray"
             if classname != "Guardian" and classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict):
                 rand = random.randint(1,2000)
-                print(rand)
                 if rand <= 4:
                     if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                         if diff == 5:
@@ -1422,58 +1424,57 @@ class General(commands.Cog, name="dungeon"):
 
             #Drop 2
             dropname2 = random.choice(list(self.data[dung]))
-            classname = self.data[dung][dropname2]["class"]
-            lvlrq = self.data[dung][dropname2]["lvlrq"]
+            classname2 = self.data[dung][dropname2]["class"]
+            lvlrq2 = self.data[dung][dropname2]["lvlrq"]
             if dung != "dt" and dung != "wo":
                 if diff == 5:
                     while (("Legendary" in self.data[dung][dropname2]) or ("Ultimate" in self.data[dung][dropname2]) or (
                             dropname2 in t3_dict.values()) or (dropname2 in t3_guard_dict.values()) or (
-                                   int(lvlrq) % 10 < 4) or (int(lvlrq) % 10 > 7)):
+                                   int(lvlrq2) % 10 < 4) or (int(lvlrq2) % 10 > 7)):
                         dropname2 = random.choice(list(self.data[dung]))
-                        lvlrq = self.data[dung][dropname2]["lvlrq"]
+                        lvlrq2 = self.data[dung][dropname2]["lvlrq"]
                 elif diff == 4:
                     while (("Legendary" in self.data[dung][dropname2]) or ("Ultimate" in self.data[dung][dropname2]) or (
                             dropname2 in t3_dict.values()) or (dropname2 in t3_guard_dict.values()) or (
-                                   (int(lvlrq) % 10 > 3) and (int(lvlrq) % 10 < 8))):
+                                   (int(lvlrq2) % 10 > 3) and (int(lvlrq2) % 10 < 8))):
                         dropname2 = random.choice(list(self.data[dung]))
-                        lvlrq = self.data[dung][dropname2]["lvlrq"]
+                        lvlrq2 = self.data[dung][dropname2]["lvlrq"]
                 dropstats2 = ""
-                classname = self.data[dung][dropname2]["class"]
+                classname2 = self.data[dung][dropname2]["class"]
             else:
                 while (dropname2 == "Desert Fury") or (dropname2 == "Crystalised Greatsword"):
                     dropname2 = random.choice(list(self.data[dung]))
-                    lvlrq = self.data[dung][dropname2]["lvlrq"]
+                    lvlrq2 = self.data[dung][dropname2]["lvlrq"]
                 dropstats2 = ""
-                classname = self.data[dung][dropname2]["class"]
+                classname2 = self.data[dung][dropname2]["class"]
             # Buff Armor Chances
             if random.randint(1, 6) == 1:
                 if dung != "dt" and dung != "wo":
                     if diff == 5:
-                        while ((int(lvlrq) % 10 < 4) or (int(lvlrq) % 10 > 7) or classname != "DPS Armor" or (dropname2 in t3_dict) or (dropname2 in t3_guard_dict)):
+                        while ((int(lvlrq2) % 10 < 4) or (int(lvlrq2) % 10 > 7) or classname2 != "DPS Armor" or (dropname2 in t3_dict) or (dropname2 in t3_guard_dict)):
                             dropname2 = random.choice(list(self.data[dung]))
-                            classname = self.data[dung][dropname2]["class"]
-                            lvlrq = self.data[dung][dropname2]["lvlrq"]
+                            classname2 = self.data[dung][dropname2]["class"]
+                            lvlrq2 = self.data[dung][dropname2]["lvlrq"]
                     elif diff == 4:
-                        while (((int(lvlrq) % 10 > 3) and (int(lvlrq) % 10 < 8) or classname != "DPS Armor" or (dropname2 in t3_dict) or (dropname2 in t3_guard_dict))):
+                        while (((int(lvlrq2) % 10 > 3) and (int(lvlrq2) % 10 < 8) or classname2 != "DPS Armor" or (dropname2 in t3_dict) or (dropname2 in t3_guard_dict))):
                             dropname2 = random.choice(list(self.data[dung]))
-                            classname = self.data[dung][dropname2]["class"]
-                            lvlrq = self.data[dung][dropname2]["lvlrq"]
+                            classname2 = self.data[dung][dropname2]["class"]
+                            lvlrq2 = self.data[dung][dropname2]["lvlrq"]
                     dropstats2 = ""
-                    classname = self.data[dung][dropname2]["class"]
+                    classname2 = self.data[dung][dropname2]["class"]
 
             # Get type of weapon
-            type = "Gray"
-            if classname != "Guardian" and classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict):
+            type2 = "Gray"
+            if classname2 != "Guardian" and classname2 != "DPS Armor" or (dropname2 in t3_dict) or (dropname2 in t3_guard_dict):
                 rand = random.randint(1, 2000)
-                print(rand)
 
                 if rand <= 4:
                     if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                         if diff == 5:
-                            type = "Legendary"
+                            type2 = "Legendary"
                             if dung == "nl" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
                                 if random.randint(1, 4) == 1:
-                                    type = "Ultimate"
+                                    type2 = "Ultimate"
                 if rand <= 20:
                     if rand <= 4:
                         if dung == "gs" or dung == "nl" or dung == "ef" or dung == "at" or dung == "om" or dung == "wt" or dung == "ec" or dung == "mk" or dung == "cl":
@@ -1484,34 +1485,34 @@ class General(commands.Cog, name="dungeon"):
                             pass
                         else:
                             if diff == 5:
-                                type = "Legendary"
+                                type2 = "Legendary"
                 if rand <= 100:
                     if rand <= 20:
                         if diff == 5:
                             pass
                     else:
-                        type = "Purple"
+                        type2 = "Purple"
                 elif rand <= 250:
-                    type = "Blue"
+                    type2 = "Blue"
                 elif rand <= 750:
-                    type = "Green"
+                    type2 = "Green"
                 else:
-                    type = "Gray"
+                    type2 = "Gray"
             # Get pot of weapon
-            if classname != "Guardian" and classname != "DPS Armor" or (dropname in t3_dict) or (dropname in t3_guard_dict):
+            if classname2 != "Guardian" and classname2 != "DPS Armor" or (dropname2 in t3_dict) or (dropname2 in t3_guard_dict):
 
                 # Legendary Catch Code
-                if type == "Legendary":
-                    dropname2 = leg_dict[dung][classname]
+                if type2 == "Legendary":
+                    dropname2 = leg_dict[dung][classname2]
                 if type == "Ultimate":
-                    dropname2 = ult_dict[dung][classname]
-                min_pot = self.data[dung][dropname2][type]["minpot"]
-                max_pot = self.data[dung][dropname2][type]["maxpot"]
-                pot = random.randint(int(min_pot), int(max_pot))
-                lvlrq = self.data[dung][dropname2]["lvlrq"]
-                dropstats2 = "Class: " + classname + "\nPot: " + str(pot) + "\nLvl Req: " + str(lvlrq) + "\nRarity: " + type
+                    dropname2 = ult_dict[dung][classname2]
+                min_pot = self.data[dung][dropname2][type2]["minpot"]
+                max_pot = self.data[dung][dropname2][type2]["maxpot"]
+                pot2 = random.randint(int(min_pot), int(max_pot))
+                lvlrq2 = self.data[dung][dropname2]["lvlrq"]
+                dropstats2 = "Class: " + classname2 + "\nPot: " + str(pot2) + "\nLvl Req: " + str(lvlrq2) + "\nRarity: " + type2
             # Get type of guard
-            if classname == "Guardian":
+            if classname2 == "Guardian":
                 rand = random.randint(1, t3chance)
                 if rand == 1:
                     if dung != "dt" and dung != "wo":
@@ -1519,27 +1520,27 @@ class General(commands.Cog, name="dungeon"):
                            dropname2 = t3_guard_dict[dung]
                 rand = random.randint(1,2000)
                 if rand <= 100:
-                    type = "Purple"
+                    type2 = "Purple"
                 elif rand <= 250:
-                    type = "Blue"
+                    type2 = "Blue"
                 elif rand <= 750:
-                    type = "Green"
+                    type2 = "Green"
                 else:
-                    type = "Gray"
+                    type2 = "Gray"
             # Get pot of guard
-            if classname == "Guardian":
+            if classname2 == "Guardian":
                 rand = random.randint(1, 2)
                 if rand == 1:
-                    classname = "Guardian Helm"
+                    classname2 = "Guardian Helm"
                 if rand == 2:
-                    classname = "Guardian Chest"
-                min_pot = self.data[dung][dropname2][type]["minpot"]
-                max_pot = self.data[dung][dropname2][type]["maxpot"]
-                pot = random.randint(int(min_pot), int(max_pot))
-                lvlrq = self.data[dung][dropname2]["lvlrq"]
-                dropstats2 = "Class: " + classname + "\nPot: " + str(pot) + "\nLvl Req: " + str(lvlrq) + "\nRarity: " + type
+                    classname2 = "Guardian Chest"
+                min_pot = self.data[dung][dropname2][type2]["minpot"]
+                max_pot = self.data[dung][dropname2][type2]["maxpot"]
+                pot2 = random.randint(int(min_pot), int(max_pot))
+                lvlrq2 = self.data[dung][dropname2]["lvlrq"]
+                dropstats2 = "Class: " + classname2 + "\nPot: " + str(pot2) + "\nLvl Req: " + str(lvlrq2) + "\nRarity: " + type2
             # Get type of armor
-            if classname == "DPS Armor":
+            if classname2 == "DPS Armor":
                 rand = random.randint(1, t3chance)
                 if rand == 1:
                     if dung != "dt" and dung != "wo":
@@ -1547,32 +1548,32 @@ class General(commands.Cog, name="dungeon"):
                             dropname2 = t3_dict[dung]
                 rand = random.randint(1,2000)
                 if rand <= 100:
-                    type = "Purple"
+                    type2 = "Purple"
                 elif rand <= 250:
-                    type = "Blue"
+                    type2 = "Blue"
                 elif rand <= 750:
-                    type = "Green"
+                    type2 = "Green"
                 else:
-                    type = "Gray"
+                    type2 = "Gray"
             # Get pot of armor
-            if classname == "DPS Armor":
+            if classname2 == "DPS Armor":
                 rand = random.randint(1,4)
                 if rand == 1:
-                    classname = "War Helm"
+                    classname2 = "War Helm"
                 if rand == 2:
-                    classname = "Mage Helm"
+                    classname2 = "Mage Helm"
                 if rand == 3:
-                    classname = "War Chest"
+                    classname2 = "War Chest"
                 if rand == 4:
-                    classname = "Mage Chest"
-                min_pot = self.data[dung][dropname2][type]["minpot"]
-                max_pot = self.data[dung][dropname2][type]["maxpot"]
-                pot = random.randint(int(min_pot), int(max_pot))
-                lvlrq = self.data[dung][dropname2]["lvlrq"]
-                min_pot = self.data[dung][dropname2][type]["minhp"]
-                max_pot = self.data[dung][dropname2][type]["maxhp"]
-                health = random.randint(int(min_pot), int(max_pot))
-                dropstats2 = "Class: " + classname + "\nPot: " + str(pot) + "\nHealth: " + str(health) + "\nLvl Req: " + str(lvlrq) + "\nRarity: " + type
+                    classname2 = "Mage Chest"
+                min_pot = self.data[dung][dropname2][type2]["minpot"]
+                max_pot = self.data[dung][dropname2][type2]["maxpot"]
+                pot2 = random.randint(int(min_pot), int(max_pot))
+                lvlrq2 = self.data[dung][dropname2]["lvlrq"]
+                min_pot = self.data[dung][dropname2][type2]["minhp"]
+                max_pot = self.data[dung][dropname2][type2]["maxhp"]
+                health2 = random.randint(int(min_pot), int(max_pot))
+                dropstats2 = "Class: " + classname2 + "\nPot: " + str(pot2) + "\nHealth: " + str(health2) + "\nLvl Req: " + str(lvlrq2) + "\nRarity: " + type2
             # Spell Handling
             rand = random.randint(1, 5)
             if rand == 1:
@@ -1696,12 +1697,6 @@ class General(commands.Cog, name="dungeon"):
             embed.set_author(
                 name="Raid Information"
             )
-            embed.add_field(
-                name=dropname,
-                value=dropstats,
-                inline=False
-            )
-
             length = len(userdata["inventory"])
             length2 = length + 1
             length = str(length)
@@ -1709,10 +1704,26 @@ class General(commands.Cog, name="dungeon"):
             userdata["inventory"][length] = {}
             userdata["inventory"][length]["name"] = dropname
             userdata["inventory"][length]["stats"] = dropstats
+            dropstats = 0
+            dropstats = "Class: " + classname
+            dropstats += "\nPot: " + str(shorten(pot))
+            if classname == "Armor":
+                dropstats += "\nHealth: " + str(shorten(health))
+
+            dropstats += "\nLvl Req: 130"
+            dropstats += "\nRarity: " + rarity
+            dropstats += "\nTier: " + str(tier)
+            embed.add_field(
+                name=dropname,
+                value=dropstats,
+                inline=False
+            )
+
+
 
             embed.add_field(
                 name="Other Loot",
-                value="Gold: " + str(((tier-1)*666666) + 14000000) + "\nExp: 130000000",
+                value="Gold: " + str(shorten(((tier-1)*666666) + 14000000)) + "\nExp: 130m",
                 inline=False
             )
 
@@ -1730,8 +1741,8 @@ class General(commands.Cog, name="dungeon"):
             embed.add_field(
                 name="Exp",
                 value="Level: " + str(userdata["stats"]["level"]) + "\nExp: " + str(
-                    userdata["stats"]["exp"]) + " / " + str(
-                    level_dict[str(userdata["stats"]["level"])])
+                    shorten(userdata["stats"]["exp"])) + " / " + str(
+                    shorten(level_dict[str(userdata["stats"]["level"])]))
             )
             embed.set_footer(
                 text=f"Requested by {context.author}"
@@ -1760,12 +1771,28 @@ class General(commands.Cog, name="dungeon"):
             embed.set_author(
                 name="Raid Information"
             )
+            if ("Helm" in classname or "Chest" in classname) and "Guardian" not in classname:
+                dropstats = "Class: " + classname + "\nPot: " + str(shorten(pot)) + "\nHealth: " + str(
+                    shorten(health)) + "\nLvl Req: " + str(lvlrq) + "\nRarity: " + type
+            if "Spell" in classname:
+                pass
+            else:
+                dropstats = "Class: " + classname + "\nPot: " + str(shorten(pot)) + "\nLvl Req: " + str(
+                    lvlrq) + "\nRarity: " + type
+
             embed.add_field(
                 name=dropname,
                 value=dropstats,
                 inline=True
             )
             if mode == "Hardcore":
+                if ("Helm" in classname2 or "Chest" in classname2) and "Guardian" not in classname2:
+                    dropstats2 = "Class: " + classname2 + "\nPot: " + str(shorten(pot2)) + "\nHealth: " + str(
+                        shorten(health2)) + "\nLvl Req: " + str(lvlrq2) + "\nRarity: " + type2
+                if "Spell" in classname2:
+                    pass
+                else:
+                    dropstats2 = "Class: " + classname2 + "\nPot: " + str(shorten(pot2)) + "\nLvl Req: " + str(lvlrq2) + "\nRarity: " + type2
                 embed.add_field(
                     name=dropname2,
                     value=dropstats2,
@@ -1773,7 +1800,7 @@ class General(commands.Cog, name="dungeon"):
                 )
             embed.add_field(
                 name="Other Loot",
-                value="Gold: " + str(gold_dict[dung][diff]) + "\nExp: " + str(exp_dict[dung][diff])
+                value="Gold: " + str(shorten(gold_dict[dung][diff])) + "\nExp: " + str(shorten(exp_dict[dung][diff]))
             )
 
             userdata["stats"]["gold"] += gold_dict[dung][diff]
@@ -1787,7 +1814,7 @@ class General(commands.Cog, name="dungeon"):
             collection.insert_one(userdata)
             embed.add_field(
                 name="Exp",
-                value="Level: " + str(userdata["stats"]["level"]) + "\nExp: " + str(userdata["stats"]["exp"]) + " / " + str(level_dict[str(userdata["stats"]["level"])])
+                value="Level: " + str(userdata["stats"]["level"]) + "\nExp: " + str(shorten(userdata["stats"]["exp"])) + " / " + str(shorten(level_dict[str(userdata["stats"]["level"])]))
             )
             embed.set_footer(
                 text=f"Requested by {context.author}"
@@ -1825,7 +1852,7 @@ class General(commands.Cog, name="dungeon"):
                 embed.add_field(
                     name="Exp",
                     value="Level: " + str(userdata["stats"]["level"]) + "\nExp: " + str(
-                        userdata["stats"]["exp"]) + " / " + str(level_dict[str(userdata["stats"]["level"])])
+                        shorten(userdata["stats"]["exp"])) + " / " + str(shorten(level_dict[str(userdata["stats"]["level"])]))
                 )
                 embed.set_footer(
                     text=f"Requested by {context.author}"

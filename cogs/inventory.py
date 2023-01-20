@@ -4,6 +4,7 @@ import random
 import pymongo
 from utilities import get_adminlist
 from utilities import get_database
+from utilities import shorten
 import aiohttp
 import discord
 from discord import app_commands
@@ -744,8 +745,8 @@ class General(commands.Cog, name="inv"):
         )
         embed.add_field(
             name="Stats",
-            value="Level: " + str(userdata["stats"]["level"]) + "\nExp: " + str(userdata["stats"]["exp"]) + " / " + str(level_dict[str(userdata["stats"]["level"])]) +
-            "\nGold: " + str(userdata["stats"]["gold"]),
+            value="Level: " + str(shorten(userdata["stats"]["level"])) + "\nExp: " + str(shorten(userdata["stats"]["exp"])) + " / " + str(shorten(level_dict[str(userdata["stats"]["level"])])) +
+            "\nGold: " + str(shorten(userdata["stats"]["gold"])),
             inline=True
         )
         embed.set_footer(
