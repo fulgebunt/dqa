@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11a5977c-5cb8-4655-95d9-a28fdf3af2ce" name="Changes" comment="changed to use mongodb" />
+    <list default="true" id="11a5977c-5cb8-4655-95d9-a28fdf3af2ce" name="Changes" comment="changed to use mongodb">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +66,7 @@
       <workItem from="1674091952236" duration="4694000" />
       <workItem from="1674098240442" duration="8714000" />
       <workItem from="1674106995450" duration="148000" />
-      <workItem from="1674107156006" duration="31070000" />
+      <workItem from="1674107156006" duration="33174000" />
     </task>
     <task id="LOCAL-00001" summary="changed to use mongodb">
       <created>1674106674377</created>
