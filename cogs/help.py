@@ -194,7 +194,7 @@ class General(commands.Cog, name="help"):
                 "weapname": "Myriminion",
                 "helmstats": "Class: Mage Helm\nPot: 519782356\nHealth: 77353540129\nLvl Req: 246\nRarity: Purple",
                 "armorstats": "Class: Mage Armor\nPot: 519782356\nHealth: 77353540129\nLvl Req: 246\nRarity: Purple",
-                "weapstats": "Class: Mage Helm\nPot: 6711095564\nLvl Req: 246\nRarity: Ultimate",
+                "weapstats": "Class: Mage\nPot: 6711095564\nLvl Req: 246\nRarity: Ultimate",
                 "spellname": "Stormy Sea",
                 "spellstats": "Class: Mage"
             },
