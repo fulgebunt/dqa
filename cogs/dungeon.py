@@ -1718,9 +1718,6 @@ class General(commands.Cog, name="dungeon"):
                 value=dropstats,
                 inline=False
             )
-
-
-
             embed.add_field(
                 name="Other Loot",
                 value="Gold: " + str(shorten(((tier-1)*666666) + 14000000)) + "\nExp: 130m",
@@ -1771,11 +1768,11 @@ class General(commands.Cog, name="dungeon"):
             embed.set_author(
                 name="Raid Information"
             )
-            if ("Helm" in classname or "Chest" in classname) and "Guardian" not in classname:
-                dropstats = "Class: " + classname + "\nPot: " + str(shorten(pot)) + "\nHealth: " + str(
-                    shorten(health)) + "\nLvl Req: " + str(lvlrq) + "\nRarity: " + type
             if "Spell" in classname:
                 pass
+            elif ("Helm" in classname or "Chest" in classname) and "Guardian" not in classname:
+                dropstats = "Class: " + classname + "\nPot: " + str(shorten(pot)) + "\nHealth: " + str(
+                    shorten(health)) + "\nLvl Req: " + str(lvlrq) + "\nRarity: " + type
             else:
                 dropstats = "Class: " + classname + "\nPot: " + str(shorten(pot)) + "\nLvl Req: " + str(
                     lvlrq) + "\nRarity: " + type
@@ -1786,11 +1783,11 @@ class General(commands.Cog, name="dungeon"):
                 inline=True
             )
             if mode == "Hardcore":
+                if "Spell" in classname2:
+                    pass
                 if ("Helm" in classname2 or "Chest" in classname2) and "Guardian" not in classname2:
                     dropstats2 = "Class: " + classname2 + "\nPot: " + str(shorten(pot2)) + "\nHealth: " + str(
                         shorten(health2)) + "\nLvl Req: " + str(lvlrq2) + "\nRarity: " + type2
-                if "Spell" in classname2:
-                    pass
                 else:
                     dropstats2 = "Class: " + classname2 + "\nPot: " + str(shorten(pot2)) + "\nLvl Req: " + str(lvlrq2) + "\nRarity: " + type2
                 embed.add_field(

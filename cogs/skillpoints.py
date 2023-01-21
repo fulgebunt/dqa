@@ -89,7 +89,7 @@ class General(commands.Cog, name="skillpoints"):
             userdata["stats"]["war"] = war
             userdata["stats"]["mage"] = mage
             userdata["stats"]["health"] = health
-            userdata["stats"]["free"] = userdata["stats"]["level"] - (war + mage + health)
+            userdata["stats"]["free"] = userdata["stats"]["level"] - (war + mage + health) - 1
             collection.drop()
             collection.insert_one(userdata)
             embed = discord.Embed(

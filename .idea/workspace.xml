@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="11a5977c-5cb8-4655-95d9-a28fdf3af2ce" name="Changes" comment="changed to use mongodb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/dungeon.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/dungeon.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/equip.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/equip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/inventory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/skillpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/skillpoints.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discord.log" beforeDir="false" afterPath="$PROJECT_DIR$/discord.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +70,8 @@
       <workItem from="1674106995450" duration="148000" />
       <workItem from="1674107156006" duration="37101000" />
       <workItem from="1674193870195" duration="37000" />
-      <workItem from="1674194018948" duration="6834000" />
+      <workItem from="1674194018948" duration="8795000" />
+      <workItem from="1674291095543" duration="383000" />
     </task>
     <task id="LOCAL-00001" summary="changed to use mongodb">
       <created>1674106674377</created>
