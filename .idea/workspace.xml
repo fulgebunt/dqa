@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11a5977c-5cb8-4655-95d9-a28fdf3af2ce" name="Changes" comment="changed to use mongodb">
-      <change afterPath="$PROJECT_DIR$/damage_gates.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exp_dict.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gold_dict.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leg_dict.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leg_list.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lists.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lists.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lvl_dict.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ult_dict.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UPDATES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/dungeon.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/dungeon.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/equip.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/equip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/help.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/inventory.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/inventory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/leaderboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/leaderboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/skillpoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/skillpoints.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/discord.log" beforeDir="false" afterPath="$PROJECT_DIR$/discord.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/itemValues.json" beforeDir="false" afterPath="$PROJECT_DIR$/itemValues.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldCogs/fun.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldCogs/general.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldCogs/moderation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldCogs/owner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oldCogs/template.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/special.py" beforeDir="false" afterPath="$PROJECT_DIR$/special.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spellData.json" beforeDir="false" afterPath="$PROJECT_DIR$/spellData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spells.json" beforeDir="false" afterPath="$PROJECT_DIR$/spells.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +75,7 @@
       <workItem from="1674194018948" duration="8795000" />
       <workItem from="1674291095543" duration="10992000" />
       <workItem from="1674362679263" duration="6836000" />
-      <workItem from="1674376139380" duration="2366000" />
+      <workItem from="1674376139380" duration="2932000" />
     </task>
     <task id="LOCAL-00001" summary="changed to use mongodb">
       <created>1674106674377</created>
