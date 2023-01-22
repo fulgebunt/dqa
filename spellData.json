@@ -84,6 +84,16 @@
     "Damage": 600,
     "Dungeon": "wo"
   },
+  "Ground Slam": {
+    "abilityType": "spell",
+    "Damage": 600,
+    "Dungeon": "wo"
+  },
+  "Piercing Rain": {
+    "abilityType": "spell",
+    "Damage": 600,
+    "Dungeon": "wo"
+  },
   "Arcane Barrage": {
     "abilityType": "spell",
     "Damage": 600,
