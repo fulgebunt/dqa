@@ -1,12 +1,7 @@
-import platform
-import random
 from utilities import get_database
-import aiohttp
 import discord
-from discord import app_commands
 from discord.ext import commands
 from discord.ext.commands import Context
-import json
 from helpers import checks
 
 
@@ -180,22 +175,22 @@ class General(commands.Cog, name="help"):
             "inventory": {
             },
             "stats": {
-                "level": 250,
+                "level": 330,
                 "exp": 0,
                 "gold": 0,
                 "war": 0,
-                "mage": 250,
+                "mage": 329,
                 "health": 0,
                 "free": 0
             },
             "equipped": {
-                "helmname": "Glimmershine",
-                "armorname": "Glimmershine",
-                "weapname": "Myriminion",
-                "helmstats": "Class: Mage Helm\nPot: 519782356\nHealth: 77353540129\nLvl Req: 246\nRarity: Purple",
-                "armorstats": "Class: Mage Armor\nPot: 519782356\nHealth: 77353540129\nLvl Req: 246\nRarity: Purple",
-                "weapstats": "Class: Mage\nPot: 6711095564\nLvl Req: 246\nRarity: Ultimate",
-                "spellname": "Stormy Sea",
+                "helmname": "Fortunata",
+                "armorname": "Fortunata",
+                "weapname": "Garadh Mor",
+                "helmstats": "Class: Mage Helm\nPot: 195417672179\nHealth: 346264891079934\nLvl Req: 326\nRarity: Purple",
+                "armorstats": "Class: Mage Armor\nPot: 195417672179\nHealth: 346264891079934\nLvl Req: 326\nRarity: Purple",
+                "weapstats": "Class: Mage\nPot: 2619340345468\nLvl Req: 246\nRarity: Ultimate",
+                "spellname": "Shattered Eternity",
                 "spellstats": "Class: Mage"
             },
             "trades": {
