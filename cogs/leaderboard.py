@@ -1,13 +1,9 @@
-import math
-import platform
-import random
-import aiohttp
 import discord
 from utilities import get_database
-from discord import app_commands, client
+from discord import app_commands
 from discord.ext import commands
 from discord.ext.commands import Context
-import json
+import lists
 
 from helpers import checks
 

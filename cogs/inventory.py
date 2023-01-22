@@ -1,17 +1,12 @@
 import math
-import platform
-import random
-import pymongo
 from utilities import get_adminlist
 from utilities import get_database
 from utilities import shorten
-import aiohttp
 import discord
 from discord import app_commands
 from discord.ext import commands
 from discord.ext.commands import Context
-import json
-
+import lists
 from helpers import checks
 
 
@@ -156,167 +151,9 @@ class General(commands.Cog, name="inv"):
         db = get_database()
         collection = db[str(userid)]
         userdata = collection.find_one()
-        leg_list = ["Desert Fury", "Crystalised Greatsword", "Soulstealer Greatsword", "Staff of the Gods",
-                    "Beast Master War Scythe", "Beast Master Spell Scythe", "Dual Phoenix Daggers",
-                    "Phoenix Greatstaff",
-                    "Sakura Katana", "Sakura Greatstaff", "Overlords Rageblade", "Overlords Manablade", "Kraken Slayer",
-                    "Sea Serpent Wings", "Inventors Greatsword", "Inventors Spellblade", "Galactic Dual Blades",
-                    "Galactic Pike", "Lava Kings Warscythe", "Lava Kings Spell Daggers", "Sea Kings Greatstaff",
-                    "Sea Kings Trident", "Eldenbark Greatsword", "Eldenbark Greatstaff", "Mjolnir", "Gungnir", "Hofund",
-                    "Laevateinn", "Gildenscale Oath and Aegis", "Daybreak and Gildensong", "Fulmen", "Fuscina",
-                    "Shattered Skies", "Stormy Seas", "Ghost Kings Halberd", "Ghost Kings Tome",
-                    "Gladius Imperialis", "Magicus Imperialis", "Storsvero", "Vigamenn", "Theospathia",
-                    "Theosevis", "Demonic Sacrificial Dagger", "Demonic Ritual Wand", "Uhenyth", "Shuggoth",
-                    "Glimmershine Battlesword",
-                    "Glimmershine Artefact", "Myrimidion", "Myriminion"]
-        leg_dict = {
-            "dt": {
-                "War": "Desert Fury",
-                "Mage": "Desert Fury"
-            },
-            "wo": {
-                "War": "Crystalised Greatsword",
-                "Mage": "Crystalised Greatsword"
-            },
-            "pi": {
-                "War": "Soulstealer Greatsword",
-                "Mage": "Staff of the Gods"
-            },
-            "kc": {
-                "War": "Beast Master War Scythe",
-                "Mage": "Beast Master Spell Scythe"
-            },
-            "uw": {
-                "War": "Dual Phoenix Daggers",
-                "Mage": "Phoenix Greatstaff"
-            },
-            "sp": {
-                "War": "Sakura Katana",
-                "Mage": "Sakura Greatstaff"
-            },
-            "tc": {
-                "War": "Overlords Rageblade",
-                "Mage": "Overlords Manablade"
-            },
-            "gh": {
-                "War": "Kraken Slayer",
-                "Mage": "Sea Serpent Wings"
-            },
-            "ss": {
-                "War": "Inventors Greatsword",
-                "Mage": "Inventors Spellblade"
-            },
-            "oo": {
-                "War": "Galactic Dual Blades",
-                "Mage": "Galactic Pike"
-            },
-            "vc": {
-                "War": "Lava Kings Warscythe",
-                "Mage": "Lava Kings Spell Daggers"
-            },
-            "at": {
-                "War": "Sea Kings Trident",
-                "Mage": "Sea Kings Greatstaff"
-            },
-            "ef": {
-                "War": "Eldenbark Greatsword",
-                "Mage": "Eldenbark Greatstaff"
-            },
-            "nl": {
-                "War": "Mjolnir",
-                "Mage": "Gungnir"
-            },
-            "gs": {
-                "War": "Gildenscale Oath and Aegis",
-                "Mage": "Daybreak and Gildensong"
-            },
-            "om": {
-                "War": "Fuscina",
-                "Mage": "Fulmen"
-            },
-            "wt": {
-                "War": "Ghost Kings Halberd",
-                "Mage": "Ghost Kings Tome"
-            },
-            "ec": {
-                "War": "Gladius Imperialis",
-                "Mage": "Magicus Imperialis"
-            },
-            "cl": {
-                "War": "Demonic Sacrificial Dagger",
-                "Mage": "Demonic Ritual Wand"
-            },
-            "mk": {
-                "War": "Glimmershine Battlesword",
-                "Mage": "Glimmershine Artefact"
-            }
-        }
-        ult_dict = {
-            "nl": {
-                "War": "Hofund",
-                "Mage": "Laevateinn"
-            },
-            "om": {
-                "War": "Stormy Seas",
-                "Mage": "Shattered Skies"
-            },
-            "wt": {
-                "War": "Storsvero",
-                "Mage": "Vigamenn"
-            },
-            "ec": {
-                "War": "Theospathia",
-                "Mage": "Theosevis"
-            },
-            "cl": {
-                "War": "Uhenyth",
-                "Mage": "Shuggoth"
-            },
-            "mk": {
-                "War": "Myrimidion",
-                "Mage": "Myriminion"
-            }
-        }
-        t3_dict = {
-            "pi": "Godly",
-            "kc": "TitanForged",
-            "uw": "Glorious",
-            "sp": "Ancestral",
-            "tc": "Overlords",
-            "gh": "Mythical",
-            "ss": "WarForged",
-            "oo": "Alien",
-            "vc": "Lava Kings",
-            "at": "Triton",
-            "ef": "Eldenbark",
-            "nl": "Valhalla",
-            "gs": "Gildenscale",
-            "om": "Thunder Gods",
-            "wt": "Soulshard",
-            "ec": "Gods Chosen",
-            "cl": "Demonic Cultists",
-            "mk": "Glimmershine"
-        }
-        t3_guard_dict = {
-            "pi": "Godly Guardian",
-            "kc": "TitanForged Guardian",
-            "uw": "Glorious Guardian",
-            "sp": "Ancestral Guardian",
-            "tc": "Overlords Guardian",
-            "gh": "Mythical Guardian",
-            "ss": "WarForged Guardian",
-            "oo": "Alien Guardian",
-            "vc": "Lava Kings Guardian",
-            "at": "Triton Guardian",
-            "ef": "Eldenbark Guardian",
-            "nl": "Valhalla Guardian",
-            "gs": "Gildenscale Guardian",
-            "om": "Thunder Gods Guardian",
-            "wt": "Soulshard Guardian",
-            "ec": "Gods Chosen Guardian",
-            "cl": "Demonic Cultists Guardian",
-            "mk": "Glimmershine Guardian"
-        }
+        leg_list = lists.get_leg_list()
+        t3_dict = lists.get_t3_dict
+        t3_guard_dict = lists.get_t3_guard_dict()
         t3_list = list(t3_dict.values())
         t3_guard_list = list(t3_guard_dict.values())
         embed = discord.Embed(

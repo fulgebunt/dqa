@@ -733,5 +733,245 @@
     "abilityType": "spell",
     "Damage": 22000,
     "Dungeon": "mk"
+  },
+  "Undead Call": {
+    "abilityType": "spell",
+    "Damage": 22800,
+    "Dungeon": "td"
+  },
+  "Undead Slam": {
+    "abilityType": "spell",
+    "Damage": 22800,
+    "Dungeon": "td"
+  },
+  "Judgement": {
+    "abilityType": "spell",
+    "Damage": 24000,
+    "Dungeon": "td"
+  },
+  "Shackled Rebirth": {
+    "abilityType": "spell",
+    "Damage": 24000,
+    "Dungeon": "td"
+  },
+  "Eternal Torment": {
+    "abilityType": "spell",
+    "Damage": 24000,
+    "Dungeon": "td"
+  },
+  "Aura of Suffering": {
+    "abilityType": "spell",
+    "Damage": 24000,
+    "Dungeon": "td"
+  },
+  "Skyshatter": {
+    "abilityType": "spell",
+    "Damage": 24800,
+    "Dungeon": "cf"
+  },
+  "Earthshatter": {
+    "abilityType": "spell",
+    "Damage": 24800,
+    "Dungeon": "cf"
+  },
+  "Formation": {
+    "abilityType": "spell",
+    "Damage": 26000,
+    "Dungeon": "cf"
+  },
+  "Flame of Heaven": {
+    "abilityType": "spell",
+    "Damage": 26000,
+    "Dungeon": "cf"
+  },
+  "Flame of Earth": {
+    "abilityType": "spell",
+    "Damage": 26000,
+    "Dungeon": "cf"
+  },
+  "Forge Collapse": {
+    "abilityType": "spell",
+    "Damage": 26000,
+    "Dungeon": "cf"
+  },
+  "Blood Sacrifice": {
+    "abilityType": "spell",
+    "Damage": 26800,
+    "Dungeon": "bc"
+  },
+  "Blood Slash": {
+    "abilityType": "spell",
+    "Damage": 26800,
+    "Dungeon": "bc"
+  },
+  "Blood Golem": {
+    "abilityType": "spell",
+    "Damage": 28000,
+    "Dungeon": "bc"
+  },
+  "Vitality Rush": {
+    "abilityType": "spell",
+    "Damage": 28000,
+    "Dungeon": "bc"
+  },
+  "Blood Storm": {
+    "abilityType": "spell",
+    "Damage": 28000,
+    "Dungeon": "bc"
+  },
+  "Anger Rush": {
+    "abilityType": "spell",
+    "Damage": 28000,
+    "Dungeon": "bc"
+  },
+  "Ice Wave": {
+    "abilityType": "spell",
+    "Damage": 30800,
+    "Dungeon": "fe"
+  },
+  "Ice Surge": {
+    "abilityType": "spell",
+    "Damage": 30800,
+    "Dungeon": "fe"
+  },
+  "Imperial Order": {
+    "abilityType": "spell",
+    "Damage": 32000,
+    "Dungeon": "fe"
+  },
+  "Frostbane": {
+    "abilityType": "spell",
+    "Damage": 32000,
+    "Dungeon": "fe"
+  },
+  "Imperial March": {
+    "abilityType": "spell",
+    "Damage": 32000,
+    "Dungeon": "fe"
+  },
+  "Frostshard": {
+    "abilityType": "spell",
+    "Damage": 32000,
+    "Dungeon": "fe"
+  },
+  "Aura of Darkness": {
+    "abilityType": "spell",
+    "Damage": 32800,
+    "Dungeon": "ad"
+  },
+  "Aura of Death": {
+    "abilityType": "spell",
+    "Damage": 32800,
+    "Dungeon": "ad"
+  },
+  "Seeping Darkness": {
+    "abilityType": "spell",
+    "Damage": 34000,
+    "Dungeon": "ad"
+  },
+  "Crawling Eternity": {
+    "abilityType": "spell",
+    "Damage": 34000,
+    "Dungeon": "ad"
+  },
+  "Desolation Roar": {
+    "abilityType": "spell",
+    "Damage": 34000,
+    "Dungeon": "ad"
+  },
+  "Bleak Slash": {
+    "abilityType": "spell",
+    "Damage": 34000,
+    "Dungeon": "ad"
+  },
+  "Petrify": {
+    "abilityType": "spell",
+    "Damage": 34800,
+    "Dungeon": "pw"
+  },
+  "Shatter": {
+    "abilityType": "spell",
+    "Damage": 34800,
+    "Dungeon": "pw"
+  },
+  "Essence of Life": {
+    "abilityType": "spell",
+    "Damage": 36000,
+    "Dungeon": "pw"
+  },
+  "Wave of Wood": {
+    "abilityType": "spell",
+    "Damage": 36000,
+    "Dungeon": "pw"
+  },
+  "Essence of Anger": {
+    "abilityType": "spell",
+    "Damage": 36000,
+    "Dungeon": "pw"
+  },
+  "Wave of Stone": {
+    "abilityType": "spell",
+    "Damage": 36000,
+    "Dungeon": "pw"
+  },
+  "Silent Wail": {
+    "abilityType": "spell",
+    "Damage": 36800,
+    "Dungeon": "ws"
+  },
+  "Cry of Desperation": {
+    "abilityType": "spell",
+    "Damage": 36800,
+    "Dungeon": "ws"
+  },
+  "Revenge of the Dead": {
+    "abilityType": "spell",
+    "Damage": 38000,
+    "Dungeon": "ws"
+  },
+  "Eternal Damnation": {
+    "abilityType": "spell",
+    "Damage": 38000,
+    "Dungeon": "ws"
+  },
+  "Soul Charge": {
+    "abilityType": "spell",
+    "Damage": 38000,
+    "Dungeon": "ws"
+  },
+  "Scream of Despair": {
+    "abilityType": "spell",
+    "Damage": 38000,
+    "Dungeon": "ws"
+  },
+  "Nightmare": {
+    "abilityType": "spell",
+    "Damage": 38800,
+    "Dungeon": "sd"
+  },
+  "Dreamscape": {
+    "abilityType": "spell",
+    "Damage": 38800,
+    "Dungeon": "sd"
+  },
+  "Unbounded Aura": {
+    "abilityType": "spell",
+    "Damage": 40000,
+    "Dungeon": "sd"
+  },
+  "Shattered Eternity": {
+    "abilityType": "spell",
+    "Damage": 40000,
+    "Dungeon": "sd"
+  },
+  "Crushed Infinity": {
+    "abilityType": "spell",
+    "Damage": 40000,
+    "Dungeon": "sd"
+  },
+  "Realmless Force": {
+    "abilityType": "spell",
+    "Damage": 40000,
+    "Dungeon": "sd"
   }
 }

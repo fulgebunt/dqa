@@ -1037,6 +1037,294 @@
             }
         ]
       },
+      "td": {
+        "4": [
+          {
+                "name": "Undead Call",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Undead Slam",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Judgement",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Shackled Rebirth",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Eternal Torment",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "Aura of Suffering",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
+      "cf": {
+        "4": [
+          {
+                "name": "Skyshatter",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Earthshatter",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Formation",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Flame of Heaven",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Flame of Earth",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "Forge Collapse",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
+      "bc": {
+        "4": [
+          {
+                "name": "Blood Sacrifice",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Blood Slash",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Blood Golem",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Vitality Rush",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Blood Storm",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "Anger Rush",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
+      "fe": {
+        "4": [
+          {
+                "name": "Ice Wave",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Ice Surge",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Imperial Order",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Frostbane",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Imperial March",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "Frostshard",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
+      "ad": {
+        "4": [
+          {
+                "name": "Aura of Darkness",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Aura of Death",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Seeping Darkness",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Crawling Eternity",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Desolation Roar",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "Bleak Slash",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
+      "pw": {
+        "4": [
+          {
+                "name": "Petrify",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Shatter",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Essence of Life",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Wave of Wood",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Essence of Anger",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "Wave of Stone",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
+      "ws": {
+        "4": [
+          {
+                "name": "Silent Wail",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Cry of Desperation",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Revenge of the Dead",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Eternal Damnation",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Soul Charge",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "Scream of Despair",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
+      "sd": {
+        "4": [
+          {
+                "name": "Dreamscape",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Nightmare",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ],
+        "5": [
+          {
+                "name": "Unbounded Aura",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Shattered Eternity",
+                "dmgscale": 1,
+                "class": "Mage"
+            },
+          {
+                "name": "Crushed Infinity",
+                "dmgscale": 1,
+                "class": "War"
+            },
+          {
+                "name": "Realmless Force",
+                "dmgscale": 1,
+                "class": "War"
+            }
+        ]
+      },
       "br": {
           "inventor": [{
               "name": "Explosive Punch",
