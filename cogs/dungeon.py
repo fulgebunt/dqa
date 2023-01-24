@@ -1,6 +1,7 @@
 import math
 import random
 from utilities import shorten
+from utilities import lengthen
 import discord
 from discord import app_commands
 from discord.ext import commands
@@ -35,6 +36,7 @@ class General(commands.Cog, name="dungeon"):
         db = get_database()
         collection = db[str(context.message.author.id)]
         userdata = collection.find_one()
+        userdata["stats"]["exp"] = lengthen(str(userdata["stats"]["exp"]))
 
         error = False
         dungeon = "N/A"
@@ -433,14 +435,14 @@ class General(commands.Cog, name="dungeon"):
             # Get type of weapon
             type2 = "Gray"
             if classname2 != "Guardian" and classname2 != "DPS Armor" or (dropname2 in t3_dict) or (dropname2 in t3_guard_dict):
-                rand = random.randint(1, 2000)
+                rand = random.randint(1, 4)
 
                 if rand <= 4:
                     if dung in leg_dungeons:
                         if diff == 5:
                             type2 = "Legendary"
                             if dung in ult_dungeons:
-                                if random.randint(1, 4) == 1:
+                                if random.randint(1, 1) == 1:
                                     type2 = "Ultimate"
                 if rand <= 20:
                     if rand <= 4:
@@ -471,7 +473,7 @@ class General(commands.Cog, name="dungeon"):
                 # Legendary Catch Code
                 if type2 == "Legendary":
                     dropname2 = leg_dict[dung][classname2]
-                if type == "Ultimate":
+                if type2 == "Ultimate":
                     dropname2 = ult_dict[dung][classname2]
                 min_pot = self.data[dung][dropname2][type2]["minpot"]
                 max_pot = self.data[dung][dropname2][type2]["maxpot"]
@@ -701,7 +703,7 @@ class General(commands.Cog, name="dungeon"):
                 userdata["stats"]["level"] += 1
                 userdata["stats"]["free"] += 1
             collection.drop()
-            collection.insert_one(userdata)
+
 
             embed.add_field(
                 name="Exp",
@@ -709,6 +711,9 @@ class General(commands.Cog, name="dungeon"):
                     shorten(userdata["stats"]["exp"])) + " / " + str(
                     shorten(level_dict[str(userdata["stats"]["level"])]))
             )
+            if userdata["stats"]["exp"] > 9000000000000000000:
+                userdata["stats"]["exp"] = shorten(userdata["stats"]["exp"])
+            collection.insert_one(userdata)
             embed.set_footer(
                 text=f"Requested by {context.author}"
             )
@@ -736,9 +741,8 @@ class General(commands.Cog, name="dungeon"):
             embed.set_author(
                 name="Raid Information"
             )
-            print(classname)
             if "Spell" in classname:
-                print(dropstats)
+                pass
             elif ("Helm" in classname or "Chest" in classname) and "Guardian" not in classname:
                 dropstats = "Class: " + classname + "\nPot: " + str(shorten(pot)) + "\nHealth: " + str(
                     shorten(health)) + "\nLvl Req: " + str(lvlrq) + "\nRarity: " + type
@@ -752,9 +756,9 @@ class General(commands.Cog, name="dungeon"):
                 inline=True
             )
             if mode == "Hardcore":
-                print(classname2)
+
                 if "Spell" in classname2:
-                    print(dropstats2)
+                    pass
                 elif ("Helm" in classname2 or "Chest" in classname2) and "Guardian" not in classname2:
                     dropstats2 = "Class: " + classname2 + "\nPot: " + str(shorten(pot2)) + "\nHealth: " + str(
                         shorten(health2)) + "\nLvl Req: " + str(lvlrq2) + "\nRarity: " + type2
@@ -771,18 +775,22 @@ class General(commands.Cog, name="dungeon"):
             )
 
             userdata["stats"]["gold"] += gold_dict[dung][str(diff)]
+            print(userdata["stats"])
             userdata["stats"]["exp"] += exp_dict[dung][str(diff)]
             while userdata["stats"]["exp"] >= level_dict[str(userdata["stats"]["level"])] :
                 userdata["stats"]["exp"] -= level_dict[str(userdata["stats"]["level"])]
                 userdata["stats"]["level"] += 1
                 userdata["stats"]["free"] += 1
 
-            collection.drop()
-            collection.insert_one(userdata)
+
             embed.add_field(
                 name="Exp",
                 value="Level: " + str(userdata["stats"]["level"]) + "\nExp: " + str(shorten(userdata["stats"]["exp"])) + " / " + str(shorten(level_dict[str(userdata["stats"]["level"])]))
             )
+            collection.drop()
+            if userdata["stats"]["exp"] > 9000000000000000000:
+                userdata["stats"]["exp"] = shorten(userdata["stats"]["exp"])
+            collection.insert_one(userdata)
             embed.set_footer(
                 text=f"Requested by {context.author}"
             )
@@ -814,13 +822,16 @@ class General(commands.Cog, name="dungeon"):
                     userdata["stats"]["exp"] -= level_dict[str(userdata["stats"]["level"])]
                     userdata["stats"]["level"] += 1
                     userdata["stats"]["free"] += 1
-                collection.drop()
-                collection.insert_one(userdata)
+
                 embed.add_field(
                     name="Exp",
                     value="Level: " + str(userdata["stats"]["level"]) + "\nExp: " + str(
                         shorten(userdata["stats"]["exp"])) + " / " + str(shorten(level_dict[str(userdata["stats"]["level"])]))
                 )
+                collection.drop()
+                if userdata["stats"]["exp"] > 9000000000000000000:
+                    userdata["stats"]["exp"] = shorten(userdata["stats"]["exp"])
+                collection.insert_one(userdata)
                 embed.set_footer(
                     text=f"Requested by {context.author}"
                 )
@@ -1141,6 +1152,7 @@ class General(commands.Cog, name="dungeon"):
         db = get_database()
         collection = db[str(target)]
         userdata = collection.find_one()
+        userdata["stats"]["exp"] = lengthen(str(userdata["stats"]["exp"]))
         if context.message.author.id in self.adminlist:
             dropname = item
             classname = self.data[dung][dropname]["class"]
@@ -1173,6 +1185,8 @@ class General(commands.Cog, name="dungeon"):
             userdata["inventory"][length]["name"] = dropname
             userdata["inventory"][length]["stats"] = dropstats
             collection.drop()
+            if userdata["stats"]["exp"] > 9000000000000000000:
+                userdata["stats"]["exp"] = shorten(userdata["stats"]["exp"])
             collection.insert_one(userdata)
             embed = discord.Embed(
                 description="debug item gen",
@@ -1201,6 +1215,7 @@ class General(commands.Cog, name="dungeon"):
         db = get_database()
         collection = db[str(target)]
         userdata = collection.find_one()
+        userdata["stats"]["exp"] = lengthen(str(userdata["stats"]["exp"]))
         if context.message.author.id in self.adminlist:
             dropname = item
             classname = itemclass
@@ -1222,6 +1237,8 @@ class General(commands.Cog, name="dungeon"):
             userdata["inventory"][length]["name"] = dropname
             userdata["inventory"][length]["stats"] = dropstats
             collection.drop()
+            if userdata["stats"]["exp"] > 9000000000000000000:
+                userdata["stats"]["exp"] = shorten(userdata["stats"]["exp"])
             collection.insert_one(userdata)
             embed = discord.Embed(
                 description="debug item giver",

@@ -100,7 +100,41 @@ def shorten(num: int = 0):
         shortened = num[0:3] + "." + num[3:4] + "sp"
         return int(shortened)
 
-
+def lengthen(num: str = "0"):
+    if "k" in num:
+        num = num[:-1]
+        num = num.replace('.','')
+        return int(num)*100
+    if "m" in num:
+        num = num[:-1]
+        num = num.replace('.','')
+        return int(num)*100000
+    if "b" in num:
+        num = num[:-1]
+        num = num.replace('.','')
+        return int(num)*100000000
+    if "t" in num:
+        num = num[:-1]
+        num = num.replace('.','')
+        return int(num)*100000000000
+    if "qa" in num:
+        num = num[:-2]
+        num = num.replace('.','')
+        return int(num)*100000000000000
+    if "qi" in num:
+        num = num[:-2]
+        num = num.replace('.','')
+        return int(num)*100000000000000000
+    if "sx" in num:
+        num = num[:-2]
+        num = num.replace('.','')
+        return int(num)*100000000000000000000
+    if "sp" in num:
+        num = num[:-2]
+        num = num.replace('.','')
+        return int(num)*100000000000000000000
+    else:
+        return int(num)
 
 # This is added so that many files can reuse the function get_database()
 if __name__ == "__main__":
