@@ -1,8 +1,8 @@
 {
   "prefix": "$",
-  "token": "MTA2NDczODMzMDU2ODMxMDkzNQ.GRNj-e.4rt-VQLxWWM63UHUSia4mCgJDkt27q7LF33-us",
+  "token": "YOUR TOKEN HERE",
   "permissions": "8",
-  "application_id": "1064738330568310935",
+  "application_id": "YOUR ID HERE",
   "sync_commands_globally": false,
   "owners": [
     123456789,
